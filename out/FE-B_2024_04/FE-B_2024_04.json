@@ -1,0 +1,365 @@
+{
+  "exam": {
+    "year": 2024,
+    "month": 4
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "- 4 -\nQ1. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program.\nA school determines the letter grade that a student will receive based on the score, which is\nan integer value between 0 and 100, as follows:\nScore\nLetter grade\nDescription\n80 – 100\nD\nPass with distinction\n50 – 79\nP\nPass\n0 – 49\nF\nFail\nThe function grade receives a score (non-negative integer value between 0 and 100) and\nreturns the letter grade as a character.\n[Program]\n○ character: grade(integer: score)\ncharacter: ret\nif (score ___A___ 80)\nret ← \"D\"\nelseif (score ___A___ 50)\nret ← ___B___\nelse\nret ← ___C___\nendif\nreturn ret\nAnswer group\nA\nB\nC",
+      "choices": [
+        "= \"P\" \"F\"",
+        "= \"F\" \"P\"",
+        "> \"P\" \"F\"",
+        "> \"F\" \"P\" e) ≥ \"P\" \"F\" f) ≥ \"F\" \"P\""
+      ],
+      "answerKey": "E",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "- 5 -\nQ2. From the answer group below, select the correct answer to be inserted into _______ in\nthe program.\nA bus company operates buses between two cities. The standard ticket price is 20 US dollars\nand the discount ticket price for passenger aged 10 and under or aged 60 and over is 10 US\ndollars. Additionally, registered members of all ages always get the ticket at the discount\nprice.\nThe function ticketPrice receives the arguments age (a non-negative integer value) and\nisMember (a boolean indicating that the passenger is a member if the value is true), which\nreturns the value ret as the ticket price (in US dollars).\n[Program]\n○ integer: ticketPrice(integer: age, boolean: isMember)\ninteger: ret\nif (_______)\nret ← 10\nelse\nret ← 20\nendif\nreturn ret\nAnswer group",
+      "choices": [
+        "((age ≤ 10) and (age ≥ 60)) and isMember",
+        "((age ≤ 10) and (age ≥ 60)) or isMember",
+        "((age ≤ 10) or (age ≥ 60)) and isMember",
+        "((age ≤ 10) or (age ≥ 60)) or isMember"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "- 6 -\nQ3. From the answer group below, select the correct answer to be inserted into _______ in\nthe program.\nThe program outputs the even numbers between 1 and 100. Subsequently, it prints the sum\nof those even numbers. Note that division is performed for data type integer, that is, a ÷ b is\nthe quotient of a divided by b.\n[Program]\ninteger: i\ninteger: sum ← 0\nfor(increase i from 1 to 100 by 1)\nif(_______)\noutput i\nsum ← sum + i\nendif\nendfor\noutput sum\nAnswer group",
+      "choices": [
+        "i ÷ 2 = 0",
+        "i ÷ 2 ≠ 0",
+        "i mod 2 = 0",
+        "i mod 2 ≠ 0 e) i = 2 f) i ≠ 2"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "pure_text",
+      "prompt": "- 7 -\nQ4. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe function sumDigits receives a non-negative integer value num as argument, and returns\nthe sum of the digits of num.\n[Program]\n○ integer: sumDigits(integer: num)\ninteger: sum ← 0\nwhile (num > 0)\nsum ← ___A___\nnum ← ___B___\nendwhile\nreturn sum\nAnswer group\nA\nB",
+      "choices": [
+        "sum + num mod 10 num mod 10",
+        "sum + num mod 10 integer part of (num ÷ 10)",
+        "sum × 10 + num mod 10 num mod 10",
+        "sum × 10 + num mod 10 integer part of (num ÷ 10) e) sum + integer part of (num ÷ 10) num mod 10 f) sum + integer part of (num ÷ 10) integer part of (num ÷ 10) g) sum × 10 + integer part of (num ÷ 10) num mod 10 h) sum × 10 + integer part of (num ÷ 10) integer part of (num ÷ 10)"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 5,
+      "type": "pure_text",
+      "prompt": "- 8 -\nQ5. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe function division receives two integer values a and b and returns the quotient of a\ndivided by b. The function modulus receives two integer values a and b and returns the\nremainder of a divided by b. The procedure convert receives the value of seconds as the\ninput argument and outputs that value in the form of hours, minutes, and seconds. For\nexample, when the procedure convert is called as convert(5450) the output is “1, 30,\n50”. Here, suppose that the range of input values satisfy 0 ≤ input < 86400.\n[Program]\n○ convert(integer: input)\ninteger: hour, minute, second\nsecond ← modulus(input, 60)\nminute ← ___A___\nhour ← ___B___\noutput hour, minute, second\n○ integer: division(integer: a, integer: b)\ninteger: u\nu ← integer part of (a ÷ b)\nreturn u\n○ integer: modulus(integer: a, integer: b)\ninteger: u\nu ← a mod b\nreturn u\nAnswer group\nA\nB",
+      "choices": [
+        "division(modulus(input, 60), 60) division(input, 3600)",
+        "division(modulus(input, 60), 60) division(modulus(input, 60), 60)",
+        "division(modulus(input, 60), 60) modulus(division(input, 60), 60)",
+        "modulus(division(input, 60), 60) division(input, 3600) e) modulus(division(input, 60), 60) division(modulus(input, 60), 60) f) modulus(division(input, 60), 60) modulus(division(input, 60), 60)"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 6,
+      "type": "pure_text",
+      "prompt": "- 9 -\nQ6. From the answer group below, select the correct answer to be inserted into _______ in\nthe program.\nThe function count1 receives the bit8 type (8-bit type) argument byte, and returns the\nnumber of bits 1 in the argument. For example, when the function count1 is called as\ncount1(11001011), the return value is 5.\nHere, operator & represents a bitwise logical product, operator | represents a bitwise logical\nsum; operator >> represents a logical shift to the right, and operator << represents a logical\nshift to the left. For example, v << n performs a logical shift of the value of v by n bits to\nthe left.\n[Program]\n○ integer: count1(bit8: byte)\nbit8: rbyte ← byte\ninteger: r ← 0\ninteger: i\nfor (increase i from 1 to 8 by 1)\nif ((_______) ≠ 00000000)\nr ← r + 1\nendif\nendfor\nreturn r\nAnswer group",
+      "choices": [
+        "rbyte & (00000001 << (i - 1))",
+        "rbyte & (00000001 << i)",
+        "rbyte & (00000001 << (i + 1))",
+        "rbyte | (00000001 << (i - 1)) e) rbyte | (00000001 << i) f) rbyte | (00000001 << (i + 1))"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 7,
+      "type": "pure_text",
+      "prompt": "- 10 -\nQ7. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe Fibonacci sequence is a sequence in which each number is equal to the sum of the two\npreceding numbers. In this question, the sequence starts with 0 and 1. The first 10 values in\nthe sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. For example, the 8-th number 13 is the sum of\nthe two preceding numbers 5 and 8.\nThe function fibo takes an integer value n as the argument and returns the value at the n-th\nposition. Here, n reflects the position of the number in the sequence, starting with 1 (one).\nWhen n is 9, the function returns 21.\n[Program]\n○ integer: fibo(integer: n)\nif (___A___)\nreturn n - 1\nelse\nreturn ___B___\nendif\nAnswer group\nA\nB",
+      "choices": [
+        "n = 1 fibo(n-1) + 1",
+        "n = 1 fibo(n-1) + n",
+        "n = 1 fibo(n-1) + fibo(n-2)",
+        "n > 1 fibo(n-1) + 1 e) n > 1 fibo(n-1) + n f) n > 1 fibo(n-1) + fibo(n-2) g) (n = 1) or (n = 2) fibo(n-1) + 1 h) (n = 1) or (n = 2) fibo(n-1) + n i) (n = 1) or (n = 2) fibo(n-1) + fibo(n-2)"
+      ],
+      "answerKey": "I",
+      "mediaFiles": []
+    },
+    {
+      "number": 8,
+      "type": "image",
+      "prompt": "- 11 -\nQ8. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program. Here, the array index starts at 1.\nThe program implements a stack. The stack implementation only accepts positive integers.\nThe function empty checks whether the stack is empty. The function full checks whether\nthe stack is full. If the stack is not full, the function push pushes an element with a specified\nvalue onto the stack. If the stack is not empty, the function pop removes an element from the\nstack and returns its value. In the program, areas outside of the array must not be referenced.\n[Program]\nglobal: integer []: content\n← {undefined, undefined, undefined, undefined}\nglobal: integer: index ← 1\nglobal: integer: max ← 4 /* max size of the stack */\n○ boolean: empty()\nif (index = 1)\nreturn true\nelse\nreturn false\nendif\n○ boolean: full()\nif (___A___)\nreturn true\nelse\nreturn false\nendif\n○ boolean: push(integer: i)\nif (not full())\ncontent[index] ← i\nindex ← ___B___\nreturn true\nelse\nreturn false\nendif\n○ integer: pop()\nif (not empty())\nindex ← ___C___\nreturn content[index]",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p011_q008.png"
+      ]
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "- 13 -\nQ9. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program. Here, the array index starts at 1.\nThe procedure preorder traverses a binary tree and outputs the value of each node by\nfollowing the sequence: root, left subtree, and right subtree using a stack (Last In, First Out).\nEach node of the binary tree is represented by the class Node. The table shows the description\nof the class Node. The Node-type variable holds a reference to an instance of the class Node.\nThe argument root holds a reference to the root of the binary tree, which is an instance of\nthe class Node. In the program, areas outside of the array must not be referenced.\nTable Class Node\nMember variable\nType\nDescription\ninfo\ncharacter\nCharacter type value to be stored in a node\nof a binary tree.\nleft\nNode\nA reference to the left child of a binary\ntree. If there is no left child, the status is\nundefined\nright\nNode\nA reference to the right child of a binary\ntree. If there is no right child, the status is\nundefined\n[Program]\n○ preorder(Node: root)\nNode []: stack ← {undefined, …, undefined}\n// an array with sufficient number of elements\nNode: v\ninteger: sp ← 1 // The stack pointer\nstack[sp] ← root // Push root to the stack\nwhile (sp is not ___A___)\nv ← stack[sp] // Pop an element from the stack\noutput v.info\nsp ← sp − 1\nif (___B___ is not undefined)\nsp ← sp + 1\nstack[sp] ← ___B___\nendif\nif (___C___ is not undefined)\nsp ← sp + 1\nstack[sp] ← ___C___\nendif\nendwhile",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p013_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "image",
+      "prompt": "- 15 -\nQ10. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe procedure Insert inserts an integer number given by the argument after the last element\nof the linear circular linked list. Each element of the linear circular linked list is represented\nby the class ListElement. The figure shows the description of the class ListElement. The\nListElement-type variable holds a reference to an instance of the class ListElement. The\nglobal variable listHead holds a reference to the head element of the linear circular linked\nlist. Remember that in the circular linked list the last element points to the listHead. Here,\nif the list is empty, listHead is set to undefined.\nMember variable\nType\nDescription\nval\ninteger\nThe value of an element.\nnext\nListElement\nReference to the instance that holds the\nnext element in the list.\nConstructor\nDescription\nListElement(integer: newItem)\nInitialize the member variable val with\nthe argument newItem.\nFigure Class ListElement\n[Program]\nglobal: ListElement: listHead ← undefined\n○ Insert(integer: newItem)\nListElement: tmp, newNode\nnewNode ← ListElement(newItem)\nif (listHead is undefined)\nlistHead ← newNode\nlistHead.next ← listHead\nelse\ntmp ← listHead\nwhile (tmp.next is not ___A___)\ntmp ← ___B___\nendwhile\ntmp.next ← newNode\nnewNode.next ← listHead\nendif",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p015_q010.png"
+      ]
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "- 17 -\nQ11. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program. Here, the array index starts at 1.\nThe program sorts the data in ascending order using the selection sort algorithm. The\nalgorithm repeatedly selects the smallest element from the unsorted portion of the array and\nswaps it with the first element of the unsorted portion until the entire array is sorted.\n[Program]\ninteger []: data ← {12, 11, 13, 5, 6}\ninteger: i, j, temp, minPos\ninteger: size ← the number of elements in data\nfor (increase i from 1 to (size – 1) by 1)\nminPos ← i\nfor (increase j from ___A___ to size by 1)\nif (data[j] ___B___ data[minPos])\nminPos ← j\nendif\nendfor\ntemp ← ___C___\n___C___ ← data[minPos]\ndata[minPos] ← temp\nendfor\nAnswer group\nA\nB\nC",
+      "choices": [
+        "1 < data[i]",
+        "1 < data[i + 1]",
+        "1 > data[i]",
+        "1 > data[i + 1] e) i + 1 < data[i] f) i + 1 < data[i + 1] g) i + 1 > data[i] h) i + 1 > data[i + 1]"
+      ],
+      "answerKey": "E",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "pure_text",
+      "prompt": "- 18 -\nQ12. From the answer group below, select the correct answer to be inserted into ______ in\nthe program.\nA string of character(s) is called a palindrome if it reads the same forwards and backwards.\nHere the input string consists of only the uppercase Roman alphabet. As an example, the\nstring \"MADAM\" is a palindrome as it remains the same when written backwards (right to left).\nThe procedure isPalindrome receives a string str as a parameter and outputs whether the\nstring str is a palindrome or not. The procedure should use the minimum number of\niterations for any number of characters in the string. Note that division is performed for data\ntype integer, that is, a ÷ b is the quotient of a divided by b.\n[Program]\n○isPalindrome(string: str)\ninteger: i, j, len\nboolean: flag\nflag ← true\nlen ← number of characters in str\ni ← 1\nj ← len\nwhile (______)\nif (the i-th character of string str ≠ the j-th character of string str)\nflag ← false\nexit the while block\nendif\ni ← i + 1\nj ← j - 1\nendwhile\nif (flag)\noutput str, \" is a palindrome.\"\nelse\noutput str, \" is not a palindrome.\"\nendif\nAnswer group",
+      "choices": [
+        "i < j - 1",
+        "i < (len ÷ 2) + 1",
+        "i < (len ÷ 2) - 1",
+        "i < len ÷ j e) i < j ÷ 2"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 13,
+      "type": "image",
+      "prompt": "- 19 -\nQ13. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program. Here, the array index starts at 1.\nThe function are_brackets_balanced checks for balanced brackets. It parses the given\narray of characters and when an opening bracket (“(”, “[”, “{”) is encountered, this is pushed\nonto the stack. When a closing bracket (“)”, “]”, “}”) is encountered, an element is popped\nfrom the stack and tested if it corresponds to the opening bracket. If the closing bracket\nmatches its corresponding opening bracket, the process continues. Otherwise, it fails and the\nfunction returns false. After all characters have been processed, it returns false if any\ncharacters remain on the stack, otherwise it returns true. For simplicity, only brackets are\nconsidered as arguments to the function. The table shows examples of arguments provided\nto are_brackets_balanced and the return values.\nTable Examples of arguments provided to the function\nare_brackets_balanced and the return values\nFunction call\nReturn value\nare_brackets_balanced({\"(\", \"{\", \"}\", \")\", \"[\", \"]\"})\ntrue\nare_brackets_balanced({\"(\", \"{\", \"}\", \"[\", \"]\"})\nfalse\nare_brackets_balanced({\"(\", \"{\", \")\", \"}\", \"[\", \"]\"})\nfalse\nThe function are_brackets_balanced uses class Stack. The figure describes class Stack.\nConstructor\nDescription\nStack()\nInitialize a stack.\nMethod\nReturn value\nDescription\npush(character: arg)\nNone\nPushes arg onto the stack.\npop()\ncharacter\nReturns the value popped from the stack.\nisEmpty()\nboolean\nReturns true if the stack is empty.\nFigure Class Stack\n[Program]\nglobal: character [][]: brackets ← {\n{\"(\", \")\"},\n{\"{\", \"}\"},\n{\"[\", \"]\"}\n}",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "H",
+      "mediaFiles": [
+        "question_images/p019_q013.png"
+      ]
+    },
+    {
+      "number": 14,
+      "type": "image",
+      "prompt": "- 22 -\nQ14. From the answer group below, select the correct answer to be inserted into _________ in\nthe description. Here, the array indexes start at 1.\nThe function calcSim takes two vectors (arrays) as input, calculates their similarity, and\nreturns a value that characterizes the similarity. A large similarity indicates that the vectors\nare similar, and a small similarity indicates that the vectors are dissimilar. For example, to\nquantify the similarity between two documents, you can create a vector of occurrences of\nsome words for each of the two documents and input them into calcSim. When the function\ncalcSim({2, 2, 1, 0, 4}, {3, 1, 1, 1, 2}) is called, the return value rounded to\nthe first decimal place is _________.\n[Program]\n// Assume that arrays v1 and v2 have the same number of one or more elements\n// and that the arrays are not all-zero.\n○ real: calcSim(integer []: v1, integer []: v2)\ninteger: i, x, y\ninteger: sxx ← 0\ninteger: syy ← 0\ninteger: sxy ← 0\nfor (increase i from 1 to the number of elements in v1 by 1)\nx ← v1[i]\ny ← v2[i]\nsxx ← sxx + x × x\nsyy ← syy + y × y\nsxy ← sxy + x × y\nendfor\nreturn sxy ÷ (square root of (sxx × syy))\nAnswer group",
+      "choices": [
+        "0.1",
+        "0.2",
+        "0.3",
+        "0.4 e) 0.5 f) 0.6 g) 0.7 h) 0.8 i) 0.9 j) 1.0"
+      ],
+      "answerKey": "I",
+      "mediaFiles": [
+        "question_images/p022_q014.png"
+      ]
+    },
+    {
+      "number": 15,
+      "type": "image",
+      "prompt": "- 23 -\nQ15. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nN-grams are continuous sequences of words, symbols, or tokens in a document. N-grams of\ntexts are extensively used in text mining and natural language processing tasks. An n-gram\nmodel is built by counting how often word sequences occur in corpus text and then\nestimating the probabilities. The figure shows an example of the unigrams, bigrams, and\ntrigrams of the example sentence “ITPEC includes members from 6 countries.”\nunigram\nITPEC\nincludes\nmembers\nfrom\n6\ncountries\nbigram\nITPEC includes\nincludes members\nmembers from\nfrom 6\n6 countries\ntrigram\nITPEC includes members\nincludes members from\nmembers from 6\nfrom 6 countries\nFigure Example of unigrams, bigrams, and trigrams\nThe procedure NGRAMS generates n-grams from text and outputs them. If the argument for n\nis 1, the procedure outputs the unigram result. If n is 2, the procedure outputs the bigram\nresult and so on. The input text is a string of words separated by a space, so it is needed to\nsplit the string to generate n-grams. The table shows the description of the functions used in\nthe program. In this question, the operator “+” is used for both arithmetic calculation of\ninteger data type and concatenation of one or more strings into one string. In the program,\nareas outside of the array must not be referenced.\nTable Functions\nFunction\nReturn value\nDescription\nsplit(string: str)\nstring []\nReturns the words that are separated with a\nspace in the text str\n[Program]\n○ NGRAMS(integer: n, string: text)\nstring []: words ← split(text)\nstring: s\ninteger: i, j, length\nlength ← the number of elements in words\nfor (increase i from 1 to ( ___A___) by 1)\ns ← \"\"\nfor (increase j from i to ( ___B___) by 1)\ns ← s + words[j] + \" \"\nendfor",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "I",
+      "mediaFiles": [
+        "question_images/p023_q015.png"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "pure_text",
+      "prompt": "- 25 -\nQ16. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe function m_sin calculates and returns the approximate value of sin(x) for the argument\nx using the Maclaurin expansion. The program calculates sin(x) using the approximate\nformula below:\nsin(x) = x/1! - x3/3! + x5/5! - … + (-1)n × ( x(2n+1)/(2n+1)!)\nHere, ! is the factorial symbol, and n is the first integer for which | x(2n+1) / (2n+1)! | ≤ 10-7 is\nsatisfied.\n[Program]\n○ real: m_sin(real: x)\nreal: vn ← x\nreal: k ← 1\nreal: sum ← vn\nreal: epsi ← 1×10-7\nwhile (abs(vn) ___A___) // abs(vn) returns the absolute value of vn\nk ← k + 2\nvn ← ___B___\nsum ← sum + vn\nendwhile\nreturn sum\nAnswer group\nA\nB",
+      "choices": [
+        "≤ epsi − vn × x ÷ k",
+        "≤ epsi − vn × x2 ÷ k2",
+        "≤ epsi − vn × x2 ÷ ((k − 1) × k)",
+        "≤ epsi − vn × xk ÷ k2 e) ≤ epsi − vn × xk ÷ ((k − 1) × k) f) > epsi − vn × x ÷ k g) > epsi − vn × x2 ÷ k2 h) > epsi − vn × x2 ÷ ((k − 1) × k) i) > epsi − vn × xk ÷ k2 j) > epsi − vn × xk ÷ ((k − 1) × k)"
+      ],
+      "answerKey": "H",
+      "mediaFiles": []
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "- 26 -\nQ17. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nAn information systems company S has a guideline related to any issue for workers doing\ntheir daily job. The company has an information security team responsible for related issues\nand updates workers’ knowledge on information security.\nOne morning, a company worker who had just started his daily job and successfully signed\ninto the company’s enterprise system received the following email:\nFrom: Administration Department Staff\nTo: To whom it may concern\nSubject: Action Required: Please update your bank account information.\nThis email has been sent to employees who failed to receive their paychecks because\ntheir bank account information is incorrect. Please use the link below to update your\naccount information ASAP. Please complete the update by noon today to receive\nyour next paycheck in time.\nLink: https://www.example.com/company-s/paycheck&param=xnt6a5mv9YeKK1\nSoon, the worker realized that something wrong. He followed the guideline instead of\nclicking on the link in the email because he suspected this is a ___A___ attack, and it is\ntypically conducted through ___B___. He also informed the company’s information\nsecurity team to deal with the issue.\nA few days later, the worker received an email from the information security team leader.\nThe email was to notify that the issue was resolved, thanking the worker for his\nresponsibility in handling the case according to the guideline.\nAnswer group\nA\nB",
+      "choices": [
+        "man in the middle email with incorrect digital signatures",
+        "man in the middle links with malicious HTTP request parameters",
+        "phishing email directing someone to a spoofed web site",
+        "phishing email with incorrect digital signatures e) SQL injection email directing someone to a spoofed web site f) SQL injection links with malicious HTTP request parameters"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "image",
+      "prompt": "- 27 -\nQ18. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ through ____C____ in Table 1.\nCompany X is a small trading company. The company is about to provide a new e-commerce\nweb site for customers to make purchases online. The company will also hosts its own email\nservice for the employees to conduct business with partners and customers. Company X will\nutilize public key infrastructure (PKI) to provide security for both the web server and email\nservice. PKI uses public key cryptography to manage the identity of servers or persons and\nis widely used on the Internet.\nMr. T, the IT support person of company X is assigned to prepare the web server and email\nservice in accordance with the following requirements:\n The e-commerce web application will run on the web server that is certified by a third-\nparty certification authority. All connections to the web server will be secured using\nHTTPS.\n The staff directory along with the contact information will be published on the web site\nto enable business partners and customers to use the information to securely\ncommunicate with employees of company X.\nThe actions taken by Mr. T are shown in Table 1.\nTable 1 Actions taken by Mr. T\nNo\nAction\n1\nTo enable secure and trusted connections to the web server, Mr. T submits the web\nserver certificate along with the ____A____ to the third-party certification\nauthority. The certification authority signs the certificate with its own private key.\nThen, he installs the signed certificate on company X’s web server.\n2\nTo allow business partners and customers to send encrypted email messages to\nparticular contacts in company X, Mr. T publishes the ____B____ along with the\nemployee’s information in the staff directory on company X’s web site.\n3\nTo send digitally signed email messages to partners and customers, the employees\nof company X are required to install the ____C____ on their email clients.\nTherefore, Mr. T provides support to the employees who require assistance.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "F",
+      "mediaFiles": [
+        "question_images/p027_q018.png"
+      ]
+    },
+    {
+      "number": 19,
+      "type": "image",
+      "prompt": "- 29 -\nQ19. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the following description.\nCompany Y is an online retailer providing e-commerce web applications for customers to\nmake purchases online and also allows customers to post product reviews. The web\napplication was developed and maintained in-house. The properties of the e-commerce web\napplication are shown in Figure 1.\n• The web application resides on the web server in the demilitarized zone (DMZ), and\nthe database used by the web application resides on the database server in the internal\nnetwork.\n• The firewall is properly configured, the customers can only access the web server in\nthe DMZ, and the database can only be accessed from the web server.\n• The web server allows access only through the HTTPS service, and the certificate is\nproperly configured.\n• The customers can login using their registered email address and password.\n• The password is hashed and stored on the database.\n• The customer is locked out and notified by email with a recovery link if there are 5\nconsecutive incorrect login attempts.\n• Third-party payment gateways are used to perform financial transactions. The credit\ncard information of customers is not stored in the database.\n• There is a password recovery system which allows the customer to reset the password\nthrough a password recovery link sent to the registered email address.\nFigure 1 Properties of the e-commerce web application\nDue to recent incidents with multiple customers reporting that their accounts were\ncompromised, the management tasked the IT team to investigate and address the issues. The\nIT team found that many customer accounts logins were unnoticed by the actual account\nowners, and some of the accounts were used to post fake reviews. The IT team also\ndiscovered unauthorized access to the database with illegal queries executed with no trace\nof administration login.\nThe IT team concluded that the incidents are most likely caused by using the same password\non other leaked sites and ____A____. They proposed to implement 2-factor authentication\nand ____B____ to mitigate respective issues in the future. The management then agreed to\nthe plan, and the solutions was implemented accordingly.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "F",
+      "mediaFiles": [
+        "question_images/p029_q019.png"
+      ]
+    },
+    {
+      "number": 20,
+      "type": "image",
+      "prompt": "- 31 -\nQ20. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the description.\nA zone is a group of interfaces that have similar functions or features. Zones establish the\nsecurity borders of a network. A zone defines a boundary where traffic is subjected to policy\nrestrictions when crossing into another region of a network. An inspection policy is applied\nto traffic moving between zones. Inter-zone policies offer considerable flexibility. Hence,\ndifferent inspection policies can be applied to multiple host groups connected to the same\nrouter interface.\nCompany Z, intends to apply a zone-based policy firewall in their datacenter. Thus, they\ndevelop the network topology shown in Figure 1.\nThe Internet\nPC-1\nPC-n\n・・・\n・・・\nServer-n\nServer-1\nPRIVATE zone\nPUBLIC zone\nDMZ zone\nFigure 1 Network topology\nThese zones have the following characteristics:\n• The DMZ zone represents a zone where servers accessed from the Internet are\nlocated. Even if a server in the DMZ zone is breached, direct access to the internal\nPCs of the datacenter is prevented.\n• The PUBLIC zone represents the entire network outside the datacenter.\n• The PRIVATE zone represents the internal network. All datacenter PCs are located\nin this zone.\nThe security policy for the datacenter should be:\n• Hosts in the ___A___ zone cannot connect to hosts in the ___B___ zone.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p031_q020.png"
+      ]
+    }
+  ],
+  "report": {
+    "questionCount": 20,
+    "imageTypeCount": 9,
+    "missingAnswerKeyCount": 0,
+    "issues": [
+      {
+        "page": 11,
+        "number": 8,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p011_q008.png"
+      },
+      {
+        "page": 13,
+        "number": 9,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p013_q009.png"
+      },
+      {
+        "page": 15,
+        "number": 10,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p015_q010.png"
+      },
+      {
+        "page": 19,
+        "number": 13,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p019_q013.png"
+      },
+      {
+        "page": 23,
+        "number": 15,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p023_q015.png"
+      },
+      {
+        "page": 27,
+        "number": 18,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p027_q018.png"
+      },
+      {
+        "page": 29,
+        "number": 19,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p029_q019.png"
+      },
+      {
+        "page": 31,
+        "number": 20,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p031_q020.png"
+      }
+    ]
+  }
+}

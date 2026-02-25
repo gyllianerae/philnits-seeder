@@ -22,13 +22,17 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
 
 const supabase = createClient(SUPABASE_URL, SERVICE_KEY)
 
-function toExamFolder(year, month) {
-  return `${year}-${String(month).padStart(2, '0')}`
+function normalizeExamSet(s) {
+  const v = String(s || '').trim().toUpperCase()
+  if (v !== 'A' && v !== 'B') {
+    throw new Error(`Invalid exam_set "${s}". Use "A" or "B".`)
+  }
+  return v
 }
 
-function normalizeRelPath(p) {
-  // Make both "\" and "/" work across OS
-  return p.replace(/[\\/]+/g, path.sep)
+function toExamFolder(year, month, examSet) {
+  // Put examSet in folder so A/B don’t overwrite each other
+  return `${year}-${String(month).padStart(2, '0')}-${examSet}`
 }
 
 function guessContentType(filename) {
@@ -47,7 +51,7 @@ async function uploadFile(localPath, destPath) {
     .upload(destPath, buf, { upsert: true, contentType })
 
   if (error) throw new Error(`Upload failed for ${destPath}: ${error.message}`)
-  return data.path // object path in bucket
+  return data.path
 }
 
 async function uploadAllQuestionImages(jsonDir, examFolder) {
@@ -60,7 +64,6 @@ async function uploadAllQuestionImages(jsonDir, examFolder) {
   const files = fs.readdirSync(imagesDir).filter(f => /\.(png|jpe?g)$/i.test(f))
   console.log(`🖼️ Found ${files.length} images in question_images/`)
 
-  // Map: filename -> uploaded storage path
   const uploaded = new Map()
 
   for (const f of files) {
@@ -76,22 +79,32 @@ async function uploadAllQuestionImages(jsonDir, examFolder) {
 }
 
 function findLocalCropFilenameForQuestion(q) {
-  // Prefer the filename in JSON mediaFiles if present (e.g. question_images\p011_q020.png)
   const mf = (q.mediaFiles || [])[0]
   if (mf) return path.basename(mf.replace(/\\/g, '/'))
-
-  // Fallback (works if your crops are always p###_q###.png but you don't know page):
-  // We can’t derive page from number alone, so we cannot guarantee the exact filename.
-  // In practice your JSON already includes it for image-type questions.
   return null
+}
+
+function inferExamSetFromJsonPath(jsonPath, fallback = 'A') {
+  const base = path.basename(jsonPath, path.extname(jsonPath)).toUpperCase()
+  // Expect filenames like FE-A_2024_04 or FE-B_2024_04
+  const m = base.match(/^FE-([AB])[_-]/)
+  if (m && m[1]) {
+    return normalizeExamSet(m[1])
+  }
+  return normalizeExamSet(fallback)
 }
 
 async function main() {
   const jsonPath = process.argv[2]
   if (!jsonPath) {
-    console.error('Usage: node seed.js <path_to_exam_json>')
+    console.error('Usage: node seed.js <path_to_exam_json> [A|B]')
     process.exit(1)
   }
+
+  const examSetArg = process.argv[3]
+  const exam_set = examSetArg
+    ? normalizeExamSet(examSetArg)
+    : inferExamSetFromJsonPath(jsonPath, 'A')
 
   const absJsonPath = path.resolve(jsonPath)
   const jsonDir = path.dirname(absJsonPath)
@@ -99,23 +112,23 @@ async function main() {
 
   const year = payload.exam.year
   const month = payload.exam.month
-  const examFolder = toExamFolder(year, month)
+  const examFolder = toExamFolder(year, month, exam_set)
 
   // 0) Upload ALL images first
   const uploadedMap = await uploadAllQuestionImages(jsonDir, examFolder)
 
-  // 1) Upsert exam (unique on year+month)
+  // 1) Upsert exam (unique on year+month+exam_set)
   const { data: examRows, error: examErr } = await supabase
     .from('exams')
-    .upsert({ year, month }, { onConflict: 'year,month' })
+    .upsert({ year, month, exam_set }, { onConflict: 'year,month,exam_set' })
     .select('id')
     .single()
 
   if (examErr) throw examErr
   const examId = examRows.id
-  console.log('✅ Exam upserted:', examId)
+  console.log('✅ Exam upserted:', examId, `(${year}-${month} set ${exam_set})`)
 
-  // 2) Build question rows (now: EVERY question gets media_paths if crop exists)
+  // 2) Build question rows (EVERY question gets media_paths if crop exists)
   const questionRows = []
   let withMedia = 0
   let missingMedia = 0
@@ -129,15 +142,12 @@ async function main() {
 
     let media_paths = []
 
-    // Use the crop filename referenced in JSON if available
     const cropFilename = findLocalCropFilenameForQuestion(q)
 
     if (cropFilename && uploadedMap.has(cropFilename)) {
       media_paths = [uploadedMap.get(cropFilename)]
       withMedia++
     } else {
-      // If JSON didn't have mediaFiles (pure_text questions), we try to find a crop by scanning:
-      // Strategy: find any uploaded filename ending with `_qNNN.png` (or jpg)
       const suffix = `_q${String(number).padStart(3, '0')}.`
       let match = null
       for (const [fname, spath] of uploadedMap.entries()) {
@@ -165,14 +175,14 @@ async function main() {
     })
   }
 
-  // 3) Upsert questions
+  // 3) Upsert questions (unique on exam_id+number)
   const { error: qErr } = await supabase
     .from('questions')
     .upsert(questionRows, { onConflict: 'exam_id,number' })
 
   if (qErr) throw qErr
 
-  console.log(`🎉 Seeded ${questionRows.length} questions for ${examFolder}`)
+  console.log(`🎉 Seeded ${questionRows.length} questions for ${year}-${String(month).padStart(2,'0')} set ${exam_set}`)
   console.log(`🧷 Questions with media_paths: ${withMedia}`)
   console.log(`⚠️ Questions missing media_paths: ${missingMedia}`)
   console.log(`📦 Bucket: ${BUCKET}`)

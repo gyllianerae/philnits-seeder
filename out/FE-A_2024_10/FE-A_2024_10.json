@@ -1,0 +1,841 @@
+{
+  "exam": {
+    "year": 2024,
+    "month": 10
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "P, Q, and R are propositions. It is known that the truth value of proposition P is true, and\nthe values of both the propositions “(not P) or Q” and “(not Q) or R” are true. Which of the\nfollowing is a combination of the truth values of Q and R? Here, X or Y represents the\nlogical sum of X and Y, and not X represents the negation of X.\nQ\nR",
+      "choices": [
+        "False False",
+        "False True",
+        "True False",
+        "True True"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "What is the value of the postfix expression below? Here, A, B, C, and D are operands\nwhose values are 4, 3, 5, and 6, respectively. Symbols “+”, “−”, “×”, and “÷” are arithmetic\noperators for addition, subtraction, multiplication, and division, respectively.\nA B 2 × + D B ÷ C × −",
+      "choices": [
+        "−3",
+        "0",
+        "3",
+        "40/3"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "– 4 –\nQ3. Which of the following is the computational complexity of the Heapsort algorithm? Here,\nn is the number of elements to be sorted, and all comparisons, swaps, and other needed\noperations can proceed in constant time.",
+      "choices": [
+        "O (log n)",
+        "O (n)",
+        "O (n2)",
+        "O (n log n)"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "image",
+      "prompt": "– 5 –\nQ4. The presence of an edge between nodes is represented by an adjacent matrix. When the\nadjacent matrix of an undirected graph is as below, which of the following is its graph\nrepresentation? Here, the nodes correspond with the rows and columns of the adjacent\nmatrix. If there is an edge between nodes, this is indicated with 1, and if there is no edge,\nthis is indicated with 0.\n0 1 0 0 0 0\n1 0 1 1 0 0\n0 1 1 0 0 0\n0 1 0 1 1 0\n0 0 1 0 0 1\n0 0 0 0 1 0\na b c d e f\na\nb\nc\nd\ne\nf",
+      "choices": [
+        "a b c d e f",
+        "a b c d e f",
+        "a b c d e f",
+        "a b c d e f"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p005_q004.png"
+      ]
+    },
+    {
+      "number": 5,
+      "type": "image",
+      "prompt": "What is the value of the arithmetic expression resulting from an in-order traversal of the\nbinary tree below?",
+      "choices": [
+        "11",
+        "20",
+        "27",
+        "45"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p006_q005.png"
+      ]
+    },
+    {
+      "number": 6,
+      "type": "pure_text",
+      "prompt": "– 6 –\nQ6. The function f (n) is recursively defined in terms of the natural number n as below. Which\nof the following is the value of f (5)?\nf (n): if n≦1 then return 1 else return n + f (n−1)",
+      "choices": [
+        "6",
+        "9",
+        "15",
+        "25"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 7,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate description of the “selection sort” algorithm?",
+      "choices": [
+        "An intermediate reference value is determined, and then the elements are divided into two groups of “larger” values and “smaller” values. This operation is recursively repeated.",
+        "Each set of elements extracted at regular intervals is sorted, and then the interval is further decreased. The operation is repeatedly performed until the interval becomes 1.",
+        "The element with the largest value is determined and swapped for the last element, and then the largest value of the unsorted elements is determined and swapped for the second-to-the-last element. This operation is repeated in the same way.",
+        "Two adjacent elements are repeatedly compared and swapped if the first element is larger than the second. This operation is repeated until all elements are arranged in an orderly fashion."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 8,
+      "type": "image",
+      "prompt": "– 7 –\nQ8. What is the approximate performance of a CPU in MIPS, when the instruction mix of the\nCPU is shown in the table below? Here, the CPU does not use a pipeline architecture.\nInstruction type\nInstruction execution\ntime in μs\nAppearance ratio\nRegister to register\noperation\n0.3\n30%\nRegister to memory\noperation\n0.6\n50%\nConditional branch\noperation\n0.1\n20%",
+      "choices": [
+        "0.03",
+        "0.41",
+        "2.44",
+        "35.00"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p007_q008.png"
+      ]
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "When the CPU needs data, it first accesses the cache memory. When the data is not\navailable in the cache memory, the CPU accesses the main memory. If the miss ratio is 0.2\nand the access times for cache memory and main memory are as shown below, what is the\napproximate average memory access time in ns for the CPU? Here, there are only cache\nmemory and main memory for the CPU, the access time for main memory includes the time\nto confirm whether the data is available in cache memory, and the overhead time for the\ncache management can be ignored.\nAccess destination\nAccess time (ns)\nCache Memory\n75\nMain Memory\n1500",
+      "choices": [
+        "315",
+        "360",
+        "1,215",
+        "1,260"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p008_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate purpose of defragmentation of hard disks?",
+      "choices": [
+        "To access disk files faster and more efficiently",
+        "To clean up temporary and junk files",
+        "To delete IBG (interblock gap) and increase capacity",
+        "To protect disk drives from physical failures"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "– 8 –\nQ11.\nWhich of the following is a fail-safe concept for improving the security and reliability\nof the information system?",
+      "choices": [
+        "Even when the user performs an incorrect operation, a problem does not occur in the system.",
+        "Even when there is a partial system fault, the required functions of the overall system are maintained.",
+        "When a device configuring the system fails, damage can be minimized by enabling the system to stop safely.",
+        "When a system failure occurs, processing is continued by switching to a standby system."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "image",
+      "prompt": "Which of the following is the approximate availability of the system comprising five\ndevices, namely, A, B, C, D, and E as shown in the figure below? The numeric value in\nparentheses represents the availability of each device. The system is operational if either\ndevice connected in parallel is available.",
+      "choices": [
+        "0.003",
+        "0.031",
+        "0.282",
+        "0.795 A (0.8) B (0.7) D (0.7) E (0.8) C (0.9)"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p009_q012.png"
+      ]
+    },
+    {
+      "number": 13,
+      "type": "pure_text",
+      "prompt": "There are minor and major page faults in an Operating System (OS). Which of the\nfollowing is an appropriate action of the OS when a major page fault occurs?",
+      "choices": [
+        "Asking the user to input the instruction corresponding to the page",
+        "Looking for a page in CPU cache",
+        "Looking for a page in virtual memory on the hard disk",
+        "Looking for the missed block corresponding to the page on the physical memory"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 14,
+      "type": "pure_text",
+      "prompt": "– 9 –\nQ14.\nA real-time OS that performs preemptive priority scheduling for tasks A and B with A\nhaving a higher priority than B. Which of the following is the action that the OS takes?",
+      "choices": [
+        "When A is launched during the execution of B, B is put into a ready state and A is executed.",
+        "When A is launched during the execution of B, B is put into a waiting state and A is executed.",
+        "When B is launched during the execution of A, A is put into a ready state and B is executed.",
+        "When B is launched during the execution of A, A is put into a waiting state and B is executed."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 15,
+      "type": "image",
+      "prompt": "– 10 –\nQ15.\nAn OS chooses a process for CPU execution based on a scheduling algorithm. Consider\nfour processes, P1, P2, P3, and P4, and their corresponding arrival times along with their\nburst times shown in the table below. Which of the following is the correct combination of\nwaiting times for the processes to be executed in the First-Come-First-Serve (FCFS)\nscheduling algorithm? Here, arrival time is when a process enters the ready queue, burst\ntime is the time required for CPU execution, and waiting time is the time a process spends\nin the ready queue before CPU execution begins.\nUnit: millisecond\nProcess\nArrival time\nBurst Time\nP1\n0\n6\nP2\n2\n4\nP3\n4\n9\nP4\n5\n7\nP1\nP2\nP3\nP4",
+      "choices": [
+        "0 2 4 5",
+        "0 4 6 14",
+        "6 4 9 7",
+        "6 6 13 12"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p010_q015.png"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "A graphical symbol for the 2-to-1 MUX (multiplexer) and its truth table are shown in\nthe figure below. The MUX has two data inputs (I0, I1), one select-line (S) and one output\n(Z). If the select line is S=0, then the output Z is switched to input I0, whereas if a select line\nis S=1, then the output Z is switched to input I1.\nWhich of the following is a logic gate that is equivalent to the circuit implemented with the\n2-to-1 MUX below?",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p011_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "Audio signals are recorded using 8-bit samples at a sampling rate of 11,000 times per\nsecond. When a flash memory of 512 × 106 bytes is used, what is the maximum recording\ntime of such data in minutes?",
+      "choices": [
+        "77",
+        "96",
+        "775",
+        "969"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "image",
+      "prompt": "– 11 –\nQ18.\nWhich of the following is a database design that consists of multiple tables with rows\nand columns that are linked together through matching data stored in each table?",
+      "choices": [
+        "Hierarchical database",
+        "Network database",
+        "Object-oriented database",
+        "Relational database"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p011_q018.png"
+      ]
+    },
+    {
+      "number": 19,
+      "type": "image",
+      "prompt": "– 12 –\nQ19. Which of the following is an appropriate ER diagram after considering the conditions\nbelow?\n- An employee is associated with 1 program and a program is associated with at least one\nemployee\n- A program belongs to 1 college and a college has one or many programs",
+      "choices": [
+        "",
+        "",
+        "",
+        "1.1 1.* 1..1 Employee College Program 1.* 1.* 1.* 1..1 Employee College Program 1.1 1.1 1.1 1..* Program Employee College 1.* 1.* 1.1 1..* Employee Program College 1.1"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p012_q019.png"
+      ]
+    },
+    {
+      "number": 20,
+      "type": "image",
+      "prompt": "– 13 –\nQ20.\nAn employee works for a department, which can be located in multiple regions. Three\ntables EMP, DEPT, and DEPT_LOCS are created as shown below for recording the employee,\ndepartment, and department location data, respectively.\nEMP\nDEPT\nDEPT_LOCS\nEID Ename\nDNO\nSalary\n11\nJohn Bate\n1\n20000\n12\nMohammed Karim\n2\n40000\n13\nSadat Hossain\n1\n50000\n14\nKatherine Li\n3\n20000\n15\nShuvashish Bose\n3\n40000\nDNO Dname\nManager\nID\n1\nAdmin\n11\n2\nAccounts 13\n3\nResearch 15\nDNO\nRegion\n1\nL1\n1\nL3\n2\nL2\n3\nL3\n3\nL2\nWhat is the output of the SQL shown below?\nSELECT EName, Salary\nFROM EMP\nWHERE DNO IN (( SELECT DNO\nFROM DEPT)\nMINUS\n(SELECT DNO\nFROM DEPT_LOCS\nWHERE Region=’L2’)\n))",
+      "choices": [
+        "Ename Salary NULL NULL",
+        "Ename Salary John Bate 20000 Sadat Hossain 50000",
+        "Ename Salary John Bate 20000 Sadat Hossain 50000 Katherine Li 20000 Shuvashish Bose 40000",
+        "Ename Salary John Bate 20000 Mohammed Karim 40000 Sadat Hossain 50000 Katherine Li 20000 Shuvashish Bose 40000"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p013_q020.png"
+      ]
+    },
+    {
+      "number": 21,
+      "type": "pure_text",
+      "prompt": "If a transaction processing program ends abnormally while updating the database, the\ndatabase is recovered by a rollback process. In these circumstances, which of the following\nis the information that is used?",
+      "choices": [
+        "Post-update information of log files",
+        "Pre-update information of log files",
+        "The latest backup file information",
+        "The latest snapshot information"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 22,
+      "type": "pure_text",
+      "prompt": "Which of the following is a property on a database that guarantees a result where a\ntransaction either fully completes update processing or is revoked as if no processing took\nplace at all?",
+      "choices": [
+        "Atomicity",
+        "Consistency",
+        "Durability",
+        "Isolation"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 23,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description of a device that connects LANs?",
+      "choices": [
+        "A bridge relays frames based on IP addresses.",
+        "A gateway converts the protocols of only the first through third levels in the OSI basic reference model.",
+        "A repeater extends the transmission distance by amplifying signals between segments of the same type.",
+        "A router relays frames based on MAC addresses."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 24,
+      "type": "pure_text",
+      "prompt": "What is the broadcast address of the network 192.168.128.0/22?",
+      "choices": [
+        "192.168.128.127",
+        "192.168.128.255",
+        "192.168.131.255",
+        "192.168.255.255"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 25,
+      "type": "pure_text",
+      "prompt": "– 14 –\nQ25.\nWhich of the following is a protocol to gather information on network components to\nmanage and troubleshoot the network?",
+      "choices": [
+        "NTP",
+        "SMTP",
+        "SNMP",
+        "TELNET"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 26,
+      "type": "pure_text",
+      "prompt": "Which of the following is the way of using a phone to supply an Internet connection to\nother devices, such as a tablet or laptop computer over either Wi-Fi or Bluetooth?",
+      "choices": [
+        "Dedicated mobile hotspots",
+        "PPPoE",
+        "Tethering",
+        "UPnP"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 27,
+      "type": "pure_text",
+      "prompt": "Which of the following is an example of a phishing email?",
+      "choices": [
+        "An email containing pop-up ads for products unrelated to the email",
+        "An email intercepted, altered, and successfully sent",
+        "An email with a link that automatically installs an application collecting and sending data to the remote server",
+        "An email with a link that redirects to a fake banking site"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 28,
+      "type": "pure_text",
+      "prompt": "Which of the following bitwise logical operation can be applied in stream cipher\nbetween a plain text and a keystream to produce a cipher text, and between a ciphertext and\nthe keystream to recover the plaintext?",
+      "choices": [
+        "AND",
+        "NAND",
+        "OR",
+        "XOR"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 29,
+      "type": "pure_text",
+      "prompt": "Which of the following description is an appropriate use of asymmetric encryption to\nensure the confidentiality of a message that a sender is going to send to a receiver?",
+      "choices": [
+        "The message is encrypted using a pre-shared secret key.",
+        "The message is encrypted using a private key of the sender.",
+        "The message is encrypted using a public key of the receiver.",
+        "The message is encrypted using a public key of the sender."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 30,
+      "type": "pure_text",
+      "prompt": "– 15 –\nQ30.\nWhich type of attack involves intercepting communication between sender and\nreceiver?",
+      "choices": [
+        "Brute Force Attack",
+        "Man-in-the-Middle Attack",
+        "Phishing Attack",
+        "Ransomware Attack"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 31,
+      "type": "pure_text",
+      "prompt": "Which of the following refers to a technique that is used in a credential stuffing attack?",
+      "choices": [
+        "Focusing on the case where there are users that set a word from the dictionary as their password, selecting one (1) user ID as the target of the attack, and attempting to log in using words in the dictionary and their combinations as the password",
+        "Focusing on the case where there are users that use the same user ID and password on multiple websites, and attempting to log in using a list of user IDs and passwords fraudulently acquired from other websites",
+        "Selecting one (1) frequently used password, and attempting to log in by using user IDs of all possible combinations of characters",
+        "Selecting one (1) user ID as the target of the attack on a website that has a low maximum number of characters for passwords, and attempting to log in by using the user ID and passwords of all possible combinations of characters"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 32,
+      "type": "pure_text",
+      "prompt": "Which of the following is the name of an attack where manipulation is made to display\na malicious website near the top of the results on a search website?",
+      "choices": [
+        "Cross-site scripting",
+        "DNS cache poisoning",
+        "SEO poisoning",
+        "Social engineering"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 33,
+      "type": "pure_text",
+      "prompt": "– 16 –\nQ33. Which of the following is a function of security information and event management\n(SIEM)?",
+      "choices": [
+        "The centralized control of a range of communication devices in a network, and the changing of network configuration and security settings",
+        "The execution of a file in an isolated virtual environment, and the monitoring of communication to a C&C server and other behavior",
+        "The general analysis of logs that are collected from a range of devices, and the support of analysis and action by an administrator",
+        "The inspection of header information in packets, the identification of application programs that receive communication, and the control of communication"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 34,
+      "type": "image",
+      "prompt": "Which of the following is the UML behavioral diagram showing the behavior of a\nsingle object in response to triggers?",
+      "choices": [
+        "Activity diagram",
+        "Sequence diagram",
+        "State machine diagram",
+        "Use case diagram"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p017_q034.png"
+      ]
+    },
+    {
+      "number": 35,
+      "type": "image",
+      "prompt": "In object-oriented programming, which of the following is abstraction?",
+      "choices": [
+        "Concealing implementation details and exposing only a simplified interface for interacting with objects",
+        "Creating a subclass instance inheriting attributes and behaviors from its superclass",
+        "Defining multiple methods with the same name but different parameters",
+        "Redefining in the child class a method that is already provided by the superclass with the same name and parameters but a different implementation"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p017_q035.png"
+      ]
+    },
+    {
+      "number": 36,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description of “delegation” in object\norientation?",
+      "choices": [
+        "A mechanism that creates one (1) new object using multiple objects as its parts",
+        "A mechanism where a lower-level class inherits the attribute or operation of a higher- level class",
+        "A mechanism where an application of an operation to a certain object automatically causes the application of that operation to related objects",
+        "A mechanism where an operation to a certain object is internally requested to be performed by another object"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 37,
+      "type": "pure_text",
+      "prompt": "– 17 –\nQ37.\nIn unit testing, which of the following activities is part of white box testing?",
+      "choices": [
+        "Boundary value analysis",
+        "Condition testing",
+        "Equivalence partitioning",
+        "Orthogonal array testing"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 38,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate explanation of a stub or a driver used in a test?",
+      "choices": [
+        "A driver is a module that is called from the module to be tested",
+        "A driver passes arguments and calls the module to be tested",
+        "A stub is a module used to call the module to be tested",
+        "A stub is used to display or print the values returned from the module to be tested"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 39,
+      "type": "pure_text",
+      "prompt": "Scrum is an agile development method. In Scrum, which of the following is an event\nwhere each member of the development team talks in turn about topics such as “things I did\nyesterday,” “things I will do today,” and “obstacles,” and all members share the status of a\nproject?",
+      "choices": [
+        "Daily Scrum",
+        "Retrospective",
+        "Sprint planning",
+        "Sprint review"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 40,
+      "type": "pure_text",
+      "prompt": "– 18 –\nQ40. Among eXtreme Programming (XP) practices, which of the following is adopted to\nimprove program quality in program development through smooth communication between\nprogrammers by exchanging their roles and reviewing each other’s work?",
+      "choices": [
+        "Coding standard",
+        "Pair programming",
+        "Planning game",
+        "Test-driven development"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 41,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate purpose for using a Work Breakdown\nStructure (WBS) in a software development project?",
+      "choices": [
+        "To clarify the sequence relation of activities and understand the critical path that should be intensively managed",
+        "To hierarchically detail activities and segment them into a manageable scale",
+        "To optimize the total cost when there is a trade-off between the duration and the cost of development",
+        "To represent the schedule of an activity with a horizontal bar, and clarify the start time and end time of the activity as well as the progress at the present point in time"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 42,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate explanation concerning the scope creep in\nproject scope management?",
+      "choices": [
+        "A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables",
+        "Any change to the project scope, which almost consistently requires an adjustment to the project cost or schedule",
+        "The sum of the products, services, and results to be provided as a project",
+        "The uncontrolled expansion of product or project scope without adjustments to time, cost, and resources"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 43,
+      "type": "pure_text",
+      "prompt": "– 19 –\nQ43.\nWhich of the following is a requirement for service level management?",
+      "choices": [
+        "A capacity plan is created, implemented, and maintained while human, technical, informational, and financial resources are considered.",
+        "A service catalog and SLA are created for the service to be provided, and they are agreed upon with the customer.",
+        "Costs are monitored and reported against the budget; the financial forecasts are reviewed, and costs are managed.",
+        "Risks to service continuity and availability of services are assessed and documented."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 44,
+      "type": "pure_text",
+      "prompt": "A device that operates 24 hours a day, 360 days a year has an MTBF value of 1,440\nhours. Which of the following is the average number of failures for this device for 360 days?\nHere, the result is rounded to the closest whole number, and the MTTR of the device is\nignored.",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 45,
+      "type": "pure_text",
+      "prompt": "Which of the following is the most appropriate description of a system auditor?",
+      "choices": [
+        "The entire audit interview must be conducted by one (1) system auditor, because discrepancies may occur in the record if multiple auditors are involved.",
+        "The system auditor must instruct the department being audited to implement improvement measures for deficiencies identified during the audit interview.",
+        "The system auditor must make an effort to obtain documents and records that support the information obtained from the department being audited during the audit interview.",
+        "The system auditor must select audit interviewees from administrators who have been an auditor within the department being audited."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 46,
+      "type": "pure_text",
+      "prompt": "– 20 –\nQ46.\nWhich of the following is an explanation of an application architecture that constitutes\nenterprise architecture?",
+      "choices": [
+        "It systematically describes the business processes or the information flows necessary for the business strategy.",
+        "It systematically describes the contents of the data necessary for business operations, the relations or structures between the data, etc.",
+        "It systematically describes the functions or system configurations that support business processes.",
+        "It systematically describes the technical components necessary for the developments and operations of the information systems."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 47,
+      "type": "pure_text",
+      "prompt": "Which of the following is a description of the SOA?",
+      "choices": [
+        "A concept of constructing a system by considering the software functions as components called services and combining them",
+        "A concept of improving sales efficiency and quality by using IT for sales activities to increase sales and profits as well as to improve customer satisfaction",
+        "A concept of re-designing the business processes to innovatively improve the cost, quality, service, and speed",
+        "Outsourcing the in-house operations that are not part of the core businesses to concentrate the management resources on the core businesses"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 48,
+      "type": "pure_text",
+      "prompt": "Which of the following is the work that is performed when non-functional requirements\nare defined?",
+      "choices": [
+        "Clarifying the flow of information (i.e., data) between the functions constituting business operations",
+        "Clarifying the interface for exchanging information with other systems",
+        "Creating the technical requirements for the development criteria and standards according to the programming language used in system development",
+        "Defining the scope to be implemented as system functions"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 49,
+      "type": "pure_text",
+      "prompt": "– 21 –\nQ49.\nWhich of the following is an explanation of diversity management?",
+      "choices": [
+        "Both labor and management to reach an agreement on working conditions and work together with the aim of increasing profits",
+        "For employees to harmonize between work and private life, approach their work with a sense of purpose, and increase the vitality of the organization",
+        "For employees to take an autonomous approach to work with the aim of achieving the objectives that they set for themselves and be evaluated according to the degree of achievement",
+        "To increase the vitality of the organization by respecting the diversity among its employees in terms of aspects such as gender, age, and nationality"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 50,
+      "type": "pure_text",
+      "prompt": "In innovation theory, consumers are classified into five (5) groups innovators, early\nadopters, early majority, late majority, and laggards according to the timing of their\npurchase of a new product. Which of the following is the appropriate explanation of the\nearly adopters?",
+      "choices": [
+        "A group that accepts a new product, service, or other such offering at an early phase, has a large impact on consumers, is sensitive to trends, and makes decisions after collecting information themselves",
+        "A group that accepts a new product, service, or other such offering at the soonest phase without worrying about risks",
+        "A group that is skeptical about the adoption of a new product or new technology and only adopts it after seeing it being adopted by most people around them",
+        "A group that is the most conservative, has limited interest in movements in society and tends to adopt new trends only after they become common or, in some cases, remains firm in refusing their adoption"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 51,
+      "type": "pure_text",
+      "prompt": "– 22 –\nQ51.\nWhich of the following is a definition of Customer Relationship Management (CRM)?",
+      "choices": [
+        "A framework used to support and integrate processes, people, and information across an organization to provide a unified gateway for information and a knowledge base for employees, partners, and customers",
+        "A technology for managing all of a company’s relationships and interactions with customers and potential customers in order to improve business relationships",
+        "A type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations",
+        "The broad range of activities required to plan, control, and execute a product's flow, from acquiring raw materials and production through distribution to the final customer, in the most streamlined and cost-effective way possible"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 52,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate explanation of concurrent engineering?",
+      "choices": [
+        "A product development technique that sequentially executes processes, such as design, manufacturing, and sales activities",
+        "A technique that analyzes a target system and clarifies its specifications",
+        "A technique that executes processes, such as design and production planning, in parallel with product development",
+        "A technique that grasps the optimal combination of functions and costs and improves value through systematic procedures"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 53,
+      "type": "pure_text",
+      "prompt": "Which of the following is one of the main characteristics of a blockchain?",
+      "choices": [
+        "A centralized ledger on a server",
+        "A client-server network",
+        "A distributed ledger on a peer-to-peer network",
+        "A type of cryptocurrency"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 54,
+      "type": "pure_text",
+      "prompt": "– 23 –\nQ54.\nWhich of the following is the situation where an improvement can be expected by\ninstalling a Material Requirements Planning (MRP) system?",
+      "choices": [
+        "Drawing information is managed on both electronic files and hard copies, so the history of design changes cannot be accurately traced.",
+        "High-mix, low-volume production is adopted, so the cost of installing production equipment is increasing.",
+        "Information about materials and quantities necessary for production is complicated, so a miscalculation of order quantity or an interruption of production often occurs.",
+        "There are too many design changes, so production efficiency does not improve."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 55,
+      "type": "pure_text",
+      "prompt": "Which of the following is the objects that can benefit from the cell production method?",
+      "choices": [
+        "Products that require a wide variety and flexible production",
+        "Products that require division of labor by standardization, simplification, and specialization",
+        "Products that require mass production to increase productivity",
+        "Products whose specifications do not change for a long period"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 56,
+      "type": "pure_text",
+      "prompt": "Which of the following is a technique that can be used to discover useful information and\nrelationships from large amounts of customer and market data retained by a company?",
+      "choices": [
+        "Data dictionary",
+        "Data flow diagram",
+        "Data mining",
+        "Data warehouse"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 57,
+      "type": "image",
+      "prompt": "– 24 –\nQ57.\nThe relationship between the value “x” of a certain factor in the manufacture of a\nproduct and the value “y” of a quality characteristic of the product is plotted in the figure\nbelow. Which of the following is an appropriate interpretation of this figure?\n0\nx\ny",
+      "choices": [
+        "In order to estimate y from x, a quadratic regression coefficient needs to be calculated.",
+        "The correlation coefficient between x and y is negative.",
+        "The correlation coefficient between x and y is positive.",
+        "The regression expression for estimating y from x is the same as that for estimating x from y."
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p024_q057.png"
+      ]
+    },
+    {
+      "number": 58,
+      "type": "image",
+      "prompt": "Two (2) types of raw materials A and B are required to manufacture products X and Y.\nThe quantity of each raw material required per unit and the procurable quantity are listed in\nthe table below. When the profit per unit is $1 for product X and $1.5 for product Y , which\nof the following is the maximum profit in dollar?\nRaw\nmaterial\nRequired quantity\nper unit of product X\nRequired quantity\nper unit of product Y\nProcurable\nquantity\nA\n2\n1\n100\nB\n1\n2\n80",
+      "choices": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p025_q058.png"
+      ]
+    },
+    {
+      "number": 59,
+      "type": "pure_text",
+      "prompt": "When the selling price of a product is $50 and the fixed costs for production and sales\nare $100,000, which of the following is the number of units to be sold to achieve the desired\nprofit of $50,000? Here, the variable cost ratio is 60%.",
+      "choices": [
+        "5,000",
+        "7,500",
+        "10,000",
+        "12,500"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 60,
+      "type": "pure_text",
+      "prompt": "– 25 –\nQ60.\nWhich of the following is an explanation of a volume license agreement?",
+      "choices": [
+        "A contract that establishes standard license conditions and deems that a license agreement is automatically established between the rightsholder and the purchaser when a certain amount of package is unwrapped within the scope of the standard license conditions",
+        "A contract that predefines the number of installations and permits the use of software for companies or other such purchasers of large amounts of software",
+        "A contract that restricts the location of use and permits the use of an unlimited number of units or persons within a specific facility",
+        "A contract where use is permitted by selecting to agree to the terms of the contract on the screen that is displayed when software is downloaded from the Internet"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 60,
+    "imageTypeCount": 14,
+    "missingAnswerKeyCount": 0,
+    "issues": [
+      {
+        "page": 11,
+        "number": 16,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p011_q016.png"
+      },
+      {
+        "page": 12,
+        "number": 19,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p012_q019.png"
+      }
+    ]
+  }
+}

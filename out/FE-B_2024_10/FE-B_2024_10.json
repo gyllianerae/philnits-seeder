@@ -1,0 +1,378 @@
+{
+  "exam": {
+    "year": 2024,
+    "month": 10
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "- 4 -\nQ1. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array indexes start at 1.\nBicycle ridership in a city is studied. Examination of several years of data revealed that 30%\nof the people who regularly ride bicycles in a given year do not regularly ride bicycles in the\nsubsequent year. Additionally, 2% of the people who do not regularly ride bicycles in that\nyear begin to ride bicycles regularly in the subsequent year. If 5,000 people ride bicycles and\n100,000 people do not ride bicycles in a given year, then the following program calculates\nthe number of cyclists in the subsequent year (cycling) and that of people who do not ride\nbicycles in the subsequent year (noncycling):\n[Program]\nreal: pc ← 0.3\nreal: pb ← 0.02\nreal: pa ← (1 – pc)\nreal: pd ← (1 – pb)\ninteger []: N ← {5000, 100000}\nreal [,]: P ← {{pa, pb}, {pc, pd}}\nreal: cycling, noncycling\ncycling ← ___A___\nnoncycling ← ___B___\noutput cycling, noncycling\nAnswer group\nA\nB",
+      "choices": [
+        "P[1,1] × N[1] + P[1,2] × N[2] P[2,1] × N[1] + P[2,2] × N[2]",
+        "P[1,1] × N[1] + P[1,2] × N[2] P[2,2] × N[1] + P[2,1] × N[2]",
+        "P[1,2] × N[1] + P[1,1] × N[2] P[2,2] × N[1] + P[2,1] × N[2]",
+        "P[1,2] × N[1] + P[2,2] × N[2] P[2,1] × N[1] + P[1,2] × N[2] e) P[2,1] × N[1] + P[1,2] × N[2] P[1,1] × N[1] + P[2,2] × N[2] f) P[2,1] × N[1] + P[2,2] × N[2] P[1,1] × N[1] + P[1,2] × N[2]"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "- 5 -\nQ2. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nThe function coupon receives the argument prod_id (a positive integer value) of product\nID, and pur_prod (a positive integer value) of the number of purchased products by a\ncustomer. The function returns the number of coupons.\nFor every purchase of three products of the product ID of which the last digit is three, the\ncustomer receives one coupon. Otherwise, they receive no coupon.\n[Program]\n○ integer: coupon(integer: prod_id, integer: pur_prod)\ninteger: num_coupon ← 0\nif (___A___)\nnum_coupon ← ___B___\nendif\nreturn num_coupon\nAnswer group\nA\nB",
+      "choices": [
+        "integer part of (prod_id ÷ 10) = 3 integer part of (pur_prod ÷ 3)",
+        "integer part of (prod_id ÷ 10) = 3 integer part of (pur_prod ÷ 3) + 1",
+        "integer part of (prod_id ÷ 10) = 3 pur_prod mod 3",
+        "prod_id = 10 mod 3 integer part of (pur_prod ÷ 3) e) prod_id = 10 mod 3 integer part of (pur_prod ÷ 3) + 1 f) prod_id = 10 mod 3 pur_prod mod 3 g) prod_id mod 10 = 3 integer part of (pur_prod ÷ 3) h) prod_id mod 10 = 3 integer part of (pur_prod ÷ 3) + 1 i) prod_id mod 10 = 3 pur_prod mod 3"
+      ],
+      "answerKey": "G",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "- 6 -\nQ3. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe program determines the second-largest element of an integer-type array and outputs its\nvalue. For instance, the second largest element of the array {2, 6, 9, 1, 7, 5} is 7. Here,\nwe assume that the array has two or more elements and that no duplicate elements are present\nin the array.\n[Program]\ninteger []: array ← {2, 6, 9, 1, 7, 5}\ninteger: i\ninteger: max1 ← -∞\ninteger: max2 ← -∞\nfor (increase i from 1\nto the number of elements of array by 1)\nif (___A___)\nmax2 ← max1\nmax1 ← array[i]\nelseif (array[i] > max2)\n___B___\nendif\nendfor\noutput max2\nAnswer group\nA\nB",
+      "choices": [
+        "array[i] < max1 max1 ← array[i]",
+        "array[i] < max1 max2 ← array[i]",
+        "array[i] < max2 max1 ← array[i]",
+        "array[i] < max2 max2 ← array[i] e) array[i] > max1 max1 ← array[i] f) array[i] > max1 max2 ← array[i] g) array[i] > max2 max1 ← array[i] h) array[i] > max2 max2 ← array[i]"
+      ],
+      "answerKey": "F",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "pure_text",
+      "prompt": "- 7 -\nQ4. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe procedure primeFactors outputs the prime factors for the input values as its argument.\nThe first few prime numbers are 2, 3, 5, 7, 11, and 13. For instance, if the input integer is 12,\nthe output is “2×2×3”. If the input integer is 78, the output is “2×3×13”. The input integer\nmust be greater than 1.\n[Program]\n○ primeFactors(integer: num)\ninteger: i\ni ← 2\ndo\nif (___A___)\nnum ← integer part of (num ÷ i)\noutput i\nif (___B___)\noutput \"×\"\nendif\nelse\ni ← i + 1\nendif\nwhile (___B___)\nAnswer group\nA\nB",
+      "choices": [
+        "num < 1 num mod i ≠ 0",
+        "num > 1 num mod i = 0",
+        "num mod i = 0 num > 1",
+        "num mod i ≠ 0 num < 1"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 5,
+      "type": "pure_text",
+      "prompt": "- 8 -\nQ5. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nFunction calcGeoMean receives the array dataArray (the number of elements ≥ 1) as an\nargument and returns the geometric mean of values in dataArray as the return value. For\nthe numbers a1, a2, …, an, the geometric mean is ඥሺ𝑎ଵ× 𝑎ଶ× ⋯× 𝑎௡ሻ\n೙\n. Here, the pow(x,\ny) function returns a real value by raising x to the power of y. In the program, division is\nperformed in data type real.\n[Program]\n○ real: calcGeoMean(real []: dataArray)\nreal: product, geomean\ninteger: n ← the number of elements in dataArray\ninteger: i\nproduct ← 1\nfor (increase i from 1 to n by 1)\nproduct ← product × dataArray[i]\nendfor\ngeomean ← pow(___A___, ___B___)\nreturn geomean\nAnswer group\nA\nB",
+      "choices": [
+        "1 ÷ n product",
+        "product 1 ÷ n",
+        "product n",
+        "n product"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 6,
+      "type": "image",
+      "prompt": "- 9 -\nQ6. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ through ____C____ in the program.\nThe standard form of a quadratic equation is as follows:\nax2 + bx + c = 0, where a, b and c are real numbers and a ≠ 0.\nHere, the term b2 - 4ac is known as the discriminant of a quadratic equation. It indicates the\nnature of the roots. The formula for solving a quadratic equation is shown in the figure. If\nthe discriminant value is positive, there are two solutions; if it is zero, there is one solution.\nHere, we assume that the discriminant value is non-negative.\nIf the discriminant > 0\n𝑟𝑜𝑜𝑡1 = −𝑏+ √𝑏ଶ−4𝑎𝑐\n2𝑎\n𝑟𝑜𝑜𝑡2 = −𝑏−√𝑏ଶ−4𝑎𝑐\n2𝑎\nIf the discriminant = 0\n𝑟𝑜𝑜𝑡1 = 𝑟𝑜𝑜𝑡2 = −𝑏\n2𝑎\nFigure The formula for solving a quadratic equation\nThe procedure findRoots receives three real number arguments a, b, and c as coefficients\nand outputs the value of the root(s) of the quadratic equation. Function\nsqrt(discriminant) returns the principal square root value of the parameter\ndiscriminant.\n[Program]\n○ findRoots(real: a, real: b, real: c)\nreal: discriminant, root1, root2\ndiscriminant ← ___A___\nif (___B___)\nroot1 ← (−b + sqrt(discriminant)) ÷ (2 × a)\nroot2 ← (−b − sqrt(discriminant)) ÷ (2 × a)\noutput \"root1 = \", root1, \" and root2 = \", root2\nelseif (___C___)\nroot1 ← −b ÷ (2 × a)\noutput \"root1 = root2 = \", root1\nendif",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "H",
+      "mediaFiles": [
+        "question_images/p009_q006.png"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "image",
+      "prompt": "- 11 -\nQ7. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nGiven two strings, str1 and str2, the task is to determine the length of the longest common\nsubsequence (LCS), that is, the length of the longest subsequence present in both strings.\nFor instance, if str1 is “ABXDZ” and str2 is “ABCD”, the LCS between str1 and str2 will\nbe “ABD” and the length of the LCS will be 3.\nThe function lcs(string: str1, string: str2, integer: m, integer: n) takes two\nstrings str1 and str2 and two integers m and n as arguments. str1 and str2 are the strings\non which the length of the LCS is calculated. m and n are indexes addressing the target\ncharacters in str1 and str2, respectively. On the first call, m and n represent the lengths of\nstr1 and str2, respectively. The function returns an integer containing the value of the\nlength of the LCS of str1 and str2. For instance, the function may be called as\nlcs(\"ABXDZ\", \"ABCD\", 5, 4).\nAnother function max(integer: a, integer: b) is also used. The function takes two\nintegers a and b as arguments. It compares these two integers and returns the integer value\nof whichever is the maximum between a and b.\n[Program]\n○ integer: max(integer: a, integer: b)\nif (a > b)\nreturn a\nelse\nreturn b\nendif\n○ integer: lcs(string: str1, string: str2, integer: m, integer: n)\nif (m = 0 or n = 0)\nreturn 0\nendif\nif (the m-th character of string str1 = the n-th character of string str2)\nreturn 1 + lcs(str1, str2, m - 1, n - 1)\nelse\nreturn max(lcs(str1, str2, m, ___A___),\nlcs(str1, str2, m - 1, ___B___))\nendif",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p011_q007.png"
+      ]
+    },
+    {
+      "number": 8,
+      "type": "image",
+      "prompt": "- 13 -\nQ8. From the answer group below, select the correct answer to be inserted into _______ in\nthe description.\nThis program performs operations on a priority queue.\nA priority queue is a queue where the handled elements have a priority assigned to them, and\nthe elements are extracted with the order of the highest priority first. The class PrioQueue\nrepresents a priority queue. The Figure shows an explanation of the class PrioQueue. Here,\nthe priority is the integer value 1, 2, or 3, and the smaller the value the higher the priority.\nWhen the procedure prioSched is called, the order of the output is _______.\nConstructor\nDescription\nPrioQueue() Creates an empty priority queue.\nMethod\nType of\nreturn value\nDescription\nenqueue(string: s,\ninteger: prio)\nNone\nAdds string s as an element to a priority queue\nwith the priority prio.\ndequeue()\nstring\nExtracts the element with the highest priority in\na priority queue and returns it. If multiple\nelements with the highest priority exist, it\nextracts the element that was added first and\nreturns it.\nsize()\ninteger\nReturns the number of elements that are stored in\na priority queue.\nFigure Explanation of the class PrioQueue\n[Program]\n○ prioSched()\nPrioQueue: prioQueue ← PrioQueue()\nprioQueue.enqueue(\"E\", 3)\nprioQueue.enqueue(\"F\", 2)\nprioQueue.enqueue(\"G\", 1)\nprioQueue.enqueue(\"H\", 1)\nprioQueue.dequeue() /* The return value is ignored */\nprioQueue.dequeue() /* The return value is ignored */\nprioQueue.enqueue(\"I\", 1)\nprioQueue.enqueue(\"J\", 1)\nprioQueue.dequeue() /* The return value is ignored */\nprioQueue.enqueue(\"K\", 2)\nprioQueue.enqueue(\"L\", 3)\nprioQueue.enqueue(\"M\", 1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p013_q008.png"
+      ]
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "- 15 -\nQ9. From the answer group below, select the correct answer to be inserted into _________ in\nthe description. Here, the array indexes start at 1.\nThe procedure traverse traces through a vertex of the graph shown in the Figure, and\noutputs all vertex numbers in the graph. The vertex number of the graph is specified with the\nargument k. The global variable n indicates the number of vertices in the graph. The global\narray graph represents the graph in the figure. Each element graph[i][j] is equal to 1 if\nan edge exists between vertices i and j, and it is equal to 0 otherwise. The global array\nvisited stores boolean values, where visited[i] indicates whether vertex i of the graph\nhas been visited during the procedure.\nWhen the procedure is called as traverse(1), the output is in the order _______.\n1\n2\n4\n5\n3\nFigure Structure of the graph\n[Program]\nglobal: integer: n ← 5\nglobal: integer [][]: graph ← {{0, 1, 0, 1, 0}, {1, 0, 1, 0, 1},\n{0, 1, 0, 0, 0}, {1, 0, 0, 0, 1},\n{0, 1, 0, 1, 0}}\nglobal: boolean []: visited ← {false, false, false, false, false}\n○ traverse(integer: k)\ninteger: i\nvisited[k] ← true\noutput k\nfor (increase i from 1 to n by 1)\nif (graph[k][i] = 1 and visited[i] = false)\ntraverse(i)\nendif\nendfor\nAnswer group",
+      "choices": [
+        "1, 2, 3, 4, 5",
+        "1, 2, 3, 5, 4",
+        "1, 2, 4, 3, 5",
+        "1, 2, 4, 5, 3"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p015_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "image",
+      "prompt": "- 16 -\nQ10. From the answer group below, select the correct answer to be inserted into _______ in\nthe program.\nThe procedure addNode adds a node to a singly-linked list at the position specified by the\nargument pos. The argument pos is a positive integer that is equal to or less than the (number\nof nodes + 1) in the list. The position at the top of the list is 1.\nThe class ListNode represents a node in a singly-linked list. The table summarizes an\nexplanation of the member variables of the class ListNode. ListNode-type variables store\nreferences to instances of the class ListNode. A reference to the first node in the list is pre-\nstored in the global variable listHead.\nTable Explanation of the member variables of the class ListNode\nMember variable\nType\nDescription\nval\ncharacter\nThe value of a node.\nnext\nListNode\nA reference for the next node.\nIf no next node exists, the status is undefined.\n[Program]\nglobal: ListNode: listHead // stores the first node in the list\n○ addNode(integer: pos, character: val)\nListNode: prev, newNode\ninteger: i\nnewNode ← ListNode()\nnewNode.val ← val\nif (pos is equal to 1)\nnewNode.next ← listHead\nlistHead ← newNode\nelse\nprev ← listHead\n/* if pos is equal to 2, the following iteration process is not executed */\nfor (increase i from 2 to pos - 1 by 1)\nprev ← prev.next\nendfor\nnewNode.next ← prev.next\n_______ ← newNode\nendif\nAnswer group",
+      "choices": [
+        "listHead",
+        "listHead.next",
+        "listHead.next.next",
+        "prev e) prev.next f) prev.next.next"
+      ],
+      "answerKey": "E",
+      "mediaFiles": [
+        "question_images/p016_q010.png"
+      ]
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "- 17 -\nQ11. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array indexes start at 1.\nThe procedure sort sorts an integer array containing certain number (≥ 2) of elements in\nascending order.\n[Program]\n○ sort(integer []: arg)\nInteger []: A ← arg\ninteger: i, k\nfor (increase i from 2 to the number of elements in A by 1)\nk ← i\nwhile (k > 1)\nif (A[k – 1] ≤ A[k])\nexit the while block\nendif\n___ A___\n___ B___\nendwhile\nendfor\noutput A\nAnswer group\nA\nB",
+      "choices": [
+        "A[i] ← A[i - 1] k ← k + 1",
+        "A[k] ← A[k - 1] swap k and i",
+        "A[k - 1] ← A[k] k ← k + 1",
+        "swap A[i] and A[i - 1] k ← k - 1 e) swap A[i] and A[k] swap k and i f) swap A[k] and A[k - 1] k ← k - 1"
+      ],
+      "answerKey": "F",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "image",
+      "prompt": "- 18 -\nQ12. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe function isPalindrome determines whether the character array s given as argument is\na palindrome. Palindromes are words when read backward will still be the same such as\n“noon” and “madam.”\nIf character array s is a palindrome, it returns the value true and if not, the function returns\nfalse.\nThe table lists examples of s given to the function isPalindrome and the return values. In\nthe program, areas outside of the arrays must not be referenced.\nTable Examples of s given to the function isPalindrome and the return values\ns\nReturn value\n{\"n\", \"o\", \"o\", \"n\"}\ntrue\n{\"n\", \"i\", \"g\", \"h\", \"t\"}\nfalse\n{\"m\", \"a\", \"d\", \"a\", \"m\"}\ntrue\n{\"s\", \"i\", \"r\"}\nfalse\n[Program]\n○ boolean: isPalindrome(character []: s)\ninteger: left ← 1\ninteger: right ← the number of elements in s\nboolean: ok ← true\nwhile (left < right)\nif (___A___)\nleft ← left + 1\n___B___\nelse\nok ← false\nbreak\nendif\nendwhile\nreturn ok",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p018_q012.png"
+      ]
+    },
+    {
+      "number": 13,
+      "type": "image",
+      "prompt": "- 20 -\nQ13. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array indexes start at 1.\nHashing in data structures is a fundamental concept used for efficient data retrieval and\nstorage mechanisms. A program storing a key-data pairs in an array by transforming keys\ninto array indexes using a hash function exists. A collision occurs when two keys hash to\nthe same index in the array representing the hash table. A common method handling\ncollisions, the probing mechanism (checking for an available element), is used in the\nfunction. The procedure insertData inserts a pair of key and data, if the element in the\narray is {undefined}. Assumptions are made that no data with the same key is stored,\nand that at least one element in the array hashTable is {undefined} when the procedure\ninsertData is called. The function hashFunction takes a key as input and returns a\nhash value.\n[Program]\nglobal: integer [][]: hashTable ← {Elements comprising 1000 {undefined}}\nglobal: integer: size ← 1000\n○ integer: hashFunction(integer: key)\nreturn (key mod size) + 1\n○ insertData(integer: key, integer: data)\ninteger: index\nindex ← hashFunction(key)\nwhile (___A___)\nif (index = size)\n___B___\nelse\nindex ← index + 1\nendif\nendwhile\nhashTable[index] ← {key, data}",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "E",
+      "mediaFiles": [
+        "question_images/p020_q013.png"
+      ]
+    },
+    {
+      "number": 14,
+      "type": "pure_text",
+      "prompt": "- 22 -\nQ14. From the answer group below, select the correct answer to be inserted into _______ in\nthe description. Here, the array indexes start at 1.\nThe function summarize receives the array sortedData sorted in ascending order and\nreturns five values that characterize the array. The array sortedData must have at least one\nelement. The summarize calls the findRank with two arguments, sortedData and q.\nWhen the function summarize is called as summarize({0.1, 0.2, 0.3, 0.4, 0.5, 0.6,\n0.7, 0.8, 0.9, 1}), the return value is _______.\n[Program]\n○ real: findRank(real []: sortedData, real: q)\ninteger: j\nj ← floor(q × (the number of elements in sortedData - 1))\n// floor returns the closest integer less than or equal to a given\n// number, e.g. floor(7.75) returns 7.\nreturn sortedData[j + 1]\n○ real []: summarize(real []: sortedData)\nreal []: rankData ← {} /* array with 0 elements */\nreal []: q ← {0, 0.25, 0.5, 0.75, 1}\ninteger: i\nfor (increase i from 1 to the number of elements in q by 1)\nadd the return value of findRank(sortedData, q[i]) to the end of rankData\nendfor\nreturn rankData\nAnswer group",
+      "choices": [
+        "{0.1, 0.2, 0.3, 0.4, 0.5}",
+        "{0.1, 0.2, 0.3, 0.4, 0.7}",
+        "{0.1, 0.2, 0.4, 0.6, 0.9}",
+        "{0.1, 0.2, 0.4, 0.7, 0.9} e) {0.1, 0.3, 0.5, 0.7, 1} f) {0.1, 0.3, 0.5, 0.8, 1} g) {0.1, 0.3, 0.6, 0.9, 1} h) {0.1, 0.3, 0.7, 0.9, 1}"
+      ],
+      "answerKey": "E",
+      "mediaFiles": []
+    },
+    {
+      "number": 15,
+      "type": "image",
+      "prompt": "- 23 -\nQ15. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array indexes start at 1.\nSuppose the weather in a city, from day to day, follows a Markov process. This implies the\nnext day’s weather depends only on today’s weather and not on those of the previous days.\nIf it rains today in the city, a probability 0.3 exists that it will rain again tomorrow. Similarly,\nthe probability that tomorrow’s weather will be sunny is 0.4 and that it will be cloudy is 0.3.\nIf today’s weather is sunny, the next day will be rainy, sunny, or cloudy with probabilities\n0.2, 0.7, and 0.1, respectively. Additionally, if today’s weather is cloudy, the next day will\nbe rainy, sunny, or cloudy with probabilities 0.25, 0.5, and 0.25, respectively.\nLet us say that the weather is in state 1 if it is rainy, in state 2 if it is sunny, and in state 3 if\nit is cloudy. Then, the above is a three-state Markov chain whose transition probabilities are\ngiven by the following:\nfrom\nto\n1\n2\n3\n0.3\n0.4\n0.3\n0.2\n0.7\n0.1\n0.25\n0.5\n0.25\n1\n2\n3\nUsing this transition matrix, the probability distribution of the weather after several days can\nbe estimated.\nThe program calculates the probability distribution of the weather of the city after three days\nfrom the present day and outputs a 3 × 3 square matrix that shows this probability distribution\nof the weather. For instance, if the weather on the present day is sunny (state 2), the\nprobability that the weather three days after will be rainy (state 1) is the value in the second\nrow and the first column of the outputted matrix.\n[Program]\nreal [,]: pmat ← {{0.3, 0.4, 0.3}, {0.2, 0.7, 0.1}, {0.25, 0.5, 0.25}}\nreal [,]: dmat ← pmat\nreal [,]: smat\ninteger: i, j, k, m\nfor (increase m from 1 to ___A___ by 1)\nsmat ← {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}\nfor (increase i from 1 to 3 by 1)\nfor (increase j from 1 to 3 by 1)\nfor (increase k from 1 to 3 by 1)\nsmat[i, j] ← smat[i, j] + __B___",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p023_q015.png"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "- 25 -\nQ16. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program.\nFunction hammingDistance receives two strings as argument and returns Hamming distance\nas the return value. Hamming distance is a metric used to measure the difference between\ntwo strings of equal length. It counts the number of positions at which the corresponding\ncharacters are different. For instance, the return value is 2 when the function\nhammingDistance(\"101010\", \"111000\") is called, because positions 2 and 5 have\ndifferent characters.\nIt can also be extended to strings of different lengths by considering the unmatched\ncharacters as differences. For instance, the return value is 5 when the function\nhammingDistance(\"101010\", \"111000111\") is called, because of two differences in first\nsix characters and addition of three extra unmatched characters.\n[Program]\n○ integer: hammingDistance(string: s1, string: s2)\ninteger: distance, length1, length2, minLength, remainingLength\nlength1 ← length of s1\nlength2 ← length of s2\ndistance ← 0\nminLength ← length1\nif (___A___)\nminLength ← length2\nendif\nfor (increase i from 1 to minLength by 1)\nif (the i-th character of string s1 ___B___ the i-th character of string s2)\ndistance ← distance + 1\nendif\nendfor\nif (length1 > length2)\nremainingLength = length1 - length2\nelse\nremainingLength = length2 - length1\nendif\ndistance ← ___C___\nreturn distance",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p025_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "image",
+      "prompt": "- 27 -\nQ17. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany A is an e-commerce company specializing in sporting goods. One morning,\nemployee X of the company's accounting department starts up his PC to begin his work.\nWhen he logged into his PC, he saw an unfamiliar screen with the following message:\n*** Attention ***\nYour files have been encrypted.\nAll of your important files have been encrypted. To restore these files, please follow\nthese steps:\n1. transfer $500 worth of cryptcurrency to the currency address provided:\nAddress: 1ABCD.... EFGH\n2. As soon as the transfer is confirmed, we will send you the key to decrypt the files.\n3. If the transfer is not confirmed within 48 h, the decryption key will be deleted and\nthe files will be lost forever.\nContact: help@ransomware.example.com\nThe accounting department immediately requested the security team in company A to help\nresolve the situation. The security team analyzed all the PCs in the accounting department,\nincluding that of employee X, and noted the following:\n1. A total of tow compromised PCs were found. One PC was used by Employee X and\nthe other PC was shared by multiple employees.\n2. IDS/IPS was not installed in the accounting department LAN, delaying detection of\nransomware.\n3. The shared PC was backed up daily, and important data could be restored from the\nbackup at the time when the PC was not compromised by the ransomware.\n4. Employee X's PC was not backed up, and important data could not be restored.\n5. The ransomware was saved on Employee X's PC as an attachment file of an email\nsent by a company pretending to be a business partner. The email envelope and\ncontent were sophisticatedly disguised and difficult to detect through enhanced spam\nfilters.",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p027_q017.png"
+      ]
+    },
+    {
+      "number": 18,
+      "type": "image",
+      "prompt": "- 29 -\nQ18. From the answer group below, select the correct answer to be inserted into ______ in\nthe description.\nCompany B runs several web services. Mr. Y is a software engineer in the company. He was\ndirected to develop a feature that prevents web service users from setting weak passwords.\nMr. Y investigated and found that “Password Entropy” is the important factor for the\npassword strength.\nPassword entropy measures the strength of a password based on the difficulty of cracking\nthe password through guessing or a brute-force attack. The entropy of a password is typically\nbased on the type of characters used—lowercase letters, uppercase letters, numerical digits,\nor special characters—and the length of the password or total number of characters.\nPassword entropy formula:\nYou can measure the entropy of a password in bits using the following formula:\nE = ⌊L ×Log2 (R)⌋\nIn this formula:\n- E denotes the password entropy\n- R denotes the possible range of character types in the password\n- L denotes the number of characters in the password (its length)\n- Log2 answers the question, \"to what power 2 must be raised to equal this number\"\n- ⌊X⌋ denotes the greatest integer N such that N ≤ X\nThe following totals show the breakdown for each character set as they appear on a typical\nAmerican QWERTY keyboard:\nLowercase letters (a–z) = 26.\nUppercase letters (A–Z) = 26.\nNumerical digits (0–9) = 10.\nSpecial characters (!, @, #, $, %, ^, etc.) = 32.\nThe password vfssxfrb has a pool of 26 characters (lowercase letters);\nChanging the password to JAAdMAdE would increase the pool to 52 characters (lowercase\nletters and uppercase letters);\nChanging it further to u7aHqsbt would increase the pool to 62 characters (lowercase letters,\nuppercase letters along with numbers) and\nFinally, Re*ct7$% has a pool of 26 + 26 + 10 + 32 = 94 characters (lowercase letters,",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p029_q018.png"
+      ]
+    },
+    {
+      "number": 19,
+      "type": "pure_text",
+      "prompt": "- 31 -\nQ19. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nCompany X is an investment company. Recently, one of their database servers was attacked\nby an attacker.\nMr. L, the security team leader of company X, decided to ask Ms. A, a security analyst\nworking for the same company, to analyze the logs. Mr. L will extract log entries related to\ndatabase access from the log file of the attacked database server and send the extracted log\nentries to Ms. A.\nWhen sending access log data from Mr. L to Ms. A, the following conditions were agreed\nupon in advance:\n-\nMr. L must encrypt the file such that only Ms. A can view it.\n-\nMs. A must confirm that the sender of the file is Mr. L.\nThey each have an RSA key pair and have already exchanged their public keys with each\nother. They sign, verify, encrypt, and decrypt using those keys and a previously shared\ncryptographic processing software.\nThis time, the log entries must be ___A___ and then ___B___.\nAnswer group\nA\nB",
+      "choices": [
+        "signed using Mr. L’s private key encrypted using Mr. L’s private key",
+        "signed using Mr. L’s private key encrypted using Mr. L’s public key",
+        "signed using Mr. L’s private key encrypted using Ms. A’s private key",
+        "signed using Mr. L’s private key encrypted using Ms. A’s public key e) signed using Mr. L’s public key encrypted using Mr. L’s private key f) signed using Mr. L’s public key encrypted using Mr. L’s public key g) signed using Mr. L’s public key encrypted using Ms. A’s private key h) signed using Mr. L’s public key encrypted using Ms. A’s public key"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 20,
+      "type": "pure_text",
+      "prompt": "- 32 -\nQ20. From the answer group below, select the most appropriate combination of answers to be\ninserted into ___A___ and ___B___ in the description.\nCompany Y, a trading company, is developing an e-commerce web application for selling\nproducts to customers directly. The web server hosting the web application is installed on-\npremise and the web application is to be developed in-house. The communications to the\nweb server are allowed only with HTTPS and the server certificate is already signed by the\nthird party and installed on the web server. Company Y has an IT department comprising\nthree teams—Developer, Security, and Tech Support—and the requirements for the web\napplication are specified as follows (excerpt):\n• The web application is user-friendly and easy to navigate.\n• The web application is cost-effective to develop and maintain.\n• The web application can prevent malicious inputs into the system.\n• The web application is scalable and can handle a large number of customers.\n• The purchase orders and invoices are digitally signed to confirm integrity and authenticity.\nDuring the initial project meeting, the members from each department discuss their\nrespective tasks. The developer team requests the security team to derive specific tasks for\nthe above requirements related to security. Ms. B, a member of the security team, suggests\nthe following tasks:\n• Set up a ___A___ to provide the infrastructure.\n• Install a ___B___ in front of the web server.\nAnswer group\nA\nB",
+      "choices": [
+        "PKI environment honeypot",
+        "PKI environment VPN gateway",
+        "PKI environment web application firewall",
+        "SPF record honeypot e) SPF record VPN gateway f) SPF record web application firewall _ _ Company names and product names appearing in the test questions are trademarks or registered trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 20,
+    "imageTypeCount": 11,
+    "missingAnswerKeyCount": 0,
+    "issues": [
+      {
+        "page": 9,
+        "number": 6,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p009_q006.png"
+      },
+      {
+        "page": 11,
+        "number": 7,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p011_q007.png"
+      },
+      {
+        "page": 13,
+        "number": 8,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p013_q008.png"
+      },
+      {
+        "page": 18,
+        "number": 12,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p018_q012.png"
+      },
+      {
+        "page": 20,
+        "number": 13,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p020_q013.png"
+      },
+      {
+        "page": 23,
+        "number": 15,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p023_q015.png"
+      },
+      {
+        "page": 25,
+        "number": 16,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p025_q016.png"
+      },
+      {
+        "page": 27,
+        "number": 17,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p027_q017.png"
+      },
+      {
+        "page": 29,
+        "number": 18,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p029_q018.png"
+      }
+    ]
+  }
+}

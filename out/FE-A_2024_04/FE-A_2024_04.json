@@ -1,0 +1,832 @@
+{
+  "exam": {
+    "year": 2024,
+    "month": 4
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "What is the decimal representation of the hexadecimal number 123.4?",
+      "choices": [
+        "83.25",
+        "83.5",
+        "291.25",
+        "291.5"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "image",
+      "prompt": "Five people are sitting at a table in a restaurant. Two of them ordered coffee, and the other\nthree ordered tea. The waiter forgets who ordered what and puts the drinks in a random\norder for the five persons. What is the probability that every person gets the correct drink?",
+      "choices": [
+        "1",
+        "1",
+        "1",
+        "3 30 20 10 10"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p004_q002.png"
+      ]
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "The expression below is represented in postfix (reverse Polish) notation. What is the\nresulting value of this expression? Here, the numbers are in decimal, and the symbols ‘+’, ‘−’,\n‘*’, and ‘/’ represent addition, subtraction, multiplication, and division operators, respectively.\n100 5 6 2 + * 12 4 / − − 36 −",
+      "choices": [
+        "5",
+        "18",
+        "21",
+        "27"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "pure_text",
+      "prompt": "– 4 –\nQ4. Which of the following is an appropriate explanation of feedback control?",
+      "choices": [
+        "It performs control in a predetermined order.",
+        "It performs control to keep the output in line with the target value.",
+        "It performs control to prevent external disturbances from affecting the output.",
+        "It performs control without using the output."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 5,
+      "type": "image",
+      "prompt": "Which of the following represents the post-order traversal of the tree below?",
+      "choices": [
+        "2, 3, 4, 7, 8, 10, 13, 15,18",
+        "2, 4, 8, 7, 3, 15, 18, 13, 10",
+        "10, 3, 2, 7, 4, 8, 13, 18,15",
+        "10, 3, 13, 2, 7, 18, 4, 8, 15"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p005_q005.png"
+      ]
+    },
+    {
+      "number": 6,
+      "type": "image",
+      "prompt": "– 5 –\nQ6.\nThe flowchart below shows an algorithm that determines the sum (i.e. “1 +3+ 5+ … +\n(2N-1)”) of the first N odd integers from 1 through 2N-1 (where N ≥ 1) and inserts the\nresult into variable x. Which of the following is an expression to be inserted in blank A ?\nStart\nx ← 0\ni ← 1\nA\nx ← x + i\ni ← i + 2\nEnd\nYes\nNo",
+      "choices": [
+        "i ≥ 2N – 1",
+        "i ≥ 2N + 1",
+        "x ≥ 2N – 1",
+        "x ≥ 2N + 1"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p005_q006.png"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "pure_text",
+      "prompt": "How many swaps are required in bubble sort when N elements in the array are already\nsorted in reverse order?",
+      "choices": [
+        "N(N-1) ÷ 2",
+        "N 2 ÷ 2",
+        "N(N-1)",
+        "N 2"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 8,
+      "type": "pure_text",
+      "prompt": "There are two microprocessors: a 32-bit CPU capable of executing each of 32-bit, 16-bit,\nand 8-bit long instructions in 1 cycle, and a 16-bit CPU capable of executing each of 16-bit\nand 8-bit long instructions in 1 cycle. Additionally, the 16-bit CPU can execute a 32-bit\nlong instruction in 2 cycles. When the appearance ratio of 32-bit long instructions is 40%, of\n16-bit long instructions is 40%, and of 8-bit long instructions is 20% respectively, what is\nthe percentage improvement in total execution time with the 32-bit CPU compared to the\n16-bit CPU? Here, both the 32-bit and 16-bit CPU operate at the same clock speed and have\nthe same performance except for the executable instruction length in 1 cycle.",
+      "choices": [
+        "28.57",
+        "40",
+        "50",
+        "71.43"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 9,
+      "type": "pure_text",
+      "prompt": "When an HDD has the specifications below, what is the average access time for an HDD to\ntransfer 1 MB of data in ms? Here, the average access time can be calculated as the sum of\nthe average seek time, controller overhead, rotational latency, and transfer time. Other\noverheads can be ignored.\nAverage seek time\n4 ms\nController overhead\n1.25 ms\nRotation speed\n5,000 rpm\nTransfer rate\n60 MB/s",
+      "choices": [
+        "21.93",
+        "26.67",
+        "27.92",
+        "33.92"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 10,
+      "type": "pure_text",
+      "prompt": "– 6 –\nQ10.\nWhich of the following is the port that can theoretically connect up to 127 peripheral\ndevices, controlled by a PC?",
+      "choices": [
+        "Displayport",
+        "HDMI",
+        "SATA",
+        "USB"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "Which of the following is the design for securing safety and reliability known as\n“foolproof”?",
+      "choices": [
+        "A redundant configuration, such as duplication, can be used so that even when a device failure occurs, the functions of the overall system are not affected.",
+        "Even when the user performs an incorrect operation, a problem does not occur in the system.",
+        "When a device failure occurs, damage can be minimized by enabling the system to stop safely.",
+        "When a device failure occurs, the system runs even if the usable functions are restricted, and the processing efficiency is reduced."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "pure_text",
+      "prompt": "– 7 –\nQ12.\nThere is a system where the operating status is continuously monitored. Which of the\nfollowing is an appropriate sequence of work items in capacity planning that is conducted\nwhen a new task is applied to the system after several years of operation?\n[Work items in capacity planning]\n(i) Evaluate the proposed system configuration, assess its appropriateness, and conduct a\nreview if necessary.\n(ii) Consider a proposal for the necessary system configuration based on the system\ncharacteristics, including factors such as the number of servers and whether parallel\ndistributed processing is performed.\n(iii) Understand the performance information of the hardware or the environment inherent\nto the system based on the operating status of the system.\n(iv) Conduct a meeting with users to gather information about the new task, understand\nrequirements such as the estimated number of processes, and determine the time\nrequired for processes.",
+      "choices": [
+        "(iii), (ii), (iv), (i)",
+        "(iii), (iv), (ii), (i)",
+        "(iv), (ii), (i), (iii)",
+        "(iv), (iii), (i), (ii)"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 13,
+      "type": "image",
+      "prompt": "An operating system adopts the priority scheduling algorithm for scheduling processes.\nThere are five processes A, B, C, D and E arriving at the same time with estimated running\ntimes of 10, 6, 2, 4, and 8 milliseconds, respectively. Their priorities are 3, 5, 2, 1, and 4,\nwhere 1 is the highest priority. What is the mean process turnaround time?",
+      "choices": [
+        "14",
+        "16",
+        "20",
+        "22"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p008_q013.png"
+      ]
+    },
+    {
+      "number": 14,
+      "type": "image",
+      "prompt": "Data is continuously sent for T seconds from the sending task to the receiving task in\nthe diagram below. When the volume of data sent in 1 second is S and the volume of data\nreceived in 1 second is R, which of the following is the appropriate relational expression\nindicating the buffer size L to prevent buffer overflow? Here, the sending task has a higher\ntransfer speed than the receiving task, and there is a sufficient time interval until the start of\nthe next transfer.\nSending task\nBuffer size: L\nReceiving task\nS\nR",
+      "choices": [
+        "L < ( R − S ) × T",
+        "L < ( S − R ) × T",
+        "L ≧ ( R − S ) × T",
+        "L ≧ ( S − R ) × T"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p008_q014.png"
+      ]
+    },
+    {
+      "number": 15,
+      "type": "pure_text",
+      "prompt": "– 8 –\nQ15.\nWhich of the following is the appropriate explanation of ideal hashing used during a data\nsearch?",
+      "choices": [
+        "It is advanced search technology that determines the intention of a user’s search request by adding recognition and decision functions to an object that combines data and its processing.",
+        "It is data search technology that is fast and highly scalable, in which values converted from data with a specific algorithm are used for storage addresses of the data.",
+        "It is technology and techniques for searching a large volume of accumulated data to identify trends, correlations, patterns, and other information required for management and marketing.",
+        "It is technology created with the aim of increasing the hit ratio for keyword searches and preventing omissions in searches by using a list of synonyms and equivalent words."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "Which of the following is equivalent to the circuit below?",
+      "choices": [
+        "",
+        "",
+        "",
+        "x y z f(x,y,z) x y z f(x,y,z) x y z f(x,y,z) x y z f(x,y,z) x y z f(x,y,z)"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p009_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "In the process of creating animation, which of the following is used to record the\nnatural movement of objects, humans, and animals by using sensors and video cameras?",
+      "choices": [
+        "Key frame method",
+        "Morphing",
+        "Motion capture",
+        "Pixel shader"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "pure_text",
+      "prompt": "– 9 –\nQ18.\nWhich of the following is a critical step in creating a relational database?",
+      "choices": [
+        "Building a network diagram",
+        "Creating entity-relationship diagrams",
+        "Designing a flowchart",
+        "Programming in C++"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 19,
+      "type": "image",
+      "prompt": "Which of the following is the appropriate interpretation of the E-R model shown below?",
+      "choices": [
+        "A department has many employees, and employees can have multiple dependents.",
+        "A department has many employees, where each employee has exactly one dependent.",
+        "An employee can have at most one dependent.",
+        "An employee can work in two departments. Employee Department Dependent"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p010_q019.png"
+      ]
+    },
+    {
+      "number": 20,
+      "type": "image",
+      "prompt": "– 10 –\nQ20.\nFrom the figure below, which of the following is an appropriate set of attributes for the\n“CatalogProduct” class table?",
+      "choices": [
+        "CatalogID, Price, SpecialPrice",
+        "CatalogID, ProductID, Price, SpecialPrice",
+        "Price, SpecialPrice",
+        "ProductID, Price, SpecialPrice Catalog CatalogID Season Year Description EffectiveDate EndDate CatalogProduct Price SpecialPrice ProductItem ProductID Vendor Gender Description 1 0..* 0..* 1"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p010_q020.png"
+      ]
+    },
+    {
+      "number": 21,
+      "type": "image",
+      "prompt": "Which of the following is a clause that is inserted into blank A of the SQL statement\nbelow that calculates the average scores for each class and subject from the “MidtermTest”\ntable and displays them in ascending order of class and subject?\nMidtermTest (Class, Subject, StudentNumber, Name, Score)\n[SQL statement]\nSELECT Class, Subject, AVG(Score) AS AverageScore\nFROM MidtermTest\nA",
+      "choices": [
+        "GROUP BY Class, AverageScore ORDER BY Class, Subject",
+        "GROUP BY Class, Subject ORDER BY Class, AVG(Score)",
+        "GROUP BY Class, Subject ORDER BY Class, Subject",
+        "ROUP BY Class, Subject, StudentNumber ORDER BY Class, Subject, AverageScore"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p011_q021.png"
+      ]
+    },
+    {
+      "number": 22,
+      "type": "pure_text",
+      "prompt": "Which of the following can change the deadlock state of the transaction back to the\nnormal state?",
+      "choices": [
+        "Commit",
+        "Drop",
+        "Rollback",
+        "Roll Forward"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 23,
+      "type": "pure_text",
+      "prompt": "Which of the following is the network device that makes a forwarding decision on the\nbasis of the destination MAC address in the frame header?",
+      "choices": [
+        "Patch cable",
+        "Repeater hub",
+        "Router",
+        "Switching hub"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 24,
+      "type": "pure_text",
+      "prompt": "– 11 –\nQ24.\nWhich of the following is the broadcast address of the network 192.168.10.0/23?",
+      "choices": [
+        "192.168.10.0",
+        "192.168.10.255",
+        "192.168.10.511",
+        "192.168.11.255"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 25,
+      "type": "pure_text",
+      "prompt": "Which of the following is the name of a communication standard that is used in mobile\nphone networks and has the three characteristics described below?\n(1) All communications are processed with a packet switching scheme.\n(2) It is possible to use a communication scheme called MIMO that uses multiple\nantennas.\n(3) It has been standardized in the international standardization project 3GPP (3rd\nGeneration Partnership Project).",
+      "choices": [
+        "LTE (Long Term Evolution)",
+        "MAC (Media Access Control)",
+        "MDM (Mobile Device Management)",
+        "VoIP (Voice over Internet Protocol)"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 26,
+      "type": "pure_text",
+      "prompt": "Which of the following is the network utility that is used to check detailed TCP\nconnection information of the host?",
+      "choices": [
+        "arp",
+        "ipconfig",
+        "netstat",
+        "ping"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 27,
+      "type": "pure_text",
+      "prompt": "Which of the following describes a brute force attack aimed at finding the key of\nsymmetric encryption?",
+      "choices": [
+        "Finding the key by observing the ciphertext change when the plaintext is altered by a certain amount",
+        "Finding the key by testing all key combinations sequentially when a set of plaintext and ciphertext is given",
+        "Finding the key by using the algebraic expression representing the relationship between the plaintext, ciphertext, and key as a clue",
+        "Finding the key by using the statistical correlation between a part of the information of the plaintext and part of the information of the ciphertext as a clue"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 28,
+      "type": "pure_text",
+      "prompt": "– 12 –\nQ28.\nWhich of the following is a package of unauthorized programs and tools that has\nfunctions such as creating a backdoor on a server and hiding the evidence of intrusion inside\nthe server?",
+      "choices": [
+        "RFID",
+        "Rootkit",
+        "TKIP",
+        "Web beacon"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 29,
+      "type": "pure_text",
+      "prompt": "Which of the following is a public-key cryptography algorithm whose security depends\non the difficulty of factoring extremely large numbers into primes?",
+      "choices": [
+        "AES",
+        "DH",
+        "DSA",
+        "RSA"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 30,
+      "type": "pure_text",
+      "prompt": "Which of the following is the name of an attack where manipulation is employed to place\na malicious website near the top of the search results on a search engine?",
+      "choices": [
+        "Cross-site scripting",
+        "DNS cache poisoning",
+        "SEO poisoning",
+        "Social engineering"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 31,
+      "type": "pure_text",
+      "prompt": "Which of the following is an explanation of the timestamp service in information\nsecurity?",
+      "choices": [
+        "It is a service that authenticates biometric information, such as fingerprints, voice prints, vein patterns, retina, and iris, by using the date and time when the information is registered in the authentication system.",
+        "It is a service that certifies that electronic data certainly exists on a particular date and time and that the data has not been modified since that date and time.",
+        "It is a service that securely verifies that the date and time information is not falsified midway for setting the clocks of the PCs and servers on the network.",
+        "It is a web service that securely displays the global date and time information used in official records by using encrypted communication."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 32,
+      "type": "pure_text",
+      "prompt": "– 13 –\nQ32.\nWhich of the following is an appropriate term for an organized and highly skilled team\nwhose mission is to continuously monitor and improve an organization’s security posture\nwhile preventing, detecting, analyzing, and responding to cybersecurity incidents, utilizing\nboth technology and well-defined processes and procedures?",
+      "choices": [
+        "Cybersecurity",
+        "Incident Management Center (IMC)",
+        "Network Operations Center (NOC)",
+        "Security Operations Center (SOC)"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 33,
+      "type": "pure_text",
+      "prompt": "In an OS where permissions for reading, writing, or executing a file can be\nindependently set as attributes of the file, one bit is allocated for each of these three (3)\npermissions to determine whether they are allowed or not. When these three bits are\nconfigured using an octal value from 0 through 7, the trial results below are obtained.\nWhich of the following is an appropriate trial result?\n[Trial results]\n(1) When 0 is set, reading, writing, and execution can no longer be performed.\n(2) When 3 is set, reading and writing can be performed, but execution cannot.\n(3) When 7 is set, reading, writing, and execution can be performed.",
+      "choices": [
+        "When 2 is set, reading and execution can be performed.",
+        "When 4 is set, only execution can be performed.",
+        "When 5 is set, only writing can be performed.",
+        "When 6 is set, reading and writing can be performed."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 34,
+      "type": "image",
+      "prompt": "Which of the following are components of a UML2.x (including 2.0 and later versions)\nstate diagram?",
+      "choices": [
+        "Message and Activity",
+        "Message and Transition",
+        "State and Message",
+        "State and Transition"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p014_q034.png"
+      ]
+    },
+    {
+      "number": 35,
+      "type": "pure_text",
+      "prompt": "– 14 –\nQ35. Which of the following represents the appropriate combination of a class and an object in\nObject Oriented Programming?\nClass\nObject",
+      "choices": [
+        "A class can be defined as a group of objects with similar behavior and attributes. An object is an instance of a class.",
+        "A class can be defined as a group of objects with similar behavior and attributes. An object is the blueprint of the class.",
+        "A class is an instance of objects. An object can be defined as a template that describes the behavior that the class of its type supports.",
+        "A class stores the actual values of its attributes. An object has the definition and behavior of a class."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 36,
+      "type": "pure_text",
+      "prompt": "Which of the following is the most appropriate description of polymorphism in object-\noriented design?",
+      "choices": [
+        "It allows developers to define classes incrementally by reusing classes defined previously as the basis for new classes.",
+        "It allows the analyst to focus on the important dimensions while ignoring nonessential dimensions.",
+        "It combines processes and data into a single object.",
+        "It is the provision of a single interface to entities of different types."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 37,
+      "type": "pure_text",
+      "prompt": "There is a program module that is executed only when the integer value of integer x is\n25 ≤𝑥< 50. When testing this module using boundary value analysis, which of the\nfollowing is an appropriate combination of values to be tested?",
+      "choices": [
+        "24, 25, 49, 50",
+        "24, 25, 50, 51",
+        "25, 26, 49, 50",
+        "25, 26, 50, 51"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 38,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate testing type to ensure that the interfaces and\nlinkages between different parts of programs work properly?",
+      "choices": [
+        "Acceptance test",
+        "Integration test",
+        "Qualification test",
+        "Unit test"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 39,
+      "type": "pure_text",
+      "prompt": "– 15 –\nQ39.\nWhich of the following is an explanation of the reverse engineering of software?",
+      "choices": [
+        "The entire software is reconstructed after the existing software is analyzed and understood.",
+        "The existing software is analyzed, and its specification and structure are clarified.",
+        "The internal structure of the software is changed without any change to the externally observed behavior.",
+        "The source code is automatically generated from the design information by a development support tool."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 40,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate order of the six phases in the SDLC (Software\nDevelopment Life Cycle) model?",
+      "choices": [
+        "Requirements Analysis  Design  Programming  Deployment  Testing  Maintenance",
+        "Requirements Analysis  Design  Programming  Testing  Deployment  Maintenance",
+        "Requirements Analysis  Design  Programming  Testing  Maintenance  Deployment",
+        "Requirements Analysis  Programming  Testing  Design  Maintenance  Deployment"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 41,
+      "type": "image",
+      "prompt": "– 16 –\nQ41.\nThe activities and milestones of a project are shown in the arrow diagram below. Which\nof the following is an appropriate description of the project if the duration of activity B is\nincreased by 5 days?",
+      "choices": [
+        "The earliest start time of activity G is delayed by 5 days.",
+        "The latest start time of activity F is delayed by 5 days.",
+        "The project’s minimum completion time does not change.",
+        "The project’s minimum completion time is increased by 5 days. A 10 B 5 E 10 C 10 D 25 G 15 F 20 H 15 Legends Activity name Dummy activity Number of days required"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p016_q041.png"
+      ]
+    },
+    {
+      "number": 42,
+      "type": "pure_text",
+      "prompt": "What is the Cost Performance Index (CPI) of the project under the conditions listed\nbelow?\nProject Budget (BAC)\n100,000 dollars\nProject Duration\n4 months\nElapsed Time\n1 month\nActual Cost (AC)\n20,000 dollars\nProject Progress\nAs planned",
+      "choices": [
+        "0.25",
+        "0.8",
+        "1.0",
+        "1.25"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 43,
+      "type": "pure_text",
+      "prompt": "In ITIL 2011 edition, which of the following is the appropriate order for the service\nlifecycle stages?",
+      "choices": [
+        "Service design  Continual service improvement  Service strategy  Service operation  Service transition",
+        "Service design  Service strategy  Service operation  Service transition  Continual service improvement",
+        "Service strategy  Service design  Service operation  Service transition  Continual service improvement",
+        "Service strategy  Service design  Service transition  Service operation  Continual service improvement"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 44,
+      "type": "pure_text",
+      "prompt": "– 17 –\nQ44.\nIn IT service management, which of the following is an activity performed for the\nmanagement of incidents and service requests?",
+      "choices": [
+        "Evaluating if customer satisfaction with the service desk meets the agreed service targets and performing a review to identify improvement opportunities",
+        "Examining measures wherein the amount of free space on a disk is near its threshold",
+        "Investigating the impact of changes made to a program",
+        "Receiving a failure report from a user and checking to see if it corresponds to a known error"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 45,
+      "type": "pure_text",
+      "prompt": "Which of the following is the most appropriate description concerning an interview\nconducted by a system auditor?",
+      "choices": [
+        "The administrator of the audited department, who has experience in auditing tasks, is selected as the interviewee.",
+        "The entire interview is conducted by one (1) system auditor, as discrepancies may occur in the record if multiple auditors are involved.",
+        "The system auditor instructs the audited department to take improvement measures for deficiencies found during the interview.",
+        "The system auditor makes an effort to obtain documents and records that support the information obtained from the audited department during the interview."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 46,
+      "type": "pure_text",
+      "prompt": "Which of the following is a case that enables the customer support operations at a call\ncenter to improve quality by applying a pattern recognition function or machine learning\nfunction to the accumulated data?",
+      "choices": [
+        "Deriving the most appropriate response in real time from related materials and all the previous support history according to the content of the inquiry made by a customer",
+        "Displaying the digital content of a response manual or basic customer information on a pop-up window of a screen for responding to requests from the operators",
+        "Repeatedly providing role play training to new operators from an experienced operator who serves as a lecturer by using the response manual as the teaching material",
+        "Transferring a phone call or the relevant support screen to an experienced operator or a dedicated staff when the operator who is responding to a customer over the phone is unable to provide an answer"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 47,
+      "type": "pure_text",
+      "prompt": "– 18 –\nQ47.\nWhich of the following is a description of knowledge management?",
+      "choices": [
+        "Conduct business by a flat organizational structure that has as few hierarchical levels as possible for quick decision making.",
+        "Conduct business by utilizing its core strength in know-how and technology that are unique to the company and cannot be imitated by others.",
+        "Conduct business that enhances overall capabilities to solve problems by sharing knowledge that is scattered throughout the company.",
+        "Implement management innovation in the company on the basis of a comparative analysis with companies that have achieved superior performance."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 48,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description of an RFI?",
+      "choices": [
+        "It is a document describing the basic policy for the system, including a summary of the system, purpose, necessary functions, system requirements, and contract matters.",
+        "It is a document that is created after an RFP.",
+        "It is a document used by companies looking for the implementation of computerization to request specific system proposals from prospective suppliers such as system vendors.",
+        "It is a document used to request information concerning computerization from prospective suppliers such as system vendors."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 49,
+      "type": "pure_text",
+      "prompt": "Which of the following is a strategy that concentrates resources in the segment of a\nspecific customer or specific product in order to achieve specialization?",
+      "choices": [
+        "Challenger strategy",
+        "Follower strategy",
+        "Leader strategy",
+        "Niche strategy"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 50,
+      "type": "pure_text",
+      "prompt": "– 19 –\nQ50.\nWhich of the following is an explanation of core competence that is adopted in business\nadministration?",
+      "choices": [
+        "It refers to a qualitative and quantitative understanding of its products, services, and operations through comparisons with the strongest competitor or advanced companies.",
+        "It refers to dramatical improvements in the costs, quality, service, and speed of a company by fundamentally reviewing and radically redesigning its business processes.",
+        "It refers to the company’s unique skills, technologies, and other strenghts that are superior to other companies, which serve as a source of competitive advantage.",
+        "It refers to the management of the allocation of company-wide management resources in an effective and integrated manner so as to achieve an improvement in management efficiency."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 51,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate explanation of telemarketing?",
+      "choices": [
+        "It refers to direct marketing that includes calling people at home and asking for donations, opinions, or purchases.",
+        "It refers to direct marketing that sells products and services and builds customer relationships over the Internet.",
+        "It refers to direct marketing that sends offers, announcements, reminders, or other items to a person at a particular address.",
+        "It refers to direct marketing that sends sales alerts, links to website updates, appointments, or delivery reminders to large groups of people."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 52,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate explanation of the technology S curve?",
+      "choices": [
+        "It represents the diffusion process of a new technology. It shows that the growth rate of the penetration rate gradually decreases as products applying the technology penetrate the market, by using a frequency distribution curve.",
+        "It represents the maturing process of technology. It shows that during the time until the new technology is actually spread, the degree of awareness changes as time passes.",
+        "It represents the process of technological progress. It shows that technology advances slowly at the beginning, then advances rapidly, and thereafter, slowly stagnates.",
+        "It represents the relationship between production volume and unit cost. It shows the course of reduction in unit cost with an increase in cumulative production volume."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 53,
+      "type": "pure_text",
+      "prompt": "– 20 –\nQ53.\nWhich of the following is an appropriate computing concept that describes the idea of\nphysical objects, such as devices, vehicles, and buildings, that are connected to the Internet\nand are able to identify themselves to other devices?",
+      "choices": [
+        "Computer networks",
+        "Deep learning",
+        "Internet of things",
+        "Network topology"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 54,
+      "type": "image",
+      "prompt": "A factory manufactures the three products that are shown in the table below. Which of\nthe following is the maximum possible profit in dollars? Here, there is an upper limit to the\nmonthly demand volume for each product. Also, the factory can only use up to 200 hours\nper month for the manufacturing process and cannot manufacture more than one products\nin parallel.\nProduct X\nProduct Y\nProduct Z\nProfit per unit (dollars)\n18\n25\n30\nManufacturing time required per unit\n(minutes)\n6\n10\n15\nLimit to monthly demand (units)\n1,000\n900\n500",
+      "choices": [
+        "26,250",
+        "30,000",
+        "31,500",
+        "33,000"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p021_q054.png"
+      ]
+    },
+    {
+      "number": 55,
+      "type": "pure_text",
+      "prompt": "Which of the following is an example of Consumer Generated Media (CGM)?",
+      "choices": [
+        "A website of a company through which the company publishes information about its management and financial status, as well as performance trends for individual investors",
+        "A website of a company through which the company transmits information about the characteristics and usage methods of its products to the general consumers",
+        "A website of a government organization through which the organization publishes information about its policies and administrative services to the general public",
+        "A website such as a blog and SNS, etc. through which an individual transmits information to an unspecified number of people about the evaluation of products, etc. that the person has used"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 56,
+      "type": "pure_text",
+      "prompt": "– 21 –\nQ56.\nWhich of the following is the maximum value of Z from the constraints that are shown\nbelow?\nx + y ≤4\nx ≥ 0, y ≥ 0\nZ= 3x + 4y",
+      "choices": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 57,
+      "type": "image",
+      "prompt": "When a company wants to earn a profit of $42,000, which of following is the number\nof units that the company must sell under the conditions shown in the table below?\nUnit: dollar\nSelling price per unit\n17\nFixed costs\nGeneral and administrative expense\n130,000\nInterest expense\n10,000\nVariable costs\nGeneral and administrative expense\n3\nSelling expense\n4",
+      "choices": [
+        "14,000",
+        "18,200",
+        "26,000",
+        "26,200"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p022_q057.png"
+      ]
+    },
+    {
+      "number": 58,
+      "type": "pure_text",
+      "prompt": "Which of the following is part of total quality management?",
+      "choices": [
+        "Designing products and services that meet or exceed customers’ expectations",
+        "Focusing on the appointment of staff with long-term work experience in a similar environment",
+        "Prioritizing central decisions rather than empowerment to ensure the quality of products and services",
+        "Promoting the capability of each department to work independently in a competitive manner"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 59,
+      "type": "image",
+      "prompt": "– 22 –\nQ59.\nWhen a relation between the list price of a product and the demand for the product is\ndefined as a linear equation, which of the following is the appropriate numerical value to be\ninserted into blank A below?\n(1) When the list price is set to $30, the demand is 0 units.\n(2) When the list price is set to $10, the demand is 60,000 units.\n(3) When the list price is set to $15, the demand is\nunits.",
+      "choices": [
+        "30,000",
+        "35,000",
+        "40,000",
+        "45,000 A"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p022_q059.png"
+      ]
+    },
+    {
+      "number": 60,
+      "type": "pure_text",
+      "prompt": "– 23 –\nQ60.\nWhen OSS that is released under GPL is modified and distributed, which of the\nfollowing is an appropriate action to comply with the GPL?",
+      "choices": [
+        "A recipient who obtains the derivative work must be strictly prohibited from redistributing copies.",
+        "The source code of a separate application that is statically linked to the derivative work does not need to be disclosed.",
+        "When the software is modified and distributed, the source code of the distributed copies is made availabe to the recipients.",
+        "When the source code of the derivative work is disclosed, compensation such as related costs cannot be demanded."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 60,
+    "imageTypeCount": 14,
+    "missingAnswerKeyCount": 0,
+    "issues": [
+      {
+        "page": 9,
+        "number": 16,
+        "issues": [
+          "missing_choice"
+        ],
+        "missingAnswerKey": false,
+        "image": "question_images/p009_q016.png"
+      }
+    ]
+  }
+}

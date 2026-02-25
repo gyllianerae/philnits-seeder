@@ -103,7 +103,9 @@ def clip_has_drawings(page: fitz.Page, clip: fitz.Rect, area_threshold: float = 
         inter = r & clip
         if inter.is_empty:
             continue
-        if inter.get_area() > area_threshold:
+        # Use width * height instead of get_area() for broader PyMuPDF compatibility
+        inter_area = (inter.x1 - inter.x0) * (inter.y1 - inter.y0)
+        if inter_area > area_threshold:
             return True
     return False
 
@@ -205,8 +207,11 @@ def extract_answers_from_pdf(answers_pdf_path: str) -> Dict[int, str]:
                 qtok = filtered[i]
                 atok = filtered[i + 1]
                 qdigits = re.sub(r"[^0-9]", "", qtok)
-                if qdigits.isdigit() and re.fullmatch(r"[a-dA-D]", atok.strip()):
-                    ans_map[int(qdigits)] = atok.strip().upper()
+                # Allow answers to be any alphabetic code (not just A–D),
+                # e.g. E, F, or multi-letter like AB.
+                atok_clean = atok.strip()
+                if qdigits.isdigit() and re.fullmatch(r"[A-Za-z]+", atok_clean):
+                    ans_map[int(qdigits)] = atok_clean.upper()
                     i += 2
                 else:
                     i += 1
@@ -297,12 +302,9 @@ def build_questions_with_answers(
 
             all_questions.append(qobj)
 
-    # De-dupe and sort
+    # De-dupe and sort (no assumption about total number of questions)
     by_num = {q["number"]: q for q in all_questions}
     all_questions = sorted(by_num.values(), key=lambda q: q["number"])
-
-    nums = sorted(q["number"] for q in all_questions)
-    missing = [n for n in range(1, 101) if n not in set(nums)]
 
     out = {
         "exam": {"year": exam_year, "month": exam_month},
@@ -311,12 +313,12 @@ def build_questions_with_answers(
             "questionCount": len(all_questions),
             "imageTypeCount": sum(1 for q in all_questions if q["type"] == "image"),
             "missingAnswerKeyCount": sum(1 for q in all_questions if not q["answerKey"]),
-            "missingNumbers": missing,
             "issues": report_issues
         }
     }
 
-    out_json = os.path.join(out_dir, f"exam_{exam_year}_{exam_month:02d}.json")
+    out_basename = os.path.basename(os.path.normpath(out_dir)) or f"exam_{exam_year}_{exam_month:02d}"
+    out_json = os.path.join(out_dir, f"{out_basename}.json")
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
@@ -324,9 +326,6 @@ def build_questions_with_answers(
     print(f"   Questions: {out['report']['questionCount']}")
     print(f"   Image-type: {out['report']['imageTypeCount']}")
     print(f"   Missing answerKey: {out['report']['missingAnswerKeyCount']}")
-    print(f"   Missing question numbers: {len(missing)}")
-    if missing:
-        print(f"   Missing sample: {missing[:25]}")
     print(f"   Output JSON: {out_json}")
     print(f"   Images folder: {img_dir}")
 
