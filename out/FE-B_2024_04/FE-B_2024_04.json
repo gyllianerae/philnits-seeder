@@ -12,7 +12,9 @@
         "= \"P\" \"F\"",
         "= \"F\" \"P\"",
         "> \"P\" \"F\"",
-        "> \"F\" \"P\" e) ≥ \"P\" \"F\" f) ≥ \"F\" \"P\""
+        "> \"F\" \"P\"",
+        "≥ \"P\" \"F\"",
+        "≥ \"F\" \"P\""
       ],
       "answerKey": "E",
       "mediaFiles": []
@@ -38,7 +40,9 @@
         "i ÷ 2 = 0",
         "i ÷ 2 ≠ 0",
         "i mod 2 = 0",
-        "i mod 2 ≠ 0 e) i = 2 f) i ≠ 2"
+        "i mod 2 ≠ 0",
+        "i = 2",
+        "i ≠ 2"
       ],
       "answerKey": "C",
       "mediaFiles": []
@@ -51,7 +55,11 @@
         "sum + num mod 10 num mod 10",
         "sum + num mod 10 integer part of (num ÷ 10)",
         "sum × 10 + num mod 10 num mod 10",
-        "sum × 10 + num mod 10 integer part of (num ÷ 10) e) sum + integer part of (num ÷ 10) num mod 10 f) sum + integer part of (num ÷ 10) integer part of (num ÷ 10) g) sum × 10 + integer part of (num ÷ 10) num mod 10 h) sum × 10 + integer part of (num ÷ 10) integer part of (num ÷ 10)"
+        "sum × 10 + num mod 10 integer part of (num ÷ 10)",
+        "sum + integer part of (num ÷ 10) num mod 10",
+        "sum + integer part of (num ÷ 10) integer part of (num ÷ 10)",
+        "sum × 10 + integer part of (num ÷ 10) num mod 10",
+        "sum × 10 + integer part of (num ÷ 10) integer part of (num ÷ 10)"
       ],
       "answerKey": "B",
       "mediaFiles": []
@@ -64,7 +72,9 @@
         "division(modulus(input, 60), 60) division(input, 3600)",
         "division(modulus(input, 60), 60) division(modulus(input, 60), 60)",
         "division(modulus(input, 60), 60) modulus(division(input, 60), 60)",
-        "modulus(division(input, 60), 60) division(input, 3600) e) modulus(division(input, 60), 60) division(modulus(input, 60), 60) f) modulus(division(input, 60), 60) modulus(division(input, 60), 60)"
+        "modulus(division(input, 60), 60) division(input, 3600)",
+        "modulus(division(input, 60), 60) division(modulus(input, 60), 60)",
+        "modulus(division(input, 60), 60) modulus(division(input, 60), 60)"
       ],
       "answerKey": "D",
       "mediaFiles": []
@@ -77,7 +87,9 @@
         "rbyte & (00000001 << (i - 1))",
         "rbyte & (00000001 << i)",
         "rbyte & (00000001 << (i + 1))",
-        "rbyte | (00000001 << (i - 1)) e) rbyte | (00000001 << i) f) rbyte | (00000001 << (i + 1))"
+        "rbyte | (00000001 << (i - 1))",
+        "rbyte | (00000001 << i)",
+        "rbyte | (00000001 << (i + 1))"
       ],
       "answerKey": "A",
       "mediaFiles": []
@@ -90,25 +102,23 @@
         "n = 1 fibo(n-1) + 1",
         "n = 1 fibo(n-1) + n",
         "n = 1 fibo(n-1) + fibo(n-2)",
-        "n > 1 fibo(n-1) + 1 e) n > 1 fibo(n-1) + n f) n > 1 fibo(n-1) + fibo(n-2) g) (n = 1) or (n = 2) fibo(n-1) + 1 h) (n = 1) or (n = 2) fibo(n-1) + n i) (n = 1) or (n = 2) fibo(n-1) + fibo(n-2)"
+        "n > 1 fibo(n-1) + 1",
+        "n > 1 fibo(n-1) + n",
+        "n > 1 fibo(n-1) + fibo(n-2)",
+        "(n = 1) or (n = 2) fibo(n-1) + 1",
+        "(n = 1) or (n = 2) fibo(n-1) + n",
+        "(n = 1) or (n = 2) fibo(n-1) + fibo(n-2)"
       ],
       "answerKey": "I",
       "mediaFiles": []
     },
     {
       "number": 8,
-      "type": "image",
+      "type": "pure_text",
       "prompt": "- 11 -\nQ8. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program. Here, the array index starts at 1.\nThe program implements a stack. The stack implementation only accepts positive integers.\nThe function empty checks whether the stack is empty. The function full checks whether\nthe stack is full. If the stack is not full, the function push pushes an element with a specified\nvalue onto the stack. If the stack is not empty, the function pop removes an element from the\nstack and returns its value. In the program, areas outside of the array must not be referenced.\n[Program]\nglobal: integer []: content\n← {undefined, undefined, undefined, undefined}\nglobal: integer: index ← 1\nglobal: integer: max ← 4 /* max size of the stack */\n○ boolean: empty()\nif (index = 1)\nreturn true\nelse\nreturn false\nendif\n○ boolean: full()\nif (___A___)\nreturn true\nelse\nreturn false\nendif\n○ boolean: push(integer: i)\nif (not full())\ncontent[index] ← i\nindex ← ___B___\nreturn true\nelse\nreturn false\nendif\n○ integer: pop()\nif (not empty())\nindex ← ___C___\nreturn content[index]",
-      "choices": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
+      "choices": [],
       "answerKey": "B",
-      "mediaFiles": [
-        "question_images/p011_q008.png"
-      ]
+      "mediaFiles": []
     },
     {
       "number": 9,
@@ -148,7 +158,11 @@
         "1 < data[i]",
         "1 < data[i + 1]",
         "1 > data[i]",
-        "1 > data[i + 1] e) i + 1 < data[i] f) i + 1 < data[i + 1] g) i + 1 > data[i] h) i + 1 > data[i + 1]"
+        "1 > data[i + 1]",
+        "i + 1 < data[i]",
+        "i + 1 < data[i + 1]",
+        "i + 1 > data[i]",
+        "i + 1 > data[i + 1]"
       ],
       "answerKey": "E",
       "mediaFiles": []
@@ -161,7 +175,8 @@
         "i < j - 1",
         "i < (len ÷ 2) + 1",
         "i < (len ÷ 2) - 1",
-        "i < len ÷ j e) i < j ÷ 2"
+        "i < len ÷ j",
+        "i < j ÷ 2"
       ],
       "answerKey": "B",
       "mediaFiles": []
@@ -189,7 +204,13 @@
         "0.1",
         "0.2",
         "0.3",
-        "0.4 e) 0.5 f) 0.6 g) 0.7 h) 0.8 i) 0.9 j) 1.0"
+        "0.4",
+        "0.5",
+        "0.6",
+        "0.7",
+        "0.8",
+        "0.9",
+        "1.0"
       ],
       "answerKey": "I",
       "mediaFiles": [
@@ -219,7 +240,13 @@
         "≤ epsi − vn × x ÷ k",
         "≤ epsi − vn × x2 ÷ k2",
         "≤ epsi − vn × x2 ÷ ((k − 1) × k)",
-        "≤ epsi − vn × xk ÷ k2 e) ≤ epsi − vn × xk ÷ ((k − 1) × k) f) > epsi − vn × x ÷ k g) > epsi − vn × x2 ÷ k2 h) > epsi − vn × x2 ÷ ((k − 1) × k) i) > epsi − vn × xk ÷ k2 j) > epsi − vn × xk ÷ ((k − 1) × k)"
+        "≤ epsi − vn × xk ÷ k2",
+        "≤ epsi − vn × xk ÷ ((k − 1) × k)",
+        "> epsi − vn × x ÷ k",
+        "> epsi − vn × x2 ÷ k2",
+        "> epsi − vn × x2 ÷ ((k − 1) × k)",
+        "> epsi − vn × xk ÷ k2",
+        "> epsi − vn × xk ÷ ((k − 1) × k)"
       ],
       "answerKey": "H",
       "mediaFiles": []
@@ -232,7 +259,9 @@
         "man in the middle email with incorrect digital signatures",
         "man in the middle links with malicious HTTP request parameters",
         "phishing email directing someone to a spoofed web site",
-        "phishing email with incorrect digital signatures e) SQL injection email directing someone to a spoofed web site f) SQL injection links with malicious HTTP request parameters"
+        "phishing email with incorrect digital signatures",
+        "SQL injection email directing someone to a spoofed web site",
+        "SQL injection links with malicious HTTP request parameters"
       ],
       "answerKey": "C",
       "mediaFiles": []
@@ -285,81 +314,8 @@
   ],
   "report": {
     "questionCount": 20,
-    "imageTypeCount": 9,
+    "imageTypeCount": 8,
     "missingAnswerKeyCount": 0,
-    "issues": [
-      {
-        "page": 11,
-        "number": 8,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p011_q008.png"
-      },
-      {
-        "page": 13,
-        "number": 9,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p013_q009.png"
-      },
-      {
-        "page": 15,
-        "number": 10,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p015_q010.png"
-      },
-      {
-        "page": 19,
-        "number": 13,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p019_q013.png"
-      },
-      {
-        "page": 23,
-        "number": 15,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p023_q015.png"
-      },
-      {
-        "page": 27,
-        "number": 18,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p027_q018.png"
-      },
-      {
-        "page": 29,
-        "number": 19,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p029_q019.png"
-      },
-      {
-        "page": 31,
-        "number": 20,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p031_q020.png"
-      }
-    ]
+    "issues": []
   }
 }

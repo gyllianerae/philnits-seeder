@@ -1,0 +1,284 @@
+{
+  "exam": {
+    "year": 2025,
+    "month": 10
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "- 4 -\nQ1. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe function sum receives an integer array array with at least two elements and two positive\nintegers k and m (k < m ≤ number of elements in array). It calculates the sum of even\nelements of the array array whose indices are from k to m.\n[Program]\n○ integer: sum(integer []: array, integer: k, integer: m)\ninteger: s ← 0\ninteger: i ← k\nwhile (i ≤ m)\nif (____A____)\ns ← s + array[i]\nendif\n____B____\nendwhile\nreturn s\nAnswer group\nA\nB",
+      "choices": [
+        "array[i] mod 2 = 0 i ← i + 1",
+        "array[i] mod 2 = 0 i ← i - 1",
+        "array[i] mod 2 ≠ 0 i ← i + 1",
+        "array[i] mod 2 ≠ 0 i ← i - 1"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "- 5 -\nQ2. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nIn statistics, the mode is the value that occurs most frequently in a dataset. For example, the\nmode of the integer array {2, 1, 1, 9, 6, 6, 2, 5, 6} is 6, as it occurs most often. The function\nfindMode receives an integer array arr as a dataset and returns the mode for it.\n[Program]\n○ integer: findMode(integer []: arr)\ninteger: n ← the number of elements in arr\ninteger: m ← arr[1] /* Current mode value */\ninteger: m_c ← 1 /* Frequency count of mode */\ninteger: c, i, j\nfor (increase i from 1 to n - 1 by 1)\nc ← 1\nfor (increase j from i + 1 to n by 1)\nif (___A___)\nc ← c + 1\nendif\nendfor\nif (___B___)\nm_c ← c\nm ← arr[i]\nendif\nendfor\nreturn m\nAnswer group\nA\nB",
+      "choices": [
+        "arr[i] = arr[j] m < arr[i]",
+        "arr[i] = arr[j] m ≠ arr[i]",
+        "arr[i] = arr[j] m_c < c",
+        "arr[i] = arr[j] m_c > c",
+        "m = arr[j] m < arr[i]",
+        "m = arr[j] m ≠ arr[i]",
+        "m = arr[j] m_c < c",
+        "m = arr[j] m_c > c"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "image",
+      "prompt": "- 6 -\nQ3. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nGiven an array of positive integers and a target sum, the problem is to find the subarray\nwhose sum is equal to the target sum. A subarray is a part of the given array composed of\ncontiguous elements. For example, when the target sum is 14, the shaded subarray in the\nfigure satisfies the given condition.\n6\n3\n2\n5\n1\n1\n7\n3\nFigure Example of an array\nThe procedure subArraySum receives an integer array arr and an integer value targetSum\nas arguments and finds the subarray whose sum is equal to the target sum. If a subarray that\nsatisfies this condition is found, it prints their starting and ending indices, and finishes the\ntask. Otherwise, it prints the message “No subarray found”.\n[Program]\n○ subArraySum(integer []: arr, integer: targetSum)\ninteger: sum, start, end\ninteger: N ← the number of elements in arr\nfor (increase start from 1 to N by 1)\nsum ← 0\nfor (increase end from start to ___A___ by 1) // α\nsum ← ___B___\nif (sum = targetSum)\noutput start, end\nreturn\nelseif (sum > targetSum)\nexit the for block marked α\nendif\nendfor\nendfor\noutput \"No subarray found\"",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p006_q003.png"
+      ]
+    },
+    {
+      "number": 4,
+      "type": "pure_text",
+      "prompt": "- 8 -\nQ4. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ through ____C____ in the program.\nThe procedure reverse_digits receives one positive integer argument named num and\noutputs both the original integer and the integer with its digits reversed. Assume that the ones\ndigit of num is not 0.\nExample:\nNumber is 456, output 654\nNumber is 23407, output 70432\n[Program]\n○ reverse_digits(integer: num)\ninteger: rev ← 0\ninteger: rm ← 0\ninteger: temp ← num\nwhile (____A____)\nrm ← temp mod 10\nrev ← ____B____\ntemp ← ____C____\nendwhile\noutput \"Number is \", num, \", output \", rev\nAnswer group\nA\nB\nC",
+      "choices": [
+        "num > 0 rm × 10 + rev integer part of (temp ÷ 10)",
+        "num > 0 rm × 10 + rev temp − rm",
+        "num > 0 rev × 10 + rm integer part of (temp ÷ 10)",
+        "num > 0 rev × 10 + rm temp – rm",
+        "temp > 0 rm × 10 + rev integer part of (temp ÷ 10)",
+        "temp > 0 rm × 10 + rev temp – rm",
+        "temp > 0 rev × 10 + rm integer part of (temp ÷ 10)",
+        "temp > 0 rev × 10 + rm temp – rm"
+      ],
+      "answerKey": "G",
+      "mediaFiles": []
+    },
+    {
+      "number": 5,
+      "type": "pure_text",
+      "prompt": "- 9 -\nQ5. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nPrime numbers are the positive integers that are only divisible by the number itself and 1.\nProcedure printPrime receives the integer N (N ≥ 1) as an argument and prints the first N\nprime numbers. For example, printPrime(6) will print “2 3 5 7 11 13”.\n[Program]\n○ printPrime(integer: N)\ninteger: count, number, i\nboolean: isPrime\ncount ← 1\nnumber ← 2\nwhile (count ≤ N)\nisPrime ← true\nfor (increase i from 2 to integer part of the square root of number by 1)\nif (number mod i = 0)\n___A___\nexit the for block\nendif\nendfor\nif (isPrime = true)\noutput \" \", number\n___B___\nendif\nnumber ← number + 1\nendwhile\nAnswer group\nA\nB",
+      "choices": [
+        "count ← count + 1 isPrime ← false",
+        "count ← count + i isPrime ← false",
+        "isPrime ← false count ← count + 1",
+        "isPrime ← false count ← count + i"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 6,
+      "type": "image",
+      "prompt": "- 10 -\nQ6. From the answer group below, select the correct answer to be inserted into ________ in\nthe description.\nClass Rectangle represents a two-dimensional figure, and class Cuboid represents a three-\ndimensional figure. The class Cuboid is a subclass of the class Rectangle. Figures 1 and 2\nexplain the classes Rectangle and Cuboid, respectively.\nMember variable\nType\nDescription\nlength\ninteger Dimension of length.\nwidth\ninteger Dimension of width.\nConstructor\nDescription\nRectangle(integer: _length,\ninteger: _width)\nInitialize member variable length with\n_length and member variable width with\n_width.\nMethod\nReturn value\nDescription\nenlarge(Rectangle:\nshape)\nNone\nTo increase the size, add shape.length\nto length and shape.width to width.\noutput()\nNone\nOutput in format “(length, width)”.\nFigure 1 Class Rectangle\nMember variable\nType\nDescription\nheight\ninteger Dimension of height.\nConstructor\nDescription\nCuboid(integer: _length,\ninteger: _width,\ninteger: _height)\nConstructor of the super class is called with\n_length and _width as arguments in that\norder, and member variable height is\ninitialized with the argument _height.\nMethod\nReturn value\nDescription\nenlarge(Cuboid:\nshape)\nNone\nTo increase the size, add shape.length\nto length, shape.width to width and\nshape.height to height.\noutput()\nNone\nOutput in format\n“(length, width, height)”.\nFigure 2 Class Cuboid",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "E",
+      "mediaFiles": [
+        "question_images/p010_q006.png"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "image",
+      "prompt": "- 12 -\nQ7. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nA singly linked list can be reversed using the following recursive procedure.\nLet head be the first element of the list, and let elm be undefined.\n(a) Reverse the order of the elements in the list starting from head, and set the next element\nof the last element in the reversed list—that is, the next element of head—to elm.\nTo “reverse the order of the elements in the list starting from head,” reverse the list starting\nfrom the next element of head, and then connect head to the end of the reversed list. In other\nwords, execute (a) by setting head as elm, and the next element of head as head.\nThe recursive function reverseList reverses a singly linked list and returns the head of the\nreversed list. Initially, the function reverseList is called as reverseList(head,\nundefined). Here, head is the head of the singly linked list before reversal and is of type\nListElement. The table provides an explanation of the member variables of the class\nListElement. ListElement-type variables store references to instances of the class\nListElement.\nTable Explanation of the member variables of the class ListElement\nMember variable\nType\nDescription\nval\ninteger\nThe value of the element.\nnext\nListElement\nReference to the next element, if there is no\nnext element, the status is undefined.\n[Program]\n○ ListElement: reverseList(ListElement: head, ListElement: elm)\nListElement: listHead\nif (head.next is not undefined)\nlistHead ← reverseList(___A___, head)\nelse\nlistHead ← head\nendif\nhead.next ← ___B___\nreturn listHead",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p012_q007.png"
+      ]
+    },
+    {
+      "number": 8,
+      "type": "pure_text",
+      "prompt": "- 14 -\nQ8. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nStack stores data using first-in, last-out ordering. Here, the items stored in the stack are\ninteger values, and the stack is controlled by the procedure push and the function pop. The\nprocedure push adds an item given as an argument to the top of the stack, and the function\npop removes the top item from the stack and returns it. The global variable stck is an array\nof 10 integers that stores the stack items, and the global variable tos is the pointer that points\nto the topmost item of the stack.\n[Program]\nglobal: integer []: stck ← {10 undefined}\nglobal: integer: tos ← 0\n○ push(integer: item)\nif (tos = 10)\noutput \"Stack is Full\"\nelse\n___A___\nstck[tos] ← item\nendif\n○ integer: pop()\ninteger: item\nif (tos < 1)\noutput \"Stack is Empty\"\nreturn undefined\nelse\n___B___\nendif\nreturn item",
+      "choices": [],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "- 16 -\nQ9. From the answer group below, select the correct answer to be inserted into _________ in\nthe description. Here, the array index starts at 1.\nThe procedure traverse traces through a vertex of the graph in Figure 1, and outputs all\nvertex numbers in the graph. One of the vertex numbers of the graph is specified with the\nargument k. The global 2-dimensional array graph represents the graph in Figure 1. Each\nelement graph[i,j] is equal to 1 if there is an edge between vertices i and j, and 0\notherwise. The array visited stores boolean values, where visited[i] indicates whether\nvertex i of the graph has been visited or not during the procedure. When the procedure is\ncalled as traverse(1), the output is in the order _______.\nFigure 1 Graph that is handled by the program\nHere, the procedure traverse uses a queue represented by the class Queue. Figure 2\nprovides an explanation of the class Queue.\nConstructor\nDescription\nQueue()\nCreates an empty queue.\nMethod\nReturn value\nDescription\nenqueue(integer: elm) None\nAdds the integer elm as an element\nto the queue.\ndequeue()\ninteger\nExtracts the element from the queue\nand returns it.\nisEmpty()\nboolean\nReturns true if the queue is empty;\notherwise, returns false.\nFigure 2 Explanation of the class Queue\n[Program]\nglobal: integer [,]: graph ← {{0, 1, 0, 1, 0},\n{1, 0, 1, 0, 1},\n{0, 1, 0, 0, 0},\n{1, 0, 0, 0, 1},\n{0, 1, 0, 1, 0}}",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p016_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "image",
+      "prompt": "- 18 -\nQ10. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nThe procedure insertAfter inserts an element into a singly linked list at the position after\nan existing element with a specific data value. The argument targetData is a string type\ndata that represents the value of the existing element in the list, after which a new element\nis to be inserted. If no corresponding element exists, no action is taken. The argument\nnewData is also a string type data represents the value of the new element to be inserted.\nThe class Element represents each element of the linked list. The figure explains the\nconstructor and the member variables of the class Element. Element-type variables store\nreferences to instances of the class Element. A reference to the first element in the list is pre-\nstored in the global variable head.\nConstructor\nDescription\nElement(string: data)\nInitialize the element with the data passed as an\nargument, which stored in the member variable data,\nwith the member variable next set to undefined.\nMember variable\nType\nDescription\ndata\nstring\nData associated with the element.\nnext\nElement\nThis attribute represents the reference to the next\nelement.\nFigure Class Element\n[Program]\nglobal: Element: head // stores first element in the list\n○ insertAfter(string: targetData, string: newData)\nElement: x, y\nx ← head\nwhile(x is ____A____)\nif (x.data = targetData)\ny ← Element(newData)",
+      "choices": [
+        "next ← y exit the while block else x ← x.next endif endwhile",
+        "next ← ____B____"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p018_q010.png"
+      ]
+    },
+    {
+      "number": 11,
+      "type": "image",
+      "prompt": "- 20 -\nQ11. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe bubble sort compares adjacent elements in an array and swaps them if they are out of\norder. It makes multiple passes through an array. The bubble sort can be modified to stop\nearly if it finds that the array has become sorted. The function quickBubble is modified\nfrom conventional bubble sort, which sorts the elements in ascending order, to recognize a\nsorted array and stop early. For example, the sorting of the unordered array {18, 1, 8, 6,\n2, 9, 12, 14, 7, 11} is completed in six passes.\n[Program]\n○ integer []: quickBubble(integer []: array)\ninteger []: arraySorted ← array\nboolean: exchange\ninteger: maxIdx, i\nexchange ← true\nmaxIdx ← (the number of elements in arraySorted) - 1\nwhile (___A___ and ___B___)\nexchange ← false\nfor (increase i from 1 to maxIdx by 1)\nif (arraySorted[i] > arraySorted[i + 1])\nexchange ← true\nswap the values of arraySorted[i] and arraySorted[i + 1]\nendif\nendfor\nmaxIdx ← maxIdx - 1\nendwhile\nreturn arraySorted\nAnswer group\nA\nB",
+      "choices": [
+        "maxIdx > 0 exchange = true",
+        "maxIdx > 0 exchange = false",
+        "maxIdx > 1 exchange = true",
+        "maxIdx > 1 exchange = false"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p020_q011.png"
+      ]
+    },
+    {
+      "number": 12,
+      "type": "pure_text",
+      "prompt": "- 21 -\nQ12. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nThe function containsSubstring receives two-character arrays str and seq as arguments,\nand returns a boolean value indicating whether the character array str contains the sequence\nseq as a substring. The character array str contains seq as a substring if every sequence of\nconsecutive characters in seq exists somewhere in the sequence of characters in str, in the\nsame order. For example, containsSubstring({\"a\", \"p\", \"p\", \"l\", \"e\"}, {\"p\",\n\"l\", \"e\"}) returns true, and containsSubstring({\"a\", \"p\", \"p\", \"l\", \"e\"}, {\"a\",\n\"e\"}) returns false. Assume that the number of elements in str and seq is one or more.\n[Program]\n○ boolean: containsSubstring(character []: str, character []: seq)\ninteger: strlen, seqlen, len, i, j\nstrlen ← the number of elements in str\nseqlen ← the number of elements in seq\nif (seqlen > strlen)\nreturn false\nendif\nlen ← strlen − seqlen + 1\nfor (increase i from 1 to len by 1)\nj ← 1\nwhile (j ≤ seqlen)\nif (___A___ ≠ seq[j])\nexit the while block\nendif\nj ← j + 1\nendwhile\nif (___B___)\nreturn true\nendif\nendfor\nreturn false",
+      "choices": [],
+      "answerKey": "E",
+      "mediaFiles": []
+    },
+    {
+      "number": 13,
+      "type": "image",
+      "prompt": "- 23 -\nQ13. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program.\nBinary Search Trees (BST) are a fundamental data structure where each node has at most\ntwo children: a left child and a right child. The key property of a BST is that each value of\nall nodes in its left subtree are less than the value of the node, and each value of all nodes in\nits right subtree are greater than the value of the node. The table shows the member variables\nof the class Node. Node-type variable holds a reference to an instance of the class Node. Each\nnode in a BST has a different value.\nTable Member variables of class Node\nMember variable\nType\nDescription\nkey\ninteger Integer to be stored in the node.\nleft\nNode\nReference to the instance that holds the left child of a\nbinary tree. If no left child exists, it is undefined.\nright\nNode\nReference to the instance that holds the right child of a\nbinary tree. If no right child exists, it is undefined.\nThe function remove removes a node with the same key value as the argument key from the\nBST specified by the argument node and returns the resulting BST. The function searches\nfor a node with the same key value, and if the found node (call it X here) does not have a\nright subtree, the function returns its left subtree. If X has a right subtree, the function locates\nthe node (call it Y here) with the smallest key value in the right subtree, replaces the key\nvalue of X with that of Y, and then removes Y. If there is no node with the same key value\nin the BST, the function performs no operations. The procedure test demonstrates this\nbehavior by removing 1 node from a BST containing 7 nodes. The figure shows the BST\nbefore and after node removal.\nFigure BST before and after node removal\n[Program]\n○ Node: remove(Node: node, integer: key)\nNode: node2\nif (node is undefined)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "H",
+      "mediaFiles": [
+        "question_images/p023_q013.png"
+      ]
+    },
+    {
+      "number": 14,
+      "type": "image",
+      "prompt": "- 25 -\nQ14. From the answer group below, select the correct answer to be inserted into _________ in\nthe program. Here, the array index starts at 1.\nA 3 × 3 normal magic square is a 3 × 3 matrix where the sum of the elements for each row,\neach column, and each diagonal is the same. The square contains the numbers 1 to 9, exactly\nas shown in the figure.\n4\n9\n2\n15\n3\n5\n7\n15\n8\n1\n6\n15\n15\n15\n15\n15\n15\nFigure 3 × 3 normal magic square\nThe function checkMagicSquare receives a two-dimensional 3 × 3 integer array (matrix) m\ncontaining the numbers 1 to 9, and returns whether the given matrix is a magic square or not.\n[Program]\n○ boolean: checkMagicSquare(integer [,]: m)\ninteger: i, j, k\ninteger: dia1Sum ← 0\ninteger: dia2Sum ← 0\ninteger []: rowSum ← {0, 0, 0}\ninteger []: colSum ← {0, 0, 0}\nfor (increase i from 1 to 3 by 1)\nfor (increase j from 1 to 3 by 1)\nrowSum[i] ← rowSum[i] + m[i,j]\ncolSum[i] ← colSum[i] + m[j,i]\nendfor\ndia1Sum ← dia1Sum + m[i,i]\ndia2Sum ← dia2Sum + m[i,3 - i + 1]\nendfor\nif (dia1Sum ≠ dia2Sum)\nreturn false\nendif\nfor (increase k from 1 to 3 by 1)\nif(______)\nreturn false\nendif\nendfor\nreturn true",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p025_q014.png"
+      ]
+    },
+    {
+      "number": 15,
+      "type": "image",
+      "prompt": "- 27 -\nQ15. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nInverse document frequency (IDF) is a metric used to evaluate the importance of a word in\na document relative to a document collection. The function calcIDF receives a string term\nand an array of strings corpus as arguments, and calculates and returns the IDF score for\nthe term based on the given corpus. The corpus of documents corpus is given as a string\narray. An example of corpus that indicates 3 documents is as follows:\n{\"ITPEC includes members from 6 countries\",\n\"many students prepare for the exam\",\n\"The ITPEC exam is essential for IT professionals\"}\nThe table shows the description of the functions used in the program.\nTable Functions\nFunction\nReturn\nvalue\nDescription\nsplit(string: str)\nstring []\nReturns words separated by a space in the text str.\nlog(real: x)\nreal\nReturns natural logarithm (base e) of the value x.\nTraditionally, IDF is computed using the following formula:\n𝐼𝐷𝐹(𝑡) = log (\n𝑁\n1 + 𝑑𝑓(𝑡) )\nWhere N is the total number of documents, t refers to a specific term or word in a document,\nand df(t) is the number of documents containing the term t.\nFor example, the return value of calcIDF(\"ITPEC\", corpus) is log(3 ÷ (1 + 2)) = 0 when\narray corpus is assigned as shown in the above example. Because the total number of\ndocuments is 3, and the total number of documents that include the word “ITPEC” is 2.\n[Program]\n○ real: calcIDF(string: term, string []: corpus)\ninteger: i, j, numDocs, numWords, termCount\nboolean: isContainsTerm\nreal: idf\nstring []: words\ntermCount ← 0\nnumDocs ← the number of elements in corpus\nfor (increase i from 1 to numDocs by 1)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "F",
+      "mediaFiles": [
+        "question_images/p027_q015.png"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "- 29 -\nQ16. From the answer group below, select the correct combination of answers to be inserted\ninto _______ in the program. Here, the array index starts at 0.\nThe Jaccard similarity index, J, measures the similarity between two sets by computing the\nratio of the number of elements in their intersection to the number of elements in their union,",
+      "choices": [
+        "e., J(A, B) = |A∩B| / |A∪B|, where A and B represent sets, ∩ and ∪ represent the intersection and the union set operations, respectively, and |…| is the operator to calculate the number of elements in a set. The intersection operation builds a new set taking members that are common to both sets; while the union operation builds a set taking all members of both sets, where each member will appear only once. For instance, A = {3, 4, 6, 7} and B = {2, 4, 5}, then A∩B = {4}, A ∪ B = {2, 3, 4, 5, 6, 7}, |A| = 4, | B| = 3, |A∩B| = 1, and |A∪B| = 6. The function jaccardSimilarity calculates the Jaccard similarity stated above and returns it. The definitions of variables used in the function are stated in the below table. Table Variable definitions Variable Explanation nA Number of elements in set A. nB Number of elements in set B. iCount Variable for counting members of intersection set, i.e., for counting |A∩B|. uCount Variable for counting members of union set, i.e., for counting |A∪B|. found Variable used to indicate whether the member has already been considered for union set or not. [Program] ○ real: jaccardSimilarity(integer []: A, integer []: B) integer: nA ← number of elements in A integer: nB ← number of elements in B integer: iCount ← 0 integer: uCount ← ______ boolean: found for (increase i from 0 to nA - 1 by 1) found ← false for (increase j from 0 to nB - 1 by 1) // α if (A[i] = B[j]) iCount ← iCount + 1 found ← true exit the for block marked α"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p029_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "- 31 -\nQ17. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany P is a small business that recently formed a data analytics team to perform business\ndata analytics using internal business data. This data is stored on a database system\nconfigured with a synchronous (real-time) mirror. The database is backed up regularly. The\ndatabase servers and IT infrastructure are maintained by a third-party IT support provider.\nA junior data analyst was mistakenly granted database superuser privileges to the production\ndatabase. This decision was made due to a lack of security understanding in the company.\nThe data analyst, unfamiliar with the sensitivity of their access level, was tasked with\nexecuting a series of routine database queries and migrations. However, due to an error in a\nscript, the data analyst accidentally ran a command that dropped critical tables, resulting in\na significant loss of data. This caused the company’s internal applications to stop working.\nThe company engaged their IT support provider, and the database system was quickly put\nback in service by ____A____. To prevent this incident from happening again, their IT\nsupport provider recommended that the company implement ____B____.\nAnswer group\nA\nB",
+      "choices": [
+        "restarting the database server database encryption",
+        "restarting the database server multi-factor authentication",
+        "restarting the database server principle of least privilege",
+        "restoring from backups database encryption",
+        "restoring from backups multi-factor authentication",
+        "restoring from backups principle of least privilege",
+        "switching to the database mirror database encryption",
+        "switching to the database mirror multi-factor authentication",
+        "switching to the database mirror principle of least privilege"
+      ],
+      "answerKey": "F",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "pure_text",
+      "prompt": "- 32 -\nQ18. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany Q is a mid-sized online retailer selling a wide range of daily necessities to a large\nnumber of general consumers. Customers are required to create an account and log in to the\ncompany’s e-commerce website to make purchases. The e-commerce website is constructed\nusing an open-source content management system (CMS) with various plugins. It is hosted\non the company’s on-premise web servers located in the Demilitarized Zone (DMZ).\nCustomer data is stored in the database installed on the web server as well. Since the e-\ncommerce site received orders from many customers, availability of the e-commerce website\nis critical, and the maximum tolerable downtime (MTD) is limited to one hour per week.\nThe server is protected by a packet filtering firewall that permits access only through ports\n80 and 443. Mr. K is an administrator responsible for both the operations and security of the\ncompany’s e-commerce website. He maintains the configuration of the firewall and other\nsecurity measures as well as patch management. For patching the company’s e-commerce\nwebsite, compatibility testing is important to maintain website stability. It takes at least three\ndays to complete compatibility testing for one component. Due to limited human resource,\nit is unrealistic to perform compatibility tests in parallel and finish them quickly. Therefore,\nthe patch management rule is to apply patches for the web server’s OS and the core CMS\ncomponents within a week of their release, while updates for other components including\nplugins are scheduled to be applied within six months. Patches for the web server’s OS and\nthe core CMS components are released on a monthly basis, while updates for other\ncomponents including plugins are released each month as well.\nOne day, Company Q’s e-commerce website was compromised and the database on the\nwebserver was accessed by an unauthorized third party. The investigation revealed that this\nwas caused by an unpatched vulnerability in a plugin enabled on the CMS. This plug-in was\ncritical to the functioning of the e-commerce website. The latest version of the plugin, which\nincludes a fix for this vulnerability, was released by the vendor three months ago. The\nexploitation of this vulnerability has been reported publicly since last month. Company Q\nwas still conducting compatibility testing, and the update to the latest version was scheduled\nfor a later time.\nTo prevent similar incidents from occurring, Mr. K is required to revise the patch\nmanagement rules for Q’s e-commerce website. In consideration of the workload associated\nwith compatibility testing, Mr. K proposed updating the patch management rule for the e-\ncommerce website to ____A____. Furthermore, as a protective measure to prevent the\nservers from exploitation during the interim period before patches are applied, Mr. K\nproposed ____B____.",
+      "choices": [],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 19,
+      "type": "pure_text",
+      "prompt": "- 34 -\nQ19. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the description.\nCompany R is a software company that sells video editing software for consumers. The\ncompany has branch offices in multiple countries, all managed by its head office. In\nCompany R’s customer support department, customer satisfaction surveys are sent to\nselected customer who have received support. The survey results are aggregated at each\nbranch, and must be sent to the customer survey analysis team at the head office every day.\nMs. T at the customer survey analysis team at the head office is responsible for managing\nand securing the survey data. The considerations for collecting survey data from each branch\noffice are as follows:\n-\nThe employees responsible for sending the survey data at each branch office changes\ndaily.\n-\nAt the head office, Ms. T in the customer survey analysis team is responsible for\nreceiving and analyzing the survey data from the branch offices. After receiving the\nsurvey data from the branch offices, she saves the data to a shared folder that only the\ncustomer survey analysis team can access.\n-\nThe file size of survey data is large, so using inefficient encryption methods would take\ntoo much time and is therefore not suitable.\n-\nSince the survey data contains confidential information, it must be ensured that no one\nother than the sender and the intended recipients can view the contents during\ntransmission between the head office and branch offices.\n-\nThe key used to encrypt the files must be transmitted in a way that prevents it from\nbeing stolen by a man-in-the-middle attacker.\n-\nThere are many branch offices and it is not practical to visit each office in person to\ndistribute keys.\nMs. T decided to adopt a new method in which the branch offices upload the survey data,\nencrypted using file encryption, to a shared folder. She set up this shared folder with access\npermissions granted to both the head office and branch office staff, and instructed the branch\noffice staff to upload the encrypted survey data to it. Taking into account the considerations\nrelated to collecting information from the branches, Ms. T decided to use ____A____ as the\nencryption method. In this method, the key used for encrypting the survey data is encrypted\nusing the public key of ____B____ .",
+      "choices": [],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 20,
+      "type": "pure_text",
+      "prompt": "- 36 -\nQ20. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany S is a software company that develops web applications. Some of web applications\nthat Company S develops are open-sourced. The web application code is made publicly\navailable in a repository accessible to anyone. These open-source web applications include\nfeatures that interact with external services using API keys.\nOne day, an external security researcher reported to Company S’s security team that the code\npublished in the company’s repository contained an API key. Company S immediately made\nthe repository private and deactivated the API key. Upon further investigation, it was found\nthat a developer on the web application development team accidentally hard-coded the API\nkey when testing a new feature, and committed the code to the source code repository. As a\nresult, this allowed unauthorized users to access external services using the API key.\nTo prevent a recurrence of such an incident, the security team has proposed adding a coding\nrule that instead of hard-coding the secrets including the API, use environment variables that\nallow the application code to be accessed dynamically. Additionally, the team suggested\n____A____ to detect any secrets that might have been missed by this rule before committing\ncode to a publicly accessible repository. Furthermore, to minimize damage in case any\nsecrets still evade detection, he proposed ____B____.\nAnswer group\nA\nB",
+      "choices": [
+        "checking logs of APIs used by the development team to see if there is any unauthorized use adding a rule that mandates regular rotation of secrets",
+        "checking logs of APIs used by the development team to see if there is any unauthorized use requiring web application developers to use multi-factor-authentication to log in to the repository",
+        "integrating automated secret scanning tools adding a rule that mandates regular rotation of secrets",
+        "integrating automated secret scanning tools requiring the web application developers to use multi-factor-authentication to log in to the repository",
+        "running antivirus full scans on developers’ PCs adding a rule that mandates regular rotation of secrets",
+        "running antivirus full scans on developers’ PCs requiring web application developers to use multi-factor-authentication to log in to the repository _ _ Company names and product names appearing in the test questions are trademarks or registered trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 20,
+    "imageTypeCount": 10,
+    "missingAnswerKeyCount": 0,
+    "issues": []
+  }
+}

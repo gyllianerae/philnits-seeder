@@ -1,0 +1,828 @@
+{
+  "exam": {
+    "year": 2025,
+    "month": 10
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "In the single precision format of the “IEEE Standard for Binary Floating-Point Arithmetic”\n(IEEE 754), a 32-bit floating point number is represented as below:\nS: Sign (1 bit)\nE: Exponent (8 bits)\nF: Fraction (23 bits)\nIf 0 < E < 255, then the value of the number is (–1)S × 2 (E–127) × (1+F)\nwhere F represents the fractional part of the number, stored as a 23-bit binary sequence. This\nF is the sum of its weighted binary components: F=b1×2−1+b2×2−2+⋯+b23×2−23 , where b₁,\nb₂, …, b₂₃ are the binary digits of F.\nAccording to the IEEE-754 standard, which of the following is the decimal equivalent of the\n32-bit floating point number given below?\n01000001011000000000000000000000",
+      "choices": [
+        "0.1875",
+        "0.4375",
+        "6.0",
+        "14.0"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "Let n be a binary integer represented in two’s complement. Which of the following is the\noperation that results in the value 9 × n using only bit shifting and an addition or subtraction?",
+      "choices": [
+        "Shift n 2 bits to the left, then add n to the result.",
+        "Shift n 2 bits to the left, then subtract n from the result.",
+        "Shift n 3 bits to the left, then add n to the result.",
+        "Shift n 3 bits to the left, then subtract n from the result."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "– 4 –\nQ3. Three friends and 4 other people are randomly seated in 7 seats arranged in a row. What is\nthe probability that the 3 friends sit next to one another?",
+      "choices": [
+        "1",
+        "1",
+        "1 d) 1 168 42 35 7"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "image",
+      "prompt": "For an automaton with input and output symbols {0, 1} and a state transition diagram shown\nbelow, which of the following is the output string for the input string 0011001110? Here, S1\nrepresents the initial state, and the label x/y on each arc indicates that if x is an input, then y\nis the corresponding output at the state transition.\nS2\nS1\n0/0\n1/0\n0/0\n0/0\n1/1\n1/1\nS3",
+      "choices": [
+        "0001000110",
+        "0001001110",
+        "0010001000",
+        "0011111110"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p005_q004.png"
+      ]
+    },
+    {
+      "number": 5,
+      "type": "image",
+      "prompt": "– 5 –\nQ5. The table below shows the data in a list structure that has bidirectional pointers. In this table,\na new Employee G is to be inserted between Employee A and Employee K. Which of the\nfollowing contains only the pointers (among a through f) whose values change after the\ninsertion?\nTable\nAddress\nEmployeeName\nNextPointer\nPreviousPointer\n100\nEmployee A\n300\n0\n200\nEmployee T\n0\n300\n300\nEmployee K\n200\n100\nTable after the addition\nAddress\nEmployeeName\nNextPointer\nPreviousPointer\n100\nEmployee A\na\nb\n200\nEmployee T\nc\nd\n300\nEmployee K\ne\nf\n400\nEmployee G\nx\ny",
+      "choices": [
+        "a, b, e, f",
+        "a, e, f",
+        "a, f",
+        "b, e"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p005_q005.png"
+      ]
+    },
+    {
+      "number": 6,
+      "type": "image",
+      "prompt": "The flowchart shown below expresses an algorithm that determines the greatest common\ndivisor between two integers a and b. How many times is A passed?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8 Start a ← 56 b ← 48 r = 0 End print a r ← a mod b a ← b b ← r Yes No A"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p006_q006.png"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "pure_text",
+      "prompt": "– 6 –\nQ7. In object-oriented programming, which of the following is the concept that refers to a class\nthat defines a method with the same name and type signature as a method in its superclass?",
+      "choices": [
+        "Hiding",
+        "Inheritance",
+        "Overloading",
+        "Overriding"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 8,
+      "type": "image",
+      "prompt": "There exists a main process and the two (2) interrupt processes A and B, as shown in the\ntable below. Multiplex interrupts are permitted. When interrupts A and B occur with the\ntiming shown in the diagram below, how many milliseconds (ms) can the main process use\nthe CPU during the time period between 0 ms and 5 ms? Here, the overhead from calling an\ninterrupt process and resuming from it can be ignored.\nInterrupt\nProcessing time (ms)\nInterrupt priority\nA\n0.5\nHigh\nB\n1.5\nLow\n0\n1\n2\n3\n4\n5\nOccurrence of interrupt A\nOccurrence of interrupt B\nTime (ms)\nindicates the timing of an interrupt.\nNote:",
+      "choices": [
+        "2",
+        "2.5",
+        "3.5",
+        "5"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p007_q008.png"
+      ]
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "– 7 –\nQ9. When an HDD has the specifications shown in the table below, what is the average access\ntime for the HDD to transfer 16 kB of data in milliseconds (ms)? The average access time is\ncalculated as the sum of the average seek time, controller overhead, rotational latency, and\ntransfer time. Other overheads can be ignored. Here, 1 MB = 1,024 kB.\nAverage seek time\n5 ms\nRotation Speed\n6,000 RPM\nTransfer rate\n1 MB/s\nController overhead\n0.1 ms",
+      "choices": [
+        "20.1",
+        "25.725 c 30.725",
+        "74.1"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p007_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description of a 3D printer’s function?",
+      "choices": [
+        "It detects the shape of three-dimensional objects and produces output of 3D data.",
+        "It functions by pushing the pins of a high-temperature printing head onto heat-sensitive paper.",
+        "It makes three-dimensional objects using methods such as fused filament fabrication.",
+        "It projects computer graphics onto uneven three-dimensional objects such as buildings and furniture."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "– 8 –\nQ11.\nWhich of the following is the most appropriate explanation of edge computing?",
+      "choices": [
+        "Increasing the operability and expressiveness of web application software by performing screen creation and data processing on the client side",
+        "Increasing the real-time nature of processing by performing primary processing of data on a server or other such computer in a location close to the origin of data, such as a sensor that is attached to a user or a device",
+        "Increasing throughput with parallel processing by virtualizing and integrating several servers and PCs and creating a single high-performance computer",
+        "Starting up the required server only when data comes in, and freeing up resources by stopping the server as soon as the processing is finished"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "image",
+      "prompt": "One (1) server, three (3) clients, and two (2) printers are connected via a LAN as shown\nin the figure below. This system prints data that is located on the server in response to\ninstructions from the clients. When the availability of each device is as shown in the table\nbelow, which of the following is the expression that represents the availability for the system?\nHere, the system is considered available if one (1) of the three (3) clients and one (1) of the\ntwo (2) printers are running.\nPrinter\nClient\nPrinter\nServer\nClient\nClient\nDevice\nAvailability\nServer\na\nClient\nb\nPrinter\nc\nLAN\n1",
+      "choices": [
+        "ab3 c2",
+        "a (1−b3 ) (1−c2 )",
+        "a (1−b)3 (1−c)2",
+        "a (1−(1−b)3 ) (1−(1−c)2 )"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p009_q012.png"
+      ]
+    },
+    {
+      "number": 13,
+      "type": "image",
+      "prompt": "– 9 –\nQ13.\nFive processes A, B, C, D and E arrive at almost the same time in the order of A, B, C, D\nand E. The processes have estimated running times of 10, 6, 2, 8, and 4 milliseconds,\nrespectively. Which of the following is the average process turnaround time with the First-\nCome-First-Served (FCFS) scheduling algorithm?",
+      "choices": [
+        "14",
+        "19.2",
+        "20",
+        "22"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p009_q013.png"
+      ]
+    },
+    {
+      "number": 14,
+      "type": "pure_text",
+      "prompt": "In indirect addressing of direct file organization, which of the following is an appropriate\nmethod for calculating the record address from a record key in the superposition addressing\nmethod, or folding and adding method? Here, the record key is 123456 in decimal. The total\nnumber of records is 1,000, and the closest prime number to 1,000 is 997. The decimal number\n123456 is equivalent to 361100 in octal.",
+      "choices": [
+        "Converting the record key into 361100 and using it as the address",
+        "Dividing the record key by 997 and using the remainder of 825 as the address",
+        "Splitting the record key into 123 and 456 and using their sum, 579, as the address",
+        "Using the record key 123456 as the address"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 15,
+      "type": "pure_text",
+      "prompt": "The page capacity of main memory is three pages, and the pages are referenced in the\norder {1, 2, 3, 2, 1, 4, 5}. Which of the following is the page that will be replaced from main\nmemory for the last page reference if LRU is used as the page replacement technique?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "Which of the following is equivalent to the logical circuit shown below?",
+      "choices": [
+        "𝐴⋅𝐵",
+        "𝐴̅ ⋅𝐵",
+        "𝐴⋅𝐵ത",
+        "𝐴̅ ⋅𝐵ത"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p010_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "– 10 –\nQ17.\nWhich of the following is a method used to improve the appearance of a jagged edge of\na slanted line so that it appears smooth on a screen, such as that of an LCD?",
+      "choices": [
+        "Anti-aliasing",
+        "Bump mapping",
+        "Shading",
+        "Texture mapping"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate explanation of attributes in the relational\nmodel?",
+      "choices": [
+        "It is possible to define attributes that have no name.",
+        "The domains of definition for attributes within a relation must not overlap.",
+        "The same name can be given to two (2) or more attributes in a relation.",
+        "There is no meaning in the order of attributes within a relation, and the relation remains unchanged even if the order is changed."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 19,
+      "type": "image",
+      "prompt": "When the functional dependencies shown below are satisfied, which of the following is\nthe transitive functional dependency that holds? Here, “A→B” indicates that B is functionally\ndependent on A, and “A→{B, C}” indicates that “A→B” and “A→C ” both hold.\n[Functional dependencies]\n{OrderCode, ProductCode} → {CustomerOrderQuantity, OrderAmount}\nOrderCode → {OrderDate, CustomerCode, OrderManagerCode}\nProductCode → {ProductName, SupplierCode, ProductSalePrice}\nSupplierCode → {SupplierName, SupplierAddress, SupplierManagerCode}\nCustomerCode → {CustomerName, CustomerAddress}",
+      "choices": [
+        "OrderCode → CustomerCode → CustomerAddress",
+        "OrderCode → ProductCode → CustomerOrderQuantity",
+        "ProductCode → SupplierCode → ProductSalePrice",
+        "SupplierCode → SupplierManagerCode → SupplierAddress"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p011_q019.png"
+      ]
+    },
+    {
+      "number": 20,
+      "type": "pure_text",
+      "prompt": "– 11 –\nQ20.\nWhich of the following is an appropriate description of distributed database?",
+      "choices": [
+        "Access to a database server is shared among a globally distributed userbase so that everyone can access the database.",
+        "It is a database that is distributed to all interested researchers and other users worldwide so that everyone can benefit.",
+        "It is a NoSQL database instead of a Relational Database Management System (RDBMS).",
+        "It stores different parts of a database in different locations, and its processing is distributed across those parts."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 21,
+      "type": "image",
+      "prompt": "Which of the following is the clause that is inserted into blank A of the SQL statement in\norder to display the names of employees who work in the same department as any employee\nlocated in \"New York\"?\nEmployees (employee_id, employee_name, salary, department_id)\nDepartments (department_id, department_name, location)\n[SQL command]\nSELECT employee_name FROM Employees WHERE",
+      "choices": [
+        "department_id IN (SELECT department_id FROM Departments WHERE location = 'New York');",
+        "department_id NOT IN (SELECT department_id FROM Departments WHERE location = 'New York');",
+        "department_id IN (SELECT department_id FROM Employees WHERE location = 'New York');",
+        "department_id = ALL (SELECT department_id FROM Employees WHERE location = 'New York'); A"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p012_q021.png"
+      ]
+    },
+    {
+      "number": 22,
+      "type": "pure_text",
+      "prompt": "In the context of transaction management, which of the following is a condition that the\nIsolation property ensures?",
+      "choices": [
+        "Data is written permanently after a transaction.",
+        "Only valid data is written to the database.",
+        "Transactions are either fully completed or revoked.",
+        "Transactions are executed without affecting each other."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 23,
+      "type": "pure_text",
+      "prompt": "– 12 –\nQ23.\nWhich of the following is a mechanism used to prioritize traffic based on its importance\nand minimize network latency for network applications?",
+      "choices": [
+        "AAA",
+        "PoE",
+        "QoS",
+        "RTP"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 24,
+      "type": "image",
+      "prompt": "PC5 has been newly added to the network. It wants to send data to PC4 using SSH\nprotocol. It must resolve the MAC address of PC4 from its IP address before sending the data.\nWhich of the following is the destination MAC address that PC5 will use in ARP request?",
+      "choices": [
+        "00:00:00:00:00:00",
+        "78:E1:00:3C:A1:8B",
+        "78:E1:00:3C:A1:9F",
+        "FF:FF:FF:FF:FF:FF 192.168.1.2 78:E1:00:3C:A1:5D 192.168.1.5 78:E1:00:3C:A1:6E 192.168.1.7 78:E1:00:3C:A1:7A 192.168.1.10 78:E1:00:3C:A1:8B Network Switch PC1 PC3 PC2 PC4 192.168.1.11 78:E1:00:3C:A1:9F PC5"
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p013_q024.png"
+      ]
+    },
+    {
+      "number": 25,
+      "type": "pure_text",
+      "prompt": "Between LAN systems that are different from the transport layer upward in the OSI basic\nreference model, which of the following is a device that performs protocol conversion?",
+      "choices": [
+        "Bridge",
+        "Gateway",
+        "Repeater",
+        "Router"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 26,
+      "type": "pure_text",
+      "prompt": "Which of the following is an Internet standard that extends the format of email header\nfields to handle not only text messages but also audio and image files?",
+      "choices": [
+        "HTML",
+        "MHS",
+        "MIME",
+        "SMTP"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 27,
+      "type": "pure_text",
+      "prompt": "– 13 –\nQ27.\nAn attacker left a USB stick labeled “Next ITPEC exam questions and answers” that\ncontains malware in front of an office, expecting someone to plug it into a PC. Once plugged\nin, the attacker gains control of the PC. Which of the following types of attack is this?",
+      "choices": [
+        "Baiting",
+        "Identity theft",
+        "Phishing",
+        "Pretexting"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 28,
+      "type": "pure_text",
+      "prompt": "When X receives a message with a digital signature that uses public key cryptography\nfrom Y, which of the following is the key that X uses to verify that the message truly came\nfrom Y?",
+      "choices": [
+        "X’s private key",
+        "X’s public key",
+        "Y’s private key",
+        "Y’s public key"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 29,
+      "type": "pure_text",
+      "prompt": "The IP address of server X that is owned by an attacker, is recorded on Company B’s\nDNS cache server as the IP address corresponding to the FQDN of Company A’s web server.\nAs a result, which of the following are the users that unintentionally connect to server X?\nHere, the employees of Company A and Company B use their own company’s DNS cache\nserver for name resolution.",
+      "choices": [
+        "Company A employees who try to connect to Company A’s web server",
+        "Company A employees who try to connect to Company B’s web server",
+        "Company B employees who try to connect to Company A’s web server",
+        "Company B employees who try to connect to Company B’s web server"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 30,
+      "type": "pure_text",
+      "prompt": "– 14 –\nQ30.\nWhen a fraud occurs, all three (3) elements of the “fraud triangle” are believed to exist.\nWhich of the following is the appropriate explanation of an element of the “fraud triangle”?",
+      "choices": [
+        "“Information and communication” refers to the identification, understanding, and processing of the required information, and its proper communication both within and outside the organization, and among the concerned persons.",
+        "“Opportunity” refers to the existence of an environment, such as technologies like the information system, physical environment, organizational rules, etc., that makes fraud possible or easy to commit.",
+        "“Pressure,” also known as incentive or motivation, refers to the selfish reasoning to justify committing fraud, such as interpreting things in a way that overcomes guilt or shifts blame.",
+        "“Rationalization” refers to the feeling of being forced caused by unrealistic performance targets."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 31,
+      "type": "pure_text",
+      "prompt": "Which of the following is a function of an IDS?",
+      "choices": [
+        "It checks whether software products that are installed on a PC are the latest version.",
+        "It collects the status of information security measures, such as the status of operations management for an information system, and also obtains company information, then performs a self-diagnosis on the status of activities for information security in an organization.",
+        "It monitors a server or a network and notifies the administrator when it has detected an intrusion or infringement.",
+        "It sends test data to a product that it examines and detects any vulnerability from the response or behavior of the product."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 32,
+      "type": "pure_text",
+      "prompt": "– 15 –\nQ32. Which of the following is an appropriate description concerning the timing and purpose\nof port scanning when an attacker intrudes into a system?",
+      "choices": [
+        "It is conducted at the post-processing stage in order to look for any evidence of attack that may remain in the system log.",
+        "It is conducted at the preliminary investigation stage in order to look for any service that can be attacked.",
+        "It is conducted at the privilege escalation stage in order to look for any account whose privileges can be obtained.",
+        "It is conducted at the unauthorized action stage in order to look for any user information that may be beneficial to the attacker."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 33,
+      "type": "image",
+      "prompt": "In a system with the configuration and communication services shown in the figure below,\nwhich of the following is the most appropriate location for the installation of a WAF as a\ncountermeasure for a vulnerability in a web application? Here, the WAF has no function to\nencrypt or decrypt communications.\nFirewall\nHTTPS\nSSL accelerator\nWeb server\nDatabase server\nHTTPS\nHTTP\nService for accessing\nthe database\nA\nB\nC\nD\nPC\nInternet\nPC\nPC",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p016_q033.png"
+      ]
+    },
+    {
+      "number": 34,
+      "type": "image",
+      "prompt": "– 16 –\nQ34.\nWhich of the following is an appropriate description of a UML use case diagram?",
+      "choices": [
+        "It shows the behavior during the object’s life cycle using finite state transitions.",
+        "It shows the exchange of messages among objects and objects’ lifelines in a time series.",
+        "It shows the flow from one activity to another activity in a system or business process.",
+        "It shows the scenarios for how actors, i.e., external users or machines, interact with a system."
+      ],
+      "answerKey": "D",
+      "mediaFiles": [
+        "question_images/p016_q034.png"
+      ]
+    },
+    {
+      "number": 35,
+      "type": "pure_text",
+      "prompt": "In the development process, which of the following is an activity that should be\nperformed in software architecture design?",
+      "choices": [
+        "Analyzing the requirements in incremental steps by arranging them in the form of a chart",
+        "Describing the specifications so that the program is clarified on a line-by-line basis",
+        "Obtaining the opinion of the customer and deciding on the specifications",
+        "Transforming the requirements for the software items into a design that describes its top- level structure and identifies the software components"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 36,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description concerning a state transition test in\na system integration test?",
+      "choices": [
+        "A method for black box tests that does not focus on a system’s internal state.",
+        "A method that checks whether a system behaves according to the designed combinations of events and internal states.",
+        "A method that is suitable for tests of calculations and processing systems whose internal state does not change depending on the occurrence of an event.",
+        "A method that uses a data flow diagram and a decision table to analyze the internal state of a system."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 37,
+      "type": "pure_text",
+      "prompt": "– 17 –\nQ37.\nWhich of the following is an appropriate description of an acceptance test?",
+      "choices": [
+        "It is conducted by developers to verify response time and other performance items.",
+        "It is conducted by testers to ensure that the interfaces and linkages between different software parts work properly.",
+        "It is conducted by the project manager to verify whether users’ functional requirements are met or not.",
+        "It is conducted by users to confirm that the software is complete and meets the business needs that prompted the software to be developed."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 38,
+      "type": "image",
+      "prompt": "What is the expected value in dollars for the correction cost of an application program in\nthe first year under the conditions shown below?\n[Conditions]\n(1) Program size: 2,000 k steps\n(2) Potential defective rate of program: 0.04 defects / k steps\n(3) Annual discovery rate of potential defects: 20% / year\n(4) Classification of discovered defects:\n–Major impact: 20%\n–Minor impact: 80%\n(5) Correction cost per defect\nDefects with major impact: 20,000 dollars\nDefects with minor impact: 5,000 dollars\n(6) In the first year, only defects with major impact are corrected",
+      "choices": [
+        "64,000",
+        "128,000",
+        "160,000",
+        "640,000"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p018_q038.png"
+      ]
+    },
+    {
+      "number": 39,
+      "type": "pure_text",
+      "prompt": "– 18 –\nQ39.\nWhich of the following is refactoring in software development activities?",
+      "choices": [
+        "In order to improve the maintainability of a program, its internal structure is modified without any change to the external specifications.",
+        "In order to improve the quality of a program, two programmers cooperate to perform the coding of a single program.",
+        "In order to obtain feedback from users, the prototype of a program to be provided is created at an early stage.",
+        "In order to promptly develop a program to be operated, test cases are set in advance, and the program is then coded."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 40,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate explanation of comprehensive patent cross-\nlicensing?",
+      "choices": [
+        "An agreement to share the necessary costs for patent registration is concluded.",
+        "The source code is published free of charge on the Internet or other places, and anyone may improve and redistribute the software.",
+        "The use of patent rights is mutually licensed among companies in the specified fields of technology or products.",
+        "To ensure that a company’s patent rights are not violated, the right to stop a counterpart’s manufacturing is exercised."
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 41,
+      "type": "image",
+      "prompt": "Eight (8) activities and milestones of a project are shown in the arrow diagram below.\nWhich of the following is the critical path of this project?",
+      "choices": [
+        "A, C, E, H",
+        "A, C, F, G",
+        "B, E, H",
+        "B, F, G E 15 C 15 D 10 A 15 B 10 G 5 F 15 H 10 Dummy Legend: Activity name Number of days required"
+      ],
+      "answerKey": "A",
+      "mediaFiles": [
+        "question_images/p019_q041.png"
+      ]
+    },
+    {
+      "number": 42,
+      "type": "pure_text",
+      "prompt": "– 19 –\nQ42.\nBased on the requirements gathered, the cost of a software project under normal\nconditions is estimated at $70,000. In case of smooth project implementation, some activities\nare not required and the estimated cost is reduced to $50,000; however, in the worst-case\nscenario, additional tasks are required and the cost increases to $120,000. What is the\nexpected cost of the project (in dollars) that is calculated by using the three-point estimate in\nthe beta distribution, also known as PERT?",
+      "choices": [
+        "70,000",
+        "75,000",
+        "80,000",
+        "85,000"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 43,
+      "type": "image",
+      "prompt": "IT services are provided under the conditions in the SLA shown below. What is the\nmaximum number of hours of downtime in a month that can satisfy the SLA?\n[Conditions in the SLA]\n‐Number of business days per month: 30\n‐Service hours: 7 AM to 11 PM on business days\n‐Agreed availability: 99% or more\n‐Maintenance time can be ignored.",
+      "choices": [
+        "1.2",
+        "3.0",
+        "4.8",
+        "7.2"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p020_q043.png"
+      ]
+    },
+    {
+      "number": 44,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate description of the relationship between a record\nof an incident and a record of a problem in IT service management?",
+      "choices": [
+        "A cross-reference to the incident that triggered the problem is included in the record of the problem.",
+        "If known errors have been identified at the time of ending the record of the problem, the record of the incident that triggered the record of the problem is deleted.",
+        "One (1) problem record is always associated with one (1) incident record.",
+        "Problems are classified and recorded by a different criterion from the classification of incidents."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 45,
+      "type": "pure_text",
+      "prompt": "– 20 –\nQ45.\nIn the system design phase, when an audit is performed on the control to reduce the risk\nof user requirements not being met, which of the following is a point to be checked?",
+      "choices": [
+        "Whether programming is performed in accordance with the specified conventions and standards",
+        "Whether the program specifications are created on the basis of the system design documents",
+        "Whether the test plan is created on the basis of the system test requirements, and the manager’s approval of the system operations department is obtained",
+        "Whether the user department participates in the review of the system design documents"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 46,
+      "type": "pure_text",
+      "prompt": "Which of the following is an appropriate feasibility evaluation when checking whether\nthe lifetime benefits of the proposed information system are greater than its lifetime costs?",
+      "choices": [
+        "Economic feasibility",
+        "Operational feasibility",
+        "Scheduling feasibility",
+        "Technical feasibility"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 47,
+      "type": "pure_text",
+      "prompt": "Which of the following is a measure for the risk of a decline in the system maintenance\nand operation quality during the outsourcing of an IT service?",
+      "choices": [
+        "Clearly stating the detailed fee structure by service in the contract or other documents, in order to validate the service costs",
+        "Requesting a proposal for the human resource development plan of the company after outsourcing during the stage of subcontractor selection, and clearly stating it in the contract or other documents",
+        "Securing human resources with capabilities to evaluate the appropriateness of service costs for system maintenance and operation within the company",
+        "Using indexes that demonstrate the service quality in order to promote improvement activities after agreeing on the desired level of quality with the subcontractor"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 48,
+      "type": "pure_text",
+      "prompt": "– 21 –\nQ48.\nIn a business scenario where marketing managers analyze customer interests and sales\npatterns, design promotional campaigns, and then send targeted emails to customers, which\nof the following is a modeling technique used to represent how information flows between\ninternal processes, data stores, and external entities?",
+      "choices": [
+        "Class Diagram",
+        "Data Flow Diagram (DFD)",
+        "Entity-Relationship Diagram (ERD)",
+        "Use Case Diagram"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 49,
+      "type": "pure_text",
+      "prompt": "Which of the following is an explanation of benchmarking that is used for corporate\nmanagement?",
+      "choices": [
+        "It refers to a qualitative and quantitative understanding of a company’s own products, services, and operations through comparison with those of competitors or advanced companies.",
+        "It refers to drastically reforming the quality and structure of a company by redesigning its business processes from a customer viewpoint and by taking full advantage of information technology.",
+        "It refers to the ability to plan and manage the allocation of company-wide management resources in an effective and integrated manner in order to improve management efficiency.",
+        "It refers to the concentration of management resources on the unique skills and technologies of a company that can generate profit and that are superior to those of other companies."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 50,
+      "type": "pure_text",
+      "prompt": "– 22 –\nQ50.\nWhich of the following is an explanation of relationship marketing?",
+      "choices": [
+        "It is a marketing technique of setting a time limit for a short period, ranging from a few hours to a few days, and selling products on the Internet only during that period.",
+        "It is a marketing technique of using the GPS function of a smartphone to send advertisements from stores near the current location.",
+        "It is a marketing technique that aims at a diversified approach to consumers by using several media such as television, newspapers, and magazines.",
+        "It is a marketing technique that aims to acquire stable sales over a long period of time from each customer by maintaining a good connection with the customer. ."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 51,
+      "type": "pure_text",
+      "prompt": "Which of the following is an explanation of ERP?",
+      "choices": [
+        "It is a method or concept by which wholesalers and manufacturers expand their business transactions with retail stores by supporting the business activities of retail stores.",
+        "It is a method or concept for performing business transactions with consumers or between companies through the use of electronic networks such as the Internet.",
+        "It is a method or concept that aims to drastically increase sales, profit, and customer satisfaction by improving the efficiency and quality of sales through the use of IT in sales activities.",
+        "It is a method or concept that aims to improve management efficiency by planning and controlling the management resources of an entire company in an effective and comprehensive manner."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 52,
+      "type": "pure_text",
+      "prompt": "Which of the following is the appropriate description of process innovation?",
+      "choices": [
+        "Development of an innovative new product on the basis of an original and high technology",
+        "Development of innovative manufacturing procedures that improve the quality of a product",
+        "Outsourcing manufacturing to another company that has a semiconductor manufacturing process",
+        "Wide adoption after passing the competition, resulting in the establishment of a de facto standard"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 53,
+      "type": "image",
+      "prompt": "– 23 –\nQ53.\nBasic elements and examples of devices and services when the IoT is used in a factory’s\nequipment maintenance tasks are compiled as shown below. When a) through d) correspond\nto one of A through D, which of the following corresponds to A?\nBasic element\nExample of device and service\nData collection\nA\nData transmission\nB\nData analysis\nC\nData utilization\nD",
+      "choices": [
+        "Abnormal value judgment tool",
+        "Display for work instructions",
+        "Temperature sensor for equipment",
+        "Wireless communication within the factory"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p023_q053.png"
+      ]
+    },
+    {
+      "number": 54,
+      "type": "pure_text",
+      "prompt": "Which of the following is a characteristic of an IC tag (RFID)?",
+      "choices": [
+        "It handles a large amount of information, so it uses an external storage device for storing information.",
+        "It is stain-resistant, and recorded information can be read from the outside of the package.",
+        "It is used by inserting the tag into a dedicated magnetic reader.",
+        "It uses GPS to display location information or attribute information about the current location."
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 55,
+      "type": "pure_text",
+      "prompt": "Which of the following is an explanation of a sharing economy?",
+      "choices": [
+        "It is a concept by which efficient management and operation of renewable energy and urban infrastructure are performed by using IT, which improves the quality of people’s lives and achieves sustainable economic growth.",
+        "It is a concept by which the productivity of an entire economy increases through the use of IT, eliminating the supply and demand gap via SCM progress, which leads to sustainable inflation-free growth.",
+        "It is a mechanism by which over-the-counter and Internet sales are integrated to combine the benefits of both and expand overall sales.",
+        "It is a mechanism, mainly between individuals, that uses the community function or other functions of social media to share, lend, or borrow unused assets owned by individuals."
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 56,
+      "type": "pure_text",
+      "prompt": "– 24 –\nQ56.\nWhich of the following is an example of Green IT?",
+      "choices": [
+        "Development of a powerful in-house data center",
+        "Development of efficient in-house software",
+        "Using a desktop PC instead of a thin client laptop",
+        "Using web conferencing instead of traveling to meetings"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 57,
+      "type": "pure_text",
+      "prompt": "Which of the following is a major role of a CIO?",
+      "choices": [
+        "The CIO creates a plan to optimize the effect of investment on information resources across the company to support business strategy when a computerization strategy is established.",
+        "The CIO gives advice to the information system department by auditing whether the information system functions properly in corporate activities.",
+        "The CIO receives queries about the information system, reports on the problems, and gives specific instructions to the department in charge to ensure optimal management of the company-wide information system.",
+        "The CIO understands the status of information system development and operation and provides specific instructions on improvements to ensure that the company-wide information system functions optimally."
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 58,
+      "type": "image",
+      "prompt": "– 25 –\nQ58.\nThe horizontal and vertical axes of an Operating Characteristic (OC) curve in quality\nmanagement generally represent the percent defective of a lot and the success rate of a lot,\nrespectively. Samples of size n are extracted from a lot of size N. When the number of\ndefective samples is less than or equal to the pass quantity C, the lot is considered to have\npassed; otherwise, it is considered to have failed.\nWhich of the following is a diagram that shows the trend of change in the OC curve when\nN and n are fixed and C takes the values 0, 1, and 2?",
+      "choices": [
+        "0 C=0 C=1 C=2 C=0 C=1 C=2",
+        "0 C=2 C=1 C=0 C=2 C=1 C=0",
+        "0 C=2 C=1 C=0 C=2 C=1 C=0",
+        "0 C=0 C=1 C=2 C=0 C=1 C=2"
+      ],
+      "answerKey": "B",
+      "mediaFiles": [
+        "question_images/p025_q058.png"
+      ]
+    },
+    {
+      "number": 59,
+      "type": "pure_text",
+      "prompt": "Which of the following is a financial statement that represents the assets, liabilities, and\nnet assets of a company at a certain point in time and indicates the financial situation of the\ncompany?",
+      "choices": [
+        "Balance sheet",
+        "Income statement",
+        "Statement of Cash Flows",
+        "Statement of Changes in Equity"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 60,
+      "type": "pure_text",
+      "prompt": "– 26 –\nQ60.\nFor a shrink-wrap license, which of the following is the point in time when a software\nlicense agreement is concluded?",
+      "choices": [
+        "At the time the purchased software is paid for",
+        "At the time the CD-ROM containing the software is received",
+        "At the time the DVD-ROM package containing the software is opened",
+        "At the time the software is installed on a PC"
+      ],
+      "answerKey": "C",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 60,
+    "imageTypeCount": 18,
+    "missingAnswerKeyCount": 0,
+    "issues": []
+  }
+}

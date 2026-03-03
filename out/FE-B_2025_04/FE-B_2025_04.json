@@ -1,0 +1,299 @@
+{
+  "exam": {
+    "year": 2025,
+    "month": 4
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "pure_text",
+      "prompt": "- 4 -\nQ1. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ through ____C____ in the program.\nCenturial years refer to the years that are divisible by 100. The centurial years are not leap\nyears except for years that are exactly divisible by 400. The non-centurial years, that is, years\nthat are not divisible by 100, refer to leap years that are divisible by 4. The function\nisLeapYear receives an integer number year and returns true if a given year is a leap year\nor false otherwise.\n[Program]\n○ boolean: isLeapYear(integer: year) // returns true if the variable year\n// is a leap year; otherwise, returns false\nif (____A____)\nreturn ____B____\nelseif (____C____)\nreturn false\nelseif (year mod 4 = 0)\nreturn true\nelse\nreturn false\nendif\nAnswer group\nA\nB\nC",
+      "choices": [
+        "year mod 100 = 0 false year mod 400 = 0",
+        "year mod 100 = 0 true year mod 400 = 0",
+        "year mod 100 ≠ 0 false year mod 400 ≠ 0",
+        "year mod 100 ≠ 0 true year mod 400 ≠ 0",
+        "year mod 400 = 0 false year mod 100 = 0",
+        "year mod 400 = 0 true year mod 100 = 0",
+        "year mod 400 ≠ 0 false year mod 100 ≠ 0",
+        "year mod 400 ≠ 0 true year mod 100 ≠ 0"
+      ],
+      "answerKey": "F",
+      "mediaFiles": []
+    },
+    {
+      "number": 2,
+      "type": "pure_text",
+      "prompt": "- 5 -\nQ2. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe function isPerfect receives positive number n, and returns whether n is a perfect\nnumber. Here, a number is a “perfect number” if the sum of its positive divisors (excluding\nthe number itself) is equal to the number itself. For instance, 28 is a perfect number because\n28 has divisors 1, 2, 4, 7, and 14, and 1 + 2 + 4 + 7 + 14 = 28.\n[Program]\n○ boolean: isPerfect(integer: n)\ninteger: k\ninteger: sum ← 0\ninteger: half ← integer part of (n ÷ 2)\nfor (increase k from 1 to half by 1)\nif (___A___)\n___B___\nendif\nendfor\nif (sum = n)\nreturn true\nelse\nreturn false\nendif\nAnswer group\nA\nB",
+      "choices": [
+        "n mod k ≠ 0 sum ← sum + 1",
+        "n mod k ≠ 0 sum ← sum + k",
+        "n mod k = 0 sum ← sum + 1",
+        "n mod k = 0 sum ← sum + k"
+      ],
+      "answerKey": "D",
+      "mediaFiles": []
+    },
+    {
+      "number": 3,
+      "type": "pure_text",
+      "prompt": "- 6 -\nQ3. From the answer group below, select the correct answer to be inserted into _______ in\nthe description.\nThe greatest common divisor (GCD) of two numbers is the largest number that divides both\nof them. The function GCD receives two positive integer numbers and returns their GCD.\nWhen the function GCD is called as GCD(98, 56), the output is _______ in (1)–(4) below.\nHere, the output statement “output m, n” outputs the values of variables m and n, and\nsubsequently starts a new line.\n(1)\n98 56\n42 14\n28 14\n14 7\n(2)\n42 56\n42 14\n28 14\n14 14\n(3) 42 56\n42 28\n14 28\n14 14\n(4) 56 42\n42 14\n14 28\n14 14\n[Program]\n○ integer: GCD(integer: x, integer: y)\ninteger: m ← x\ninteger: n ← y\nwhile (m ≠ n)\nif (m > n)\nm ← m - n\nelse\nn ← n - m\nendif\noutput m, n\nendwhile\nreturn m\nAnswer group",
+      "choices": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 4,
+      "type": "pure_text",
+      "prompt": "- 7 -\nQ4. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe following function receives an integer number and returns the result of interpreting the\ndecimal representation of the number as a binary number. Note that the number is non-\nnegative, and its decimal representation comprises only the digits 0 and 1. For instance, if it\nreceives 1100, it returns 12.\n[Program]\n○ integer: convert(integer: number)\ninteger: place, n, remainder, decimal\ndecimal ← 0\nplace ← 1\nn ← number\nwhile (n > 0)\nremainder ← n mod 10\nn ← integer part of (n ÷ 10)\ndecimal ← decimal + ___A___\nplace ← ___B___\nendwhile\nreturn decimal\nAnswer group\nA\nB",
+      "choices": [
+        "2 × place n × place",
+        "2 × place remainder × place",
+        "10 × place 2 × place",
+        "10 × place remainder × place",
+        "n × place 2 × place",
+        "n × place remainder × place",
+        "remainder × place 2 × place",
+        "remainder × place 10 × place"
+      ],
+      "answerKey": "G",
+      "mediaFiles": []
+    },
+    {
+      "number": 5,
+      "type": "pure_text",
+      "prompt": "- 8 -\nQ5. From the answer group below, select the correct answer to be inserted into _________ in\nthe program.\nThe function calc receives the positive real numbers x and y, and returns the result of the\ncalculation of (√x + ඥy )2. For instance, when the function calc is called as calc(4, 9),\nthe return value is 25. Here, the function pow(a, b) returns a raised to the power of b.\n[Program]\n○ real: calc(real: x, real: y)\nreturn _______\nAnswer group",
+      "choices": [
+        "pow(pow(x, 0.5) + pow(y, 0.5), 2)",
+        "pow(pow(x, 0.5), 2) + pow(pow(y, 0.5), 2)",
+        "pow(pow(x, 2) + pow(y, 2), 0.5)",
+        "pow(x, 0.5) + pow(y, 0.5)",
+        "pow(x, 0.5) + pow(y, 0.5) ÷ pow(2, 0.5)",
+        "pow(x, 2) + pow(y, 2) ÷ pow(2, 0.5)"
+      ],
+      "answerKey": "A",
+      "mediaFiles": []
+    },
+    {
+      "number": 6,
+      "type": "image",
+      "prompt": "- 9 -\nQ6. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nGray code is a sequence of binary numbers in which two successive values differ by only 1\nbit. The function GrayBiCon converts the gray code to a binary code using bitwise operators.\nThe bitwise operators operate on the individual bits of the variables. The function receives\nthe 8-bit type argument x as a gray code, and returns a corresponding binary number of the\ngiven argument. The value of each bit after conversion is the exclusive OR of the most\nsignificant bit in the gray code up to the corresponding bit position and the converted value\nof the next higher bit position. For instance, when the function GrayBiCon is called as\nGrayBiCon(00001100), the return value is a binary number 00001000. The common bitwise\noperators are listed in the table below:\nTable Operators\nOperator\nName\n&\nBitwise AND\n|\nBitwise OR\n^\nBitwise XOR (exclusive OR)\n<<\nShift left\n>>\nShift right\nFor instance, v << n performs a logical shift of the value of v by n bits to the left.\n[Program]\n○ 8-bit: GrayBiCon(8-bit: x)\n8-bit: y ← x\n8-bit: z ← x\nwhile (z ≠ 00000000)\nz ← z ____A____ 1\ny ← ____B____\nendwhile\nreturn y",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "H",
+      "mediaFiles": [
+        "question_images/p009_q006.png"
+      ]
+    },
+    {
+      "number": 7,
+      "type": "pure_text",
+      "prompt": "- 11 -\nQ7. From the answer group below, select the correct answer to be inserted into _________ in\nthe description. Here, the array index starts at 1.\nThe function binarySearch receives four arguments: the first argument is an array specified\nwith the argument arr (the number of elements ≥ 1), the second argument is the value\nspecified with the argument target, the third argument is the lower bound low of the array,\nand the fourth argument is the upper bound high of the array. The array arr has no duplicate\nelements and is sorted in ascending order. If arr has an element with the same value as\ntarget, this function returns the index of that element, and -1 otherwise.\nWhen the function binarySearch is called as binarySearch({1, 2, 3, 4, 5, 6}, 5,\n1, 6), the number of times the string “call” is output is _________ .\n[Program]\n○ integer: binarySearch(integer []: arr, integer: target,\ninteger: low, integer: high)\ninteger: mid\nif (low > high)\nreturn −1\nendif\nmid ← integer part of ((low + high) ÷ 2)\nif (arr[mid] > target)\noutput \"call\"\nreturn binarySearch(arr, target, low, mid − 1)\nelseif (arr[mid] < target)\noutput \"call\"\nreturn binarySearch(arr, target, mid + 1, high)\nelse\nreturn mid\nendif\nAnswer group",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerKey": "B",
+      "mediaFiles": []
+    },
+    {
+      "number": 8,
+      "type": "pure_text",
+      "prompt": "- 12 -\nQ8. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nThe function reverse takes a string inputStr as a parameter and returns the reversed string.\nHere, the length of the string given to inputStr is 100 or less. In the program, areas outside\nof the arrays must not be referenced and the undefined value must not be appended to a string.\n[Program]\nglobal: character []: stack ← {100 undefined}\nglobal: integer: sp ← 0\n○ string: reverse(string: inputStr)\ninteger: n ← length of inputStr\ninteger: i\ncharacter: x, v\nstring: outputStr ← \"\"\nfor (increase i from 1 to n by 1)\nx ← the i-th character of string inputStr\npush(x)\nendfor\nwhile (sp ≠ ___A___)\nv ← pop()\nappend v to outputStr\nendwhile\nreturn outputStr\n○ push(character: x)\nsp ← sp + 1\nstack[sp] ← x\n○ character: pop()\ncharacter: retvar\n___B___\nreturn retvar",
+      "choices": [],
+      "answerKey": "F",
+      "mediaFiles": []
+    },
+    {
+      "number": 9,
+      "type": "image",
+      "prompt": "- 14 -\nQ9. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ____C____ in the program.\nGiven the root of two binary trees, the aim of the following program is to check whether\nthese two trees are identical. Two binary trees are defined as identical if they satisfy the\nfollowing formal conditions:\n• Structure: Both trees have the same structure, implying that for every corresponding\nnode in the two trees, the arrangement of the left and right children is the same.\n• Node Values: Each corresponding node in the two trees must contain the same value.\nSpecifically, if tree 𝑇ଵ has a node 𝑁ଵ with value 𝑣ଵ and tree 𝑇ଶ has the corresponding\nnode 𝑁ଶ with value 𝑣ଶ, then 𝑣ଵ = 𝑣ଶ.\nThe function isSameTree takes two instances of class TreeNode as the argument\nrepresenting the root nodes of two binary trees, and returns true if the trees are identical, or\nfalse otherwise. The member variables of TreeNode are listed in the table below:\nTable Explanation of the member variables of the class TreeNode\nMember variable\nType\nDescription\nval\ninteger\nThe integer value of a current node\nleft\nTreeNode\nLeft child node\nright\nTreeNode\nRight child node\n[Program]\n○ boolean: isSameTree(TreeNode: p, TreeNode: q)\nboolean: checkLeft, checkRight\nif (p = undefined ____A____ q = undefined)\nreturn true\nendif\nif (p = undefined ____B____ q = undefined)\nreturn false\nendif\nif (p.val ≠ q.val)\nreturn false\nendif\ncheckLeft ← isSameTree(p.left, q.left)\ncheckRight ← isSameTree(p.right, q.right)\nreturn checkLeft ____C____ checkRight",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p014_q009.png"
+      ]
+    },
+    {
+      "number": 10,
+      "type": "image",
+      "prompt": "- 16 -\nQ10. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe procedure deleteLast removes an element at the end of a doubly linked list. Each\nelement of the doubly linked list is represented by the class ListElement. The table shows\nthe description of the class ListElement. The ListElement-type variable holds a\nreference to an instance of the class ListElement. The global variable listHead holds a\nreference to the head element of the doubly linked list. Remember that each element in the\ndoubly linked list has a reference to its previous element and its next element. Here, if the\nlist is empty, listHead is set to undefined.\nThe procedure handles three main cases: if the list is empty, it outputs \"empty.\" If the list\ncontains only one element, it becomes empty after deletion. If multiple elements are present,\nit only removes the last element.\nTable Class ListElement\nMember Variable\nType\nDescription\ndata\ninteger\nThe value of an element.\nnext\nListElement\nReference to the instance that holds the next\nelement in the list.\nprev\nListElement\nReference to the instance that holds the previous\nelement in the list.\n[Program]\nglobal: ListElement: listHead /* A reference to the first element of\nthe list is stored. */\n○ deleteLast()\nListElement: current\nif (listHead is undefined)\noutput \"empty\"\nelse\ncurrent ← listHead\nwhile (___A___ is not undefined)\ncurrent ← current.next\nendwhile\nif (current.prev is not undefined) // multiple elements are present\n___B___ ← undefined\nelse // only one element is present\nlistHead ← undefined // empty list\nendif\nendif",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "E",
+      "mediaFiles": [
+        "question_images/p016_q010.png"
+      ]
+    },
+    {
+      "number": 11,
+      "type": "pure_text",
+      "prompt": "- 18 -\nQ11. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ in the description and ___B___ in the program. Here, the array index\nstarts at 0.\nThe procedure sort receives an integer array arr and prints all the integers in arr in\nascending order, separated by commas. The number of elements in arr is ≥ 1. The values\nof all array elements are in the range of 0–10.\nIf arr is {9, 3, 2, 0, 9, 3, 0, 1, 5, 3, 8}, at the end of the procedure, it outputs\n\"0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9, \" and the values of the elements of array s will\nbe {___A___}\n[Program]\n○ sort(integer []: arr) // prints all the elements in arr in ascending order\ninteger []: s ← {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\ninteger: i, j\nfor (increase i from 0 to (the number of elements in arr) - 1 by 1)\ns[arr[i]] ← s[arr[i]] + 1\nendfor\nfor (increase i from 0 to 10 by 1)\nif (s[i] > 0)\nfor (increase j from 0 to s[i] - 1 by 1)\noutput ___B___ and \", \"\nendfor\nendif\nendfor\nreturn\nAnswer group\nA\nB",
+      "choices": [
+        "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 arr[i]",
+        "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 i",
+        "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 s[i]",
+        "0, 1, 2, 3, 5, 8, 9 arr[j]",
+        "0, 1, 2, 3, 5, 8, 9 i",
+        "0, 1, 2, 3, 5, 8, 9 j",
+        "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 i",
+        "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 j",
+        "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 s[j]"
+      ],
+      "answerKey": "G",
+      "mediaFiles": []
+    },
+    {
+      "number": 12,
+      "type": "image",
+      "prompt": "- 19 -\nQ12. From the answer group below, select the correct answer to be inserted into _______ in\nthe program. Here, the array index starts at 1.\nThe function hammingDistance compares the two-character arrays s1 and s2 that are given\nas arguments. s1 and s2 have one or more elements. If s1 and s2 do not have the same\nnumber of elements, the function returns -1. Otherwise, it returns the number of indices\nwhere two arrays have different element values at the same index. The figure shows an\nexample of two character arrays. APPLE and APRIE have different element values at two\nindices.\nA\nP\nP\nL\nE\nA\nP\nR\nI\nE\nFigure Example of two-character arrays\nThe table lists examples of s1 and s2 given to the function hammingDistance and the return\nvalues. In the program, areas outside of the arrays must not be referenced.\nTable Examples of s1 and s2 given to the function hammingDistance\nand the return values\ns1\ns2\nReturn value\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"p\", \"l\", \"e\"}\n0\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"r\", \"i\", \"l\"}\n3\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"m\", \"e\", \"l\", \"o\", \"n\"}\n5\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"p\", \"i\", \"e\"}\n-1\n[Program]\n○ integer: hammingDistance(character []: s1, character []: s2)\ninteger: i, cnt ← 0\nif (the number of elements in s1 ≠ the number of elements in s2)\nreturn −1\nendif\nfor (increase i from 1 to the number of elements in s1 by 1)\nif (_______)\ncnt ← cnt + 1\nendif\nendfor\nreturn cnt",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "H",
+      "mediaFiles": [
+        "question_images/p019_q012.png"
+      ]
+    },
+    {
+      "number": 13,
+      "type": "pure_text",
+      "prompt": "- 21 -\nQ13. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe procedure maximumSubarray calculates the maximum sum of the subarray of the array\nT (the number of elements ≥ 1). A subarray is a contiguous portion of the array, for instance,\nfrom T[1] to T[3]. It can be as short as one element or as long as the entire array. The\nprocedure finds one of the subarrays with the largest sum of values, and outputs the sum, the\nfirst, and the last indices of the subarray. For instance, if the content of the array is {-2, 1,\n-3, 4, -1, 2, 1, -5, 4}, the output will be 6, 4, and 7 representing the sum, first index,\nand last index, respectively. Here, the subarray from T[4] to T[7] is {4, -1, 2, 1}.\n[Program]\n○ maximumSubarray(integer []: T)\ninteger: n ← the number of elements in T\ninteger: i, j\ninteger: first, last /* the first and last indices of the subarray */\ninteger: sum\ninteger: max ← T[1] - 1\nfor (increase i from 1 to n by 1)\nsum ← 0\nfor (increase j from ____A____ to n by 1)\nsum ← sum + T[j]\nif (sum > max)\nfirst ← i\nlast ← ____B____\nmax ← sum\nendif\nendfor\nendfor\noutput max, first, last",
+      "choices": [],
+      "answerKey": "C",
+      "mediaFiles": []
+    },
+    {
+      "number": 14,
+      "type": "image",
+      "prompt": "- 23 -\nQ14. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nThe function cosine(z) returns an approximate value of the cosine value of z degrees. The\nfunction uses Maclaurin series expansion for the cosine shown below and can be used to\ndetermine cos(y) for values of y radians.\ncos(y) = 1 −\n௬మ\nଶ! +\n௬ర\nସ! −\n௬ల\n଺! + ⋯\n[Program]\n○ real: cosine(real: z)\nreal: y ← z × π ÷ 180 // convert from degrees to radians\nreal: term ← 1\nreal: cosy ← term\ninteger: n ← 0\nwhile (absolute value of ____A____ > 0.000000001)\nn ← n + 1\nterm ← term × (-1 × (y ____B____) ÷ (2 × n × (2 × n - 1)))\ncosy ← cosy + term\nendwhile\nreturn cosy\nAnswer group\nA\nB",
+      "choices": [
+        "cosy raised to the power of (2 × n)",
+        "cosy raised to the power of 4",
+        "cosy squared",
+        "term raised to the power of (2 × n)",
+        "term raised to the power of 4",
+        "term squared"
+      ],
+      "answerKey": "F",
+      "mediaFiles": [
+        "question_images/p023_q014.png"
+      ]
+    },
+    {
+      "number": 15,
+      "type": "image",
+      "prompt": "- 24 -\nQ15. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description. Here, the array index starts at 1.\nThe calcDistance returns a value based on array p1, p2 and positive integer n. Assuming\nthat the number of elements in arrays p1 and p2 are the same. The function abs(x) returns\nthe absolute value of x, and pow(a, b) returns a raised to the power of b.\nIn the case of p1 is {3, 1, 5, 2} and p2 is {4, 6, 2, 3}, the calcDistance(p1, p2,\n1) returns ___A___, whereas calcDistance(p1, p2, 2) returns ___B___. As the\nvalue of n increases, those of calcDistance(p1, p2, n) converges to 5.\n[Program]\n○ real: calcDistance(real []: p1, real []: p2, integer: n)\ninteger: i\nreal: distance ← 0\nreal: ex\nfor (increase i from 1 to number of elements in p1 by 1)\ndistance ← distance + pow(abs(p1[i] - p2[i]), n)\nendfor\nex ← 1 ÷ n /* Division is performed in data type real */\ndistance ← pow(distance, ex)\nreturn distance\nAnswer group\nA\nB",
+      "choices": [
+        "4 4",
+        "4 6",
+        "4 10",
+        "4 18",
+        "10 4",
+        "10 6",
+        "10 10",
+        "10 18"
+      ],
+      "answerKey": "F",
+      "mediaFiles": [
+        "question_images/p024_q015.png"
+      ]
+    },
+    {
+      "number": 16,
+      "type": "image",
+      "prompt": "- 25 -\nQ16. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program.\nCraps is a casino dice game in which players bet on the outcomes of the roll of a pair dice.\nIn the rules of the game, a player rolls two dice and finds their sum. There possible outcomes\ncould lead to a win or loss.\n1. If the sum is 7 or 11, the player wins.\n2. If the sum is 2, 3 or 12, the player loses.\n3. Otherwise (the sum is 4, 5, 6, 8, 9 or 10), the player neither wins nor loses. However,\nthe player continues rolling the dice until they either roll the same (initial) sum\nagain (in which case they win the game) or roll a sum of 7 (in which case they lose\nthe game).\nThe following program approximates the chance of winning a game of Craps using Monte\nCarlo method and outputs it. The Monte Carlo method is a technique used to estimate the\nprobability of certain outcomes of an experiment by running multiple trial runs, using\nrandom numbers. In the program, the playing Craps is illustrated simply by generating\nrandom numbers rather than actually rolling a pair of dice. The function random_int(1, 6)\ngenerates a random integer number between 1 and 6, and returns it.\nThe program also calculates and outputs the relative error of the measured approximate\nprobability of winning Craps. In general, the relative error Er is calculated using the\nfollowing formula:\nEr = | (Pm – Pt) / Pt |\nwhere Pm denotes the measured approximate probability and Pt denotes the theoretical\nprobability. The theoretical probability of winning Craps is known to be 244/495.\n[Program]\ninteger: wins_sum ← 0\ninteger: lose_sum ← 0\ninteger: n ← 10000\ninteger: i, dice1, dice2, sum, newsum\nreal: result, pt ← (244 ÷ 495)\nfor (increase i from 1 to n by 1)\ndice1 ← random_int(1, 6)\ndice2 ← random_int(1, 6)\nsum ← dice1 + dice2\nif (sum = 7 or sum = 11)",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "C",
+      "mediaFiles": [
+        "question_images/p025_q016.png"
+      ]
+    },
+    {
+      "number": 17,
+      "type": "pure_text",
+      "prompt": "- 27 -\nQ17. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nRecently, an e-commerce company X was cyber-attacked by an attacker. Mr. Y, the security\nteam leader at the company, is investigating the incident and considering future\ncountermeasures. The following is the summary of the incident:\nThe first half of the attack: An attacker visited company X's website to collect valuable\ninformation and knew the name of a senior worker of the IT department who was only\nresponsible for system administration. One day, a receptionist for Company X received\na phone call from a man with a fantastic voice. He asked some personal questions\nabout the senior IT guy, Mr. Z. The caller skillfully manipulated the receptionist into\ngiving him personal information about the IT guy. The caller was the attacker who got\nhelpful information for further attacks on the company's server.\nThe second half of the attack: After that, the attacker dug into social sites and other\nresources to get additional information about Mr. Z and the servers of Company X,\nand then he created a password file based on Mr. Z's information and a file with the\ncompany server's IP address list. Then, the attacker remotely attacked a server of the\ncompany using the password list and an IP address of the server.\nMr. Y implemented two measures as future countermeasures for a similar attack. The\nmeasure for the first half of the attack is ___A___. The other for the second half is\n___B___.",
+      "choices": [],
+      "answerKey": "E",
+      "mediaFiles": []
+    },
+    {
+      "number": 18,
+      "type": "image",
+      "prompt": "- 29 -\nQ18. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany Z wants to provide secure file transfer service especially for very large files for\ntheir customers. Mr. K, the system architect of the company, designed the sequence of\nuploading, storing, and downloading customer files on the web service. In this system,\ncustomers register their email addresses and their public keys during sign up. The associated\nprivate keys reside on the customers’ computers and the email address is used as the user id.\nThe requirements for the file transfer service are as follows:\n-\nCustomers transfer files between each other by uploading files to or downloading them\nfrom the web service provided by Company Z.\n-\nWhen uploading a file, the sender supplies the recipient’s email address and the\npassword that will be used with the particular file (Upload function).\n-\nThe file uploaded by the sender is encrypted with the supplied password and then stored\nin the database of the web service. (StoreFile function).\n-\nThe web service assigns a file id to the uploaded file and notifies the sender of it upon\nuploading.\n-\nThe encrypted file can only be decrypted by the sender and the recipient of the file using\nthe password supplied by the sender.\n-\nThe password is encrypted and sent to the recipient as an email message along with the\nfile id (Message function).\n-\nWhen downloading the file, the recipient supplies the file id and the password. The web\nservice then decrypts the stored file and provides it for the recipient.\n-\nEven if the database is leaked, it will be difficult to decrypt the uploaded files stored in\nthe database.\nFigure 1 shows the sequence of uploading file by customer P for customer Q.\nP\nServer\nDatabase\nQ\nUpload(Q’s email, file, password)\nLoadPublicKeys(Q’s email)\nQ’s public key\nStoreFile( (file, KDF(password)))\nA\nfile id\nMessage(file id, (password, Q’s public key))\nB\nfile id\nFigure 1 Sequence on file uploading",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerKey": "E",
+      "mediaFiles": [
+        "question_images/p029_q018.png"
+      ]
+    },
+    {
+      "number": 19,
+      "type": "pure_text",
+      "prompt": "- 31 -\nQ19. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nCompany V, a small-sized company specializing in manufacturing and selling home\nappliances, has recently expanded its team of website administrators to five. In addition, they\nhave renovated their website to allow customers to download user manuals for their products.\nOne day, an external security researcher highlighted that files containing a watermark with\n\"For Internal Use\" were publicly accessible in the public directory of the company’s website\nand available for download. Company V has a system that ensures all documents stored in\nthe internal folder have this watermark by default, and a rule exists stating that the watermark\nmust be removed when files are published or shared external. The website administrator\nimmediately confirmed the issue and removed the document from the public directory. Then,\nthe website administrator reported this issue to Company V's security team. The\ninvestigation of the security team revealed that the issue was caused by a website\nadministrator accidentally uploading internal documents instead of the intended public\ncatalog files. Those publicly accessible files were a draft version of the catalogs, and they\ndid not contain credential information such as API keys for website management. When\nuploading files to the website's public directory, another website administrator, other than\nthe uploader, was supposed to verify the correctness of the files. However, they failed to\nnotice the mistake. To prevent similar issues in the future, the security team suggested\nimplementing ___A___ to the website administrators. Additionally, to quickly detect\nissues, the security team suggested implementing ___B___.",
+      "choices": [],
+      "answerKey": "I",
+      "mediaFiles": []
+    },
+    {
+      "number": 20,
+      "type": "pure_text",
+      "prompt": "- 33 -\nQ20. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nCompany A recently experienced a security incident where confidential data were exfiltrated\nby a compromised employee account. Ms. T, a security analyst at Company A, investigated\nthe compromised employee account and found that the password used by the employee's\naccount involved in this breach was a complex password that met the company's password\npolicy. However, the same password was used across several web services. Additionally, Ms.\nT investigated the login logs of Company A’s system and discovered 1,000 failed login\nattempts recorded within 3 hours before a successful login was recorded. These failed login\nlogs included attempts to log in with different account IDs and password sets. These login\nattempts occurred from a county where Company A does not have an office. Company A has\nno employees who travel abroad.\nTo prevent future account compromise by the same attack pattern, Ms. T suggested that the\nsystem administrators of Company V implement ___A___. Additionally, to quickly detect\nany account compromise, she suggested implementing a monitoring system to alert\nadministrators of ___B___.\nAnswer group\nA\nB",
+      "choices": [
+        "a more complex password policy login attempts from locations where the account is not usually logged in.",
+        "a more complex password policy overwhelmed network traffic in Company A's system",
+        "a more complex password policy unpatched servers in Company A's system",
+        "encryption of all files stored on employees' computers login attempts from locations where the account is not usually logged in.",
+        "encryption of all files stored on employees' computers overwhelmed network traffic in Company A's system",
+        "encryption of all files stored on employees' computers unpatched servers in Company A's system",
+        "Multi-Factor Authentication to all employee accounts login attempts from locations where the account is not usually logged in.",
+        "Multi-Factor Authentication to all employee accounts overwhelmed network traffic in Company A's system",
+        "Multi-Factor Authentication to all employee accounts unpatched servers in Company A's system _ _ Company names and product names appearing in the test questions are trademarks or registered trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text."
+      ],
+      "answerKey": "G",
+      "mediaFiles": []
+    }
+  ],
+  "report": {
+    "questionCount": 20,
+    "imageTypeCount": 8,
+    "missingAnswerKeyCount": 0,
+    "issues": []
+  }
+}

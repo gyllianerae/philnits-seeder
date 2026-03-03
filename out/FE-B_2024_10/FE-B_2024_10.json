@@ -12,7 +12,9 @@
         "P[1,1] × N[1] + P[1,2] × N[2] P[2,1] × N[1] + P[2,2] × N[2]",
         "P[1,1] × N[1] + P[1,2] × N[2] P[2,2] × N[1] + P[2,1] × N[2]",
         "P[1,2] × N[1] + P[1,1] × N[2] P[2,2] × N[1] + P[2,1] × N[2]",
-        "P[1,2] × N[1] + P[2,2] × N[2] P[2,1] × N[1] + P[1,2] × N[2] e) P[2,1] × N[1] + P[1,2] × N[2] P[1,1] × N[1] + P[2,2] × N[2] f) P[2,1] × N[1] + P[2,2] × N[2] P[1,1] × N[1] + P[1,2] × N[2]"
+        "P[1,2] × N[1] + P[2,2] × N[2] P[2,1] × N[1] + P[1,2] × N[2]",
+        "P[2,1] × N[1] + P[1,2] × N[2] P[1,1] × N[1] + P[2,2] × N[2]",
+        "P[2,1] × N[1] + P[2,2] × N[2] P[1,1] × N[1] + P[1,2] × N[2]"
       ],
       "answerKey": "A",
       "mediaFiles": []
@@ -25,7 +27,12 @@
         "integer part of (prod_id ÷ 10) = 3 integer part of (pur_prod ÷ 3)",
         "integer part of (prod_id ÷ 10) = 3 integer part of (pur_prod ÷ 3) + 1",
         "integer part of (prod_id ÷ 10) = 3 pur_prod mod 3",
-        "prod_id = 10 mod 3 integer part of (pur_prod ÷ 3) e) prod_id = 10 mod 3 integer part of (pur_prod ÷ 3) + 1 f) prod_id = 10 mod 3 pur_prod mod 3 g) prod_id mod 10 = 3 integer part of (pur_prod ÷ 3) h) prod_id mod 10 = 3 integer part of (pur_prod ÷ 3) + 1 i) prod_id mod 10 = 3 pur_prod mod 3"
+        "prod_id = 10 mod 3 integer part of (pur_prod ÷ 3)",
+        "prod_id = 10 mod 3 integer part of (pur_prod ÷ 3) + 1",
+        "prod_id = 10 mod 3 pur_prod mod 3",
+        "prod_id mod 10 = 3 integer part of (pur_prod ÷ 3)",
+        "prod_id mod 10 = 3 integer part of (pur_prod ÷ 3) + 1",
+        "prod_id mod 10 = 3 pur_prod mod 3"
       ],
       "answerKey": "G",
       "mediaFiles": []
@@ -38,7 +45,11 @@
         "array[i] < max1 max1 ← array[i]",
         "array[i] < max1 max2 ← array[i]",
         "array[i] < max2 max1 ← array[i]",
-        "array[i] < max2 max2 ← array[i] e) array[i] > max1 max1 ← array[i] f) array[i] > max1 max2 ← array[i] g) array[i] > max2 max1 ← array[i] h) array[i] > max2 max2 ← array[i]"
+        "array[i] < max2 max2 ← array[i]",
+        "array[i] > max1 max1 ← array[i]",
+        "array[i] > max1 max2 ← array[i]",
+        "array[i] > max2 max1 ← array[i]",
+        "array[i] > max2 max2 ← array[i]"
       ],
       "answerKey": "F",
       "mediaFiles": []
@@ -59,12 +70,13 @@
     {
       "number": 5,
       "type": "pure_text",
-      "prompt": "- 8 -\nQ5. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nFunction calcGeoMean receives the array dataArray (the number of elements ≥ 1) as an\nargument and returns the geometric mean of values in dataArray as the return value. For\nthe numbers a1, a2, …, an, the geometric mean is ඥሺ𝑎ଵ× 𝑎ଶ× ⋯× 𝑎௡ሻ\n೙\n. Here, the pow(x,\ny) function returns a real value by raising x to the power of y. In the program, division is\nperformed in data type real.\n[Program]\n○ real: calcGeoMean(real []: dataArray)\nreal: product, geomean\ninteger: n ← the number of elements in dataArray\ninteger: i\nproduct ← 1\nfor (increase i from 1 to n by 1)\nproduct ← product × dataArray[i]\nendfor\ngeomean ← pow(___A___, ___B___)\nreturn geomean\nAnswer group\nA\nB",
+      "prompt": "- 8 -\nQ5. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nFunction calcGeoMean receives the array dataArray (the number of elements ≥ 1) as an\nargument and returns the geometric mean of values in dataArray as the return value. For\nthe numbers a1, a2, …, an, the geometric mean is ඥሺ𝑎ଵ× 𝑎ଶ× ⋯× 𝑎௡ሻ\n೙\n. Here, the pow(x,",
       "choices": [
         "1 ÷ n product",
         "product 1 ÷ n",
         "product n",
-        "n product"
+        "n product",
+        "function returns a real value by raising x to the power of y. In the program, division is performed in data type real. [Program] ○ real: calcGeoMean(real []: dataArray) real: product, geomean integer: n ← the number of elements in dataArray integer: i product ← 1 for (increase i from 1 to n by 1) product ← product × dataArray[i] endfor geomean ← pow(___A___, ___B___) return geomean Answer group A B"
       ],
       "answerKey": "B",
       "mediaFiles": []
@@ -86,18 +98,11 @@
     },
     {
       "number": 7,
-      "type": "image",
+      "type": "pure_text",
       "prompt": "- 11 -\nQ7. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nGiven two strings, str1 and str2, the task is to determine the length of the longest common\nsubsequence (LCS), that is, the length of the longest subsequence present in both strings.\nFor instance, if str1 is “ABXDZ” and str2 is “ABCD”, the LCS between str1 and str2 will\nbe “ABD” and the length of the LCS will be 3.\nThe function lcs(string: str1, string: str2, integer: m, integer: n) takes two\nstrings str1 and str2 and two integers m and n as arguments. str1 and str2 are the strings\non which the length of the LCS is calculated. m and n are indexes addressing the target\ncharacters in str1 and str2, respectively. On the first call, m and n represent the lengths of\nstr1 and str2, respectively. The function returns an integer containing the value of the\nlength of the LCS of str1 and str2. For instance, the function may be called as\nlcs(\"ABXDZ\", \"ABCD\", 5, 4).\nAnother function max(integer: a, integer: b) is also used. The function takes two\nintegers a and b as arguments. It compares these two integers and returns the integer value\nof whichever is the maximum between a and b.\n[Program]\n○ integer: max(integer: a, integer: b)\nif (a > b)\nreturn a\nelse\nreturn b\nendif\n○ integer: lcs(string: str1, string: str2, integer: m, integer: n)\nif (m = 0 or n = 0)\nreturn 0\nendif\nif (the m-th character of string str1 = the n-th character of string str2)\nreturn 1 + lcs(str1, str2, m - 1, n - 1)\nelse\nreturn max(lcs(str1, str2, m, ___A___),\nlcs(str1, str2, m - 1, ___B___))\nendif",
-      "choices": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
+      "choices": [],
       "answerKey": "C",
-      "mediaFiles": [
-        "question_images/p011_q007.png"
-      ]
+      "mediaFiles": []
     },
     {
       "number": 8,
@@ -137,7 +142,9 @@
         "listHead",
         "listHead.next",
         "listHead.next.next",
-        "prev e) prev.next f) prev.next.next"
+        "prev",
+        "prev.next",
+        "prev.next.next"
       ],
       "answerKey": "E",
       "mediaFiles": [
@@ -152,7 +159,9 @@
         "A[i] ← A[i - 1] k ← k + 1",
         "A[k] ← A[k - 1] swap k and i",
         "A[k - 1] ← A[k] k ← k + 1",
-        "swap A[i] and A[i - 1] k ← k - 1 e) swap A[i] and A[k] swap k and i f) swap A[k] and A[k - 1] k ← k - 1"
+        "swap A[i] and A[i - 1] k ← k - 1",
+        "swap A[i] and A[k] swap k and i",
+        "swap A[k] and A[k - 1] k ← k - 1"
       ],
       "answerKey": "F",
       "mediaFiles": []
@@ -195,7 +204,11 @@
         "{0.1, 0.2, 0.3, 0.4, 0.5}",
         "{0.1, 0.2, 0.3, 0.4, 0.7}",
         "{0.1, 0.2, 0.4, 0.6, 0.9}",
-        "{0.1, 0.2, 0.4, 0.7, 0.9} e) {0.1, 0.3, 0.5, 0.7, 1} f) {0.1, 0.3, 0.5, 0.8, 1} g) {0.1, 0.3, 0.6, 0.9, 1} h) {0.1, 0.3, 0.7, 0.9, 1}"
+        "{0.1, 0.2, 0.4, 0.7, 0.9}",
+        "{0.1, 0.3, 0.5, 0.7, 1}",
+        "{0.1, 0.3, 0.5, 0.8, 1}",
+        "{0.1, 0.3, 0.6, 0.9, 1}",
+        "{0.1, 0.3, 0.7, 0.9, 1}"
       ],
       "answerKey": "E",
       "mediaFiles": []
@@ -232,33 +245,19 @@
     },
     {
       "number": 17,
-      "type": "image",
+      "type": "pure_text",
       "prompt": "- 27 -\nQ17. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany A is an e-commerce company specializing in sporting goods. One morning,\nemployee X of the company's accounting department starts up his PC to begin his work.\nWhen he logged into his PC, he saw an unfamiliar screen with the following message:\n*** Attention ***\nYour files have been encrypted.\nAll of your important files have been encrypted. To restore these files, please follow\nthese steps:\n1. transfer $500 worth of cryptcurrency to the currency address provided:\nAddress: 1ABCD.... EFGH\n2. As soon as the transfer is confirmed, we will send you the key to decrypt the files.\n3. If the transfer is not confirmed within 48 h, the decryption key will be deleted and\nthe files will be lost forever.\nContact: help@ransomware.example.com\nThe accounting department immediately requested the security team in company A to help\nresolve the situation. The security team analyzed all the PCs in the accounting department,\nincluding that of employee X, and noted the following:\n1. A total of tow compromised PCs were found. One PC was used by Employee X and\nthe other PC was shared by multiple employees.\n2. IDS/IPS was not installed in the accounting department LAN, delaying detection of\nransomware.\n3. The shared PC was backed up daily, and important data could be restored from the\nbackup at the time when the PC was not compromised by the ransomware.\n4. Employee X's PC was not backed up, and important data could not be restored.\n5. The ransomware was saved on Employee X's PC as an attachment file of an email\nsent by a company pretending to be a business partner. The email envelope and\ncontent were sophisticatedly disguised and difficult to detect through enhanced spam\nfilters.",
-      "choices": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
+      "choices": [],
       "answerKey": "C",
-      "mediaFiles": [
-        "question_images/p027_q017.png"
-      ]
+      "mediaFiles": []
     },
     {
       "number": 18,
-      "type": "image",
+      "type": "pure_text",
       "prompt": "- 29 -\nQ18. From the answer group below, select the correct answer to be inserted into ______ in\nthe description.\nCompany B runs several web services. Mr. Y is a software engineer in the company. He was\ndirected to develop a feature that prevents web service users from setting weak passwords.\nMr. Y investigated and found that “Password Entropy” is the important factor for the\npassword strength.\nPassword entropy measures the strength of a password based on the difficulty of cracking\nthe password through guessing or a brute-force attack. The entropy of a password is typically\nbased on the type of characters used—lowercase letters, uppercase letters, numerical digits,\nor special characters—and the length of the password or total number of characters.\nPassword entropy formula:\nYou can measure the entropy of a password in bits using the following formula:\nE = ⌊L ×Log2 (R)⌋\nIn this formula:\n- E denotes the password entropy\n- R denotes the possible range of character types in the password\n- L denotes the number of characters in the password (its length)\n- Log2 answers the question, \"to what power 2 must be raised to equal this number\"\n- ⌊X⌋ denotes the greatest integer N such that N ≤ X\nThe following totals show the breakdown for each character set as they appear on a typical\nAmerican QWERTY keyboard:\nLowercase letters (a–z) = 26.\nUppercase letters (A–Z) = 26.\nNumerical digits (0–9) = 10.\nSpecial characters (!, @, #, $, %, ^, etc.) = 32.\nThe password vfssxfrb has a pool of 26 characters (lowercase letters);\nChanging the password to JAAdMAdE would increase the pool to 52 characters (lowercase\nletters and uppercase letters);\nChanging it further to u7aHqsbt would increase the pool to 62 characters (lowercase letters,\nuppercase letters along with numbers) and\nFinally, Re*ct7$% has a pool of 26 + 26 + 10 + 32 = 94 characters (lowercase letters,",
-      "choices": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
+      "choices": [],
       "answerKey": "D",
-      "mediaFiles": [
-        "question_images/p029_q018.png"
-      ]
+      "mediaFiles": []
     },
     {
       "number": 19,
@@ -268,7 +267,11 @@
         "signed using Mr. L’s private key encrypted using Mr. L’s private key",
         "signed using Mr. L’s private key encrypted using Mr. L’s public key",
         "signed using Mr. L’s private key encrypted using Ms. A’s private key",
-        "signed using Mr. L’s private key encrypted using Ms. A’s public key e) signed using Mr. L’s public key encrypted using Mr. L’s private key f) signed using Mr. L’s public key encrypted using Mr. L’s public key g) signed using Mr. L’s public key encrypted using Ms. A’s private key h) signed using Mr. L’s public key encrypted using Ms. A’s public key"
+        "signed using Mr. L’s private key encrypted using Ms. A’s public key",
+        "signed using Mr. L’s public key encrypted using Mr. L’s private key",
+        "signed using Mr. L’s public key encrypted using Mr. L’s public key",
+        "signed using Mr. L’s public key encrypted using Ms. A’s private key",
+        "signed using Mr. L’s public key encrypted using Ms. A’s public key"
       ],
       "answerKey": "D",
       "mediaFiles": []
@@ -281,7 +284,9 @@
         "PKI environment honeypot",
         "PKI environment VPN gateway",
         "PKI environment web application firewall",
-        "SPF record honeypot e) SPF record VPN gateway f) SPF record web application firewall _ _ Company names and product names appearing in the test questions are trademarks or registered trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text."
+        "SPF record honeypot",
+        "SPF record VPN gateway",
+        "SPF record web application firewall _ _ Company names and product names appearing in the test questions are trademarks or registered trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text."
       ],
       "answerKey": "C",
       "mediaFiles": []
@@ -289,90 +294,8 @@
   ],
   "report": {
     "questionCount": 20,
-    "imageTypeCount": 11,
+    "imageTypeCount": 8,
     "missingAnswerKeyCount": 0,
-    "issues": [
-      {
-        "page": 9,
-        "number": 6,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p009_q006.png"
-      },
-      {
-        "page": 11,
-        "number": 7,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p011_q007.png"
-      },
-      {
-        "page": 13,
-        "number": 8,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p013_q008.png"
-      },
-      {
-        "page": 18,
-        "number": 12,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p018_q012.png"
-      },
-      {
-        "page": 20,
-        "number": 13,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p020_q013.png"
-      },
-      {
-        "page": 23,
-        "number": 15,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p023_q015.png"
-      },
-      {
-        "page": 25,
-        "number": 16,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p025_q016.png"
-      },
-      {
-        "page": 27,
-        "number": 17,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p027_q017.png"
-      },
-      {
-        "page": 29,
-        "number": 18,
-        "issues": [
-          "missing_choice"
-        ],
-        "missingAnswerKey": false,
-        "image": "question_images/p029_q018.png"
-      }
-    ]
+    "issues": []
   }
 }

@@ -3,7 +3,7 @@ import os, re, json, sys
 from typing import List, Dict, Any, Tuple
 
 # ---------- Patterns ----------
-CHOICE_RE = re.compile(r"^\s*([a-dA-D])\s*[\.\)]\s*(.*)\s*$")
+CHOICE_RE = re.compile(r"^\s*([a-zA-Z])\s*[\.\)]\s*(.*)\s*$")
 QSTART_LINE_RE = re.compile(r"^\s*Q\s*(\d{1,3})\s*[\.\)]\s*(.*)$", re.IGNORECASE)
 
 VISUAL_HINT_RE = re.compile(
@@ -148,7 +148,9 @@ def parse_mcq_text(text: str) -> Tuple[str, List[str], List[str]]:
             prompt_lines.append(ln)
 
     prompt = "\n".join(prompt_lines).strip()
-    choices = [(choices_map.get(k) or "").strip() for k in ["A", "B", "C", "D"]]
+    # Preserve order: use sorted keys so we get A, B, C, D, E, ... (all parsed choices)
+    choice_keys = sorted(choices_map.keys())
+    choices = [(choices_map.get(k) or "").strip() for k in choice_keys]
 
     if not prompt:
         issues.append("missing_prompt")
